@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://www.sitepoint.com/12-little-known-css-facts/ -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./12 Little-Known CSS Facts_files/saved_resource"></script><script src="./12 Little-Known CSS Facts_files/slim_v05.js"></script><script src="./12 Little-Known CSS Facts_files/sitepoint.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/icon.css.png">
+        
+    <link rel="shortcut icon" href="http://www.sitepoint.com/favicon.ico">
+
+    <link rel="apple-touch-icon-precomposed" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-144x144-precomposed.png">
+
+        <link href="https://plus.google.com/+sitepoint" rel="publisher">
+        <meta property="twitter:account_id" content="15743570">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <script async="" type="text/javascript" src="./12 Little-Known CSS Facts_files/gpt.js"></script><script type="text/javascript" async="" src="./12 Little-Known CSS Facts_files/ga.js"></script><script type="text/javascript">
+    function r(f){/in/.test(document.readyState)?setTimeout(r,9,f):f()}
+    </script>
+
+    
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30131-1']);
+  _gaq.push(['_setCustomVar', 1, 'Context', 'post', 3]);
+_gaq.push(['_setCustomVar', 2, 'Channel', 'CSS', 3]);
+_gaq.push(['_setCustomVar', 3, 'Primary Category', 'CSS', 3]);
+_gaq.push(['_setCustomVar', 4, 'Published date', '2014-04-16', 3]);
+_gaq.push(['_setCustomVar', 5, 'Author', 'Louis Lazaris', 3 ]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script type="text/javascript">
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      (function() {
+      var gads = document.createElement('script');
+      gads.async = true;
+      gads.type = 'text/javascript';
+      var useSSL = 'https:' == document.location.protocol;
+      gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(gads, node);
+      })();
+    </script>
+    
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.24 - http://yoast.com/wordpress/seo/ -->
+<title>12 Little-Known CSS Facts</title>
+<meta name="description" content="Even if you&#39;ve been coding CSS for a while, you probably still come across new stuff all the time. Here are 12 things you might not have been aware of.">
+<link rel="canonical" href="./12 Little-Known CSS Facts_files/12 Little-Known CSS Facts.html">
+<link rel="author" href="https://plus.google.com/107512330611517129044/">
+<link rel="publisher" href="https://plus.google.com/+sitepoint/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="12 Little-Known CSS Facts">
+<meta property="og:description" content="Even if you&#39;ve been coding CSS for a while, you probably still come across new stuff all the time. Here are 12 things you might not have been aware of.">
+<meta property="og:url" content="http://www.sitepoint.com/12-little-known-css-facts/">
+<meta property="og:site_name" content="SitePoint">
+<meta property="article:publisher" content="https://www.facebook.com/sitepoint">
+<meta property="article:tag" content="css facts">
+<meta property="article:tag" content="css tips">
+<meta property="article:tag" content="css tricks">
+<meta property="article:tag" content="w3c css">
+<meta property="article:section" content="CSS">
+<meta property="article:section" content="CSS3">
+<meta property="article:published_time" content="2014-04-16T11:00:53+00:00">
+<meta property="article:modified_time" content="2014-04-20T18:10:10+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="SitePoint">
+<meta name="twitter:creator" content="@http://twitter.com/ImpressiveWebs">
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="SitePoint » 12 Little-Known CSS Facts Comments Feed" href="http://www.sitepoint.com/12-little-known-css-facts/feed/">
+<link rel="stylesheet" id="sitepoint-fonts-css" href="./12 Little-Known CSS Facts_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="sitepoint-styles-css" href="./12 Little-Known CSS Facts_files/styles-f28b43ac52ec68fffa00d1afa414f6e8.css" type="text/css" media="all">
+<script type="text/javascript" src="./12 Little-Known CSS Facts_files/scripts-head-e4a2be27db699092d2993e42901cedf6.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.sitepoint.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.sitepoint.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 3.9">
+<link rel="shortlink" href="http://www.sitepoint.com/?p=79806">
+
+<!--Plugin WP Missed Schedule 2013.1231.2013 Active - Tag 6707293c0218e2d8b7aa38d418ffa608-->
+
+<!-- This site is patched which an important unfixed problem since WordPress 2.5+ to 3.9+ -->
+
+<!-- wp-parsely Plugin Version 1.5 -->
+<meta name="wp-parsely_version" id="wp-parsely_version" content="1.5">
+<meta name="parsely-page" id="parsely-page" content="{&quot;title&quot;:&quot;12 Little-Known CSS Facts&quot;,&quot;link&quot;:&quot;http:\/\/www.sitepoint.com\/12-little-known-css-facts\/&quot;,&quot;image_url&quot;:&quot;&quot;,&quot;type&quot;:&quot;post&quot;,&quot;post_id&quot;:&quot;79806&quot;,&quot;pub_date&quot;:&quot;2014-04-16T18:00:53Z&quot;,&quot;section&quot;:&quot;CSS&quot;,&quot;author&quot;:&quot;Louis Lazaris&quot;,&quot;tags&quot;:[&quot;css facts&quot;,&quot;css tips&quot;,&quot;css tricks&quot;,&quot;w3c css&quot;,&quot;css\/css3&quot;]}">
+<script type="text/javascript">
+    googletag.cmd.push(function() {
+		googletag.defineSlot("/7448792/SP2013_Articles_300x250_1", [300, 250], "div-gpt-ad-1392428092543-0").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/SP2013_Articles_728x90_1", [728, 90], "div-gpt-ad-article-header").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/SP2013_Articles_300x600_1", [300, 600], "div-gpt-ad-1392428092543-4").addService(googletag.pubads());
+		googletag.pubads().setTargeting("channel", "CSS");
+		googletag.pubads().setTargeting("post_id", "79806");
+		googletag.pubads().setTargeting("OpenX",["true", "false"]);
+		googletag.pubads().setTargeting("Tribal",["true", "false"]);
+		googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+    });
+</script><script async="" type="text/javascript" src="./12 Little-Known CSS Facts_files/pubads_impl_37.js"></script>
+        <link rel="stylesheet" type="text/css" href="./12 Little-Known CSS Facts_files/shCore.css"><link rel="stylesheet" type="text/css" href="./12 Little-Known CSS Facts_files/shThemeDefault.css"><style type="text/css" id="syntaxhighlighteranchor"></style>
+    <!--[if lt IE 9]>
+      <script src="/wp-content/themes/sitepoint/assets/javascripts/vendor/respond.custom.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" async="" src="./12 Little-Known CSS Facts_files/embed.js"></script><style type="text/css"></style><script async="" src="./12 Little-Known CSS Facts_files/count-data.js"></script><script type="text/javascript" src="./12 Little-Known CSS Facts_files/osd.js"></script></head>
+
+  <body>
+
+    <header class="main-header" role="banner">
+      <nav class="top-bar" role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <div class="logo">
+              <a class="logomark" href="http://www.sitepoint.com/" tabindex="1">
+                <img src="./12 Little-Known CSS Facts_files/sitepoint.svg" alt="SitePoint">
+              </a>
+            </div>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="http://www.sitepoint.com/12-little-known-css-facts/#"><span>Menu</span></a>
+          </li>
+        </ul>
+
+        
+      <section class="top-bar-section">
+          <ul class="right">
+            <li class="has-dropdown">
+              <a href="http://www.sitepoint.com/12-little-known-css-facts/#" tabindex="-1">Topics</a>
+              <ul class="dropdown"><li class="title back js-generated"><h5><a href="http://www.sitepoint.com/12-little-known-css-facts/#">« Back</a></h5></li>
+                <li>
+                  <a class="category-html menuitem" href="http://www.sitepoint.com/html/">HTML</a>
+                </li>
+                <li>
+                  <a class="category-css menuitem" href="http://www.sitepoint.com/css/">CSS</a>
+                </li>
+                <li>
+                  <a class="category-javascript menuitem" href="http://www.sitepoint.com/javascript/">JS</a>
+                </li>
+                <li>
+                  <a class="category-php menuitem" href="http://www.sitepoint.com/php/">PHP</a>
+                </li>
+                <li>
+                  <a class="category-ruby menuitem" href="http://www.sitepoint.com/ruby/">Ruby</a>
+                </li>
+                <li>
+                  <a class="category-mobile menuitem" href="http://www.sitepoint.com/mobile/">Mobile</a>
+                </li>
+                <li>
+                  <a class="category-ux menuitem" href="http://www.sitepoint.com/ux/">UX</a>
+                </li>
+                <li>
+                  <a class="category-design menuitem" href="http://www.sitepoint.com/design/">Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://learnable.com/topics/all/book?utm_source=sitepoint&utm_medium=link&utm_content=top-nav" target="_blank" tabindex="2">Books</a>
+            </li>
+            <li>
+              <a href="https://learnable.com/topics/all/course?utm_source=sitepoint&utm_medium=link&utm_content=top-nav" target="_blank" tabindex="3">Courses</a>
+            </li>
+<!--             <li>
+              <a href="/store/" tabindex="2">Store</a>
+            </li>
+ -->            <li>
+              <a href="http://www.sitepoint.com/forums/" tabindex="4">Forums</a>
+            </li>
+            <li>
+              <a href="http://www.sitepoint.com/newsletter" tabindex="5">Subscribe</a>
+            </li>
+            <li class="top-bar_search">
+              <form method="get" action="http://www.sitepoint.com/">
+                <input autocomplete="off" class="searchquery" id="search-box" name="s" placeholder="Search…" type="text" tabindex="4">
+                <button tabindex="-1"></button>
+              </form>
+            </li>
+          </ul>
+        </section></nav>
+    </header>
+<div class="awesome-bar js show" data-campaign="newrelic" style="background:#038D98;">
+  <a class="awesome-bar_container" target="_blank" href="http://newrelic.com/lp/brand2?utm_source=SITE&utm_medium=banner_ad&utm_content=hellobar&utm_campaign=q2banners&mpc=BA-SITE-RPM-en-100-nerdlife-hellobar">
+    <img class="awesome-bar_brand" src="./12 Little-Known CSS Facts_files/NewRelic-logo-w.png" alt="New Relic" style="height:22px;">
+    <span class="awesome-bar_message" style="color:#fff;">URGENT NERD ALERT: Optimize your apps now to get a nerdtastic t-shirt.</span>
+    <span class="button small radius awesome-bar_action" style="background:#78cbd1;">nerd me now</span>
+  </a>
+  <span class="awesome-bar_close">x</span>
+</div><main role="main" class="page page--primary category-css">
+
+  <header role="banner" class="page_banner page_banner--category">
+    <h2 class="page_banner_title">
+      <a href="http://www.sitepoint.com/css/" class="page_banner_title_category"><i class="icon-category"></i>CSS</a>
+          </h2>
+    <div class="page_banner_adspot">
+      <div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-37"><!-- SP2013_Articles_728x90_1 -->
+<div id="div-gpt-ad-article-header" style="width:728px; height:90px;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-article-header"); });</script>
+ <div id="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0" name="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0__hidden__" name="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div></div>          </div>
+
+    <div class="page_banner_divider-container">
+      <hr>
+    </div>
+  </header>
+
+      <div class="page_content">
+      <article class="article" id="post-79806">
+        <header class="article_header">
+          <h1 class="article_title">12 Little-Known CSS Facts</h1>
+
+          
+    <div class="contributor article_contributor">
+
+          <figure class="contributor_avatar">
+      <a href="http://www.sitepoint.com/author/louis-lazaris1/">
+        <img src="./12 Little-Known CSS Facts_files/url.jpg" width="44" height="44" alt="Louis Lazaris" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo">      </a>
+    </figure>
+  
+      <div class="contributor_details">
+          <div class="contributor_name">
+    <a href="http://www.sitepoint.com/author/louis-lazaris1/">Louis Lazaris</a>
+  </div>
+
+        </div>
+
+    </div>
+
+    
+          <div class="article_meta-data">
+            <p class="article_pub-date">Published <time datetime="2014-04-16" pubdate="">April 16, 2014</time></p>
+          </div>
+          <div class="article_header__buttons">
+            
+            <!-- make sure to update trackTweetsAndSubscriptions in scripts.js if the Tweet button DOM path changes in the future -->
+            <a class="button small transparent radius twitter-share-button" target="_blank" href="https://twitter.com/share?text=12+Little-Known+CSS+Facts&via=sitepointdotcom">
+              <i class="icon-twitter"></i>
+              Tweet
+            </a>
+            
+            <!-- make sure to update trackTweetsAndSubscriptions in scripts.js if the Subscribe button DOM path changes in the future -->
+            <a class="button small transparent radius subscribe-button" target="_blank" href="https://confirmsubscription.com/h/y/D46DD8C9BD8A0B5D">
+              <!--<i class="icon-envelope-alt"></i>-->
+              Subscribe
+            </a>
+            
+          </div>
+
+        </header>
+
+        <section class="article_body">
+
+            <p>CSS is not an overly complex language. But even if you’ve been writing CSS for many years, you probably still come across new things — properties you’ve never used, values you’ve never considered, or specification details you never knew about.</p>
+<p>In my research, I come across new little tidbits all the time, so I thought I’d share some of them in this post. Admittedly, not everything in this post will have a ton of immediate practical value, but maybe you can mentally file some of these away for later use.</p>
+<h2 id="the-color-property-isnt-just-for-text">1. The <code>color</code> Property Isn’t Just for Text</h2>
+<p>Let’s start with the easier stuff. The color property is used extensively by every CSS developer. Some of you not as experienced with CSS may not realize, however, that it doesn’t define only the color of the text.</p>
+<p>Take a look at the demo below:</p>
+<div><iframe id="cp_embed_CtwFG" src="./12 Little-Known CSS Facts_files/CtwFG.html" scrolling="no" frameborder="0" height="431" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>Notice in the CSS, only one color property is used, on the <code>body</code> element, setting it to <code>yellow</code>. As you can see, everything on the page is yellow, including:</p>
+<ul>
+<li>The alt text displayed on a missing image</li>
+<li>The border on the list element</li>
+<li>The bullet (or marker) on the unordered list</li>
+<li>The number marker on the ordered list</li>
+<li>The <code>hr</code> element</li>
+</ul>
+<p>Interestingly, the <code>hr</code> element, by default does not inherit the value of the color property, but I had to force it to do so by using <code>border-color: inherit</code>. This is kind of odd behaviour to me.</p>
+<p>All of this is <a href="http://www.w3.org/TR/css3-color/#foreground">verified by the spec</a>:</p>
+<blockquote>
+<p>This property describes the foreground color of an element’s text <br>
+  content. In addition it is used to provide a potential indirect value <br>
+  … for any other properties that accept color values.</p>
+</blockquote>
+<p>I can’t think of anything else that would qualify as ‘foreground’, but if you do, let us know in the comments.</p>
+<h2 id="visibility-collapse">2. The <code>visibility</code> Property Can Be Set to “collapse”</h2>
+<p>You’ve probably used the <code>visibility</code> property hundreds of times. The most commonly used values are <code>visible</code> (the default for all elements) and <code>hidden</code>, which makes an element disappear while allowing it to still occupy space as if it was there (which is unlike <code>display: none</code>).</p>
+<p>A third and rarely used value for the <code>visibility</code> property is <code>collapse</code>. This works the same way as <code>hidden</code> on all elements except table rows, table row groups, table columns, and table column groups. In the case of these table-based elements, a value of <code>collapse</code> is supposed to work similar to <code>display: none</code>, so that the space occupied by the collapsed row/column can be occupied by other content.</p>
+<p>Unfortunately, the way browsers handle <code>collapse</code> is not consistent. Try the following demo:</p>
+<div><iframe id="cp_embed_jeICw" src="./12 Little-Known CSS Facts_files/jeICw.html" scrolling="no" frameborder="0" height="406" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>The CSS-Tricks Almanac <a href="http://css-tricks.com/almanac/properties/v/visibility/">advises never to use this</a>, due to the browser inconsistencies.</p>
+<p>From my observations:</p>
+<ul>
+<li>In Chrome, it makes no difference if you apply <code>collapse</code> or <code>hidden</code> (See <a href="https://code.google.com/p/chromium/issues/detail?id=174167">this bug report and comments</a>)</li>
+<li>In Firefox, Opera, and IE11, <code>collapse</code> seems to respond exactly as it should: The row is removed and the row below moves up.</li>
+</ul>
+<p>Admittedly, this value is probably rarely ever going to be used, but it does exist, so if you didn’t know about it before, I guess in some odd way you are now smarter.</p>
+<h2 id="the-background-shorthand-property-has-new-values">3. The <code>background</code> Shorthand Property Has New Values</h2>
+<p>in CSS2.1 the <code>background</code> shorthand property included 5 longhand values – <code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-attachment</code>, and <code>background-position</code>. In CSS3 and beyond, it now includes three more, for a total of up to 8. Here’s how the values map:</p>
+<div><div id="highlighter_567769" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css keyword">background</code><code class="css plain">: [background-color] [background-image] [background-</code><code class="css value">repeat</code><code class="css plain">]</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css plain">[background-attachment] [background-position] / [ background-size]</code></div><div class="line number3 index2 alt2"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css plain">[background-origin] [background-clip];</code></div></div></td></tr></tbody></table></div></div>
+<p>Notice the forward slash, similar to how <code>font</code> shorthand and <a href="http://www.sitepoint.com/setting-css3-border-radius-with-slash-syntax/">border-radius</a> can be written. The slash allows you to include a <code>background-size</code> value after the position in supporting browsers.</p>
+<p>In addition, you also have up to two optional declarations for <code>background-origin</code> and <code>background-clip</code>. </p>
+<p>So the syntax looks like this:</p>
+<div><div id="highlighter_31433" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css plain">.example {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;</code><code class="css keyword">background</code><code class="css plain">: aquamarine </code><code class="css value">url</code><code class="css plain">(img.png)</code></div><div class="line number3 index2 alt2"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css value">no-repeat</code></div><div class="line number4 index3 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css value">scroll</code></div><div class="line number5 index4 alt2"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css value">center</code> <code class="css value">center</code> <code class="css plain">/ </code><code class="css value">50%</code></div><div class="line number6 index5 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css plain">content-box content-box;</code></div><div class="line number7 index6 alt2"><code class="css plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>Test it in your browser using this demo:</p>
+<div><iframe id="cp_embed_wdsef" src="./12 Little-Known CSS Facts_files/wdsef.html" scrolling="no" frameborder="0" height="359" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>As for browser support, these new values seem to work fine in all modern browsers, but it’s likely you’ll have to provide good fallbacks for any nonsupporting browsers so it degrades gracefully.</p>
+<h2 id="the-clip-property-works-only-on-absolutely-positioned-elements">4. The <code>clip</code> Property Works Only on Absolutely Positioned Elements</h2>
+<p>Speaking of <code>background-clip</code>, you’ve likely also seen <code>clip</code> before. It looks like this:</p>
+<div><div id="highlighter_535455" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css plain">.example {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">clip</code><code class="css plain">: rect(</code><code class="css value">110px</code><code class="css plain">, </code><code class="css value">160px</code><code class="css plain">, </code><code class="css value">170px</code><code class="css plain">, </code><code class="css value">60px</code><code class="css plain">);</code></div><div class="line number3 index2 alt2"><code class="css plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>This will ‘clip’ the element at the specified locations (explained <a href="http://www.impressivewebs.com/css-clip-property/">here</a>). The only caveat is that the element to which you apply <code>clip</code> must be positioned absolutely. So you have to do this:</p>
+<div><div id="highlighter_216569" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css plain">.example {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">position</code><code class="css plain">: </code><code class="css value">absolute</code><code class="css plain">;</code></div><div class="line number3 index2 alt2"><code class="css spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="css keyword">clip</code><code class="css plain">: rect(</code><code class="css value">110px</code><code class="css plain">, </code><code class="css value">160px</code><code class="css plain">, </code><code class="css value">170px</code><code class="css plain">, </code><code class="css value">60px</code><code class="css plain">);</code></div><div class="line number4 index3 alt1"><code class="css plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>You can see how clip is disabled in the demo below when <code>position: absolute</code> is toggled:</p>
+<div><iframe id="cp_embed_siFJu" src="./12 Little-Known CSS Facts_files/siFJu.html" scrolling="no" frameborder="0" height="494" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>You could also set the element to <code>position: fixed</code>, because, <a href="http://www.w3.org/TR/CSS2/visuren.html#absolute-positioning">according to the spec</a>, fixed-position elements also qualify as ‘absolutely positioned’ elements.</p>
+<h2 id="vertical-percentages-are-relative-to-container-width-not-height">5. Vertical Percentages are Relative to Container Width, Not Height</h2>
+<p>This one is a tad bit confusing at first, which <a href="http://www.impressivewebs.com/vertical-percentages-css/">I’ve written about before</a>. While you might know that percentage widths are calculated based on the width of the container, percentages on properties like top and bottom padding and top and bottom margins are likewise calculated based on the width of the container, rather than the height.</p>
+<p>Here’s an example that you can adjust with a range slider, so you can see the effect:</p>
+<div><iframe id="cp_embed_qLnpm" src="./12 Little-Known CSS Facts_files/qLnpm.html" scrolling="no" frameborder="0" height="475" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>Notice that there are 3 “vertical” percentages declared on the inner box (top and bottom padding, and bottom margin). When the slider moves, it changes only the container width. But the other values change in response to this, as the output on the page shows, showing that these values, when declared as percentages, are based on container width.</p>
+<h2 id="the-border-property-is-kind-of-like-inception">6. The <code>border</code> Property is Kind of Like Inception</h2>
+<p>We’ve all done this at some point:</p>
+<div><div id="highlighter_496235" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css plain">.example {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;</code><code class="css keyword">border</code><code class="css plain">: </code><code class="css value">solid</code> <code class="css value">1px</code> <code class="css value">black</code><code class="css plain">;</code></div><div class="line number3 index2 alt2"><code class="css plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>The <code>border</code> property is a shorthand property that sets <code>border-style</code>, <code>border-width</code>, and <code>border-color</code> — all in a single declaration.</p>
+<p>But don’t forget that each of the properties that the <code>border</code> property represents is itself a shorthand property. So <code>border-width</code> alone can be declared:</p>
+<div><div id="highlighter_690900" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css plain">.example {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;</code><code class="css keyword">border-width</code><code class="css plain">: </code><code class="css value">2px</code> <code class="css value">5px</code> <code class="css value">1px</code> <code class="css value">0</code><code class="css plain">;</code></div><div class="line number3 index2 alt2"><code class="css plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>This will set different widths for each of the four borders. And the same is true for <code>border-color</code> and <code>border-style</code>, as shown in this awful demo:</p>
+<div><iframe id="cp_embed_ClKFE" src="./12 Little-Known CSS Facts_files/ClKFE.html" scrolling="no" frameborder="0" height="302" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>In addition, each of those properties can be broken down even further with <code>border-left-style</code>, <code>border-top-width</code>, <code>border-bottom-color</code>, and so on.</p>
+<p>But the catch is that you cannot use the regular <code>border</code> shorthand to set different values for different sides. So it’s shorthand inside of shorthand inside of shorthand, but not exactly.</p>
+<h2 id="text-decoration-is-now-a-shorthand-property">7. The <code>text-decoration</code> Property is Now a Shorthand</h2>
+<p>I knew something on this list would blow your mind.</p>
+<p>This is now standard, according to the spec:</p>
+<div><div id="highlighter_724748" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css plain">a {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;</code><code class="css keyword">text-decoration</code><code class="css plain">: </code><code class="css value">overline</code> <code class="css value">aqua</code> <code class="css plain">wavy;</code></div><div class="line number3 index2 alt2"><code class="css plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>This property now represents 3 properties: <code>text-decoration-line</code>, <code>text-decoration-color</code>, and <code>text-decoration-style</code>.</p>
+<p>Unfortunately, Firefox is the only browser that supports these new properties, and (I’m assuming, for backwards compatibility), doesn’t support them in the shorthand yet.</p>
+<p>Try the demo below in Firefox:</p>
+<div><iframe id="cp_embed_HapgB" src="./12 Little-Known CSS Facts_files/HapgB.html" scrolling="no" frameborder="0" height="178" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>The demo is using the longhand values to do this. This ultimately will be a tough one because currently any browser that sees an extra value in <code>text-decoration</code> will nullify the entire declaration, which is clearly not good for backwards compatibility.</p>
+<h2 id="border-width-accepts-keyword-values">8. The <code>border-width</code> Property Accepts Keyword Values</h2>
+<p>Not exactly earth-shattering, and this isn’t new, but, in addition to standard length values (e.g. 5px or 1em), the <code>border-width</code> property accepts three keyword values: <code>medium</code>, <code>thin</code>, and <code>thick</code>.</p>
+<p>In fact, the initial value of the <code>border-width</code> property is “medium”. The demo below uses “thick”:</p>
+<div><iframe id="cp_embed_HcaED" src="./12 Little-Known CSS Facts_files/HcaED.html" scrolling="no" frameborder="0" height="216" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>When browsers render these keyword values, the spec doesn’t require that they map them to specific length values, but, from what I can see, all browsers seem to use 1px, 3px, and 5px.</p>
+<h2 id="nobody-uses-border-image">9. Nobody Uses <code>border-image</code></h2>
+<p>I wrote about the CSS3 <code>border-image</code> property <a href="http://www.sitepoint.com/css3-border-images/">on SitePoint a while back</a>. The feature is supported in all modern browsers except IE10 and below. But does anybody care?</p>
+<p>It seems like a really neat feature, allowing you to create border images that are fluid. Use the resize handle in this demo to test it out:</p>
+<div><iframe id="cp_embed_DvhKL" src="./12 Little-Known CSS Facts_files/DvhKL.html" scrolling="no" frameborder="0" height="384" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>Unfortunately, <code>border-image</code> seems like a novelty that not many people are using. But maybe I’m wrong. If you know of any examples of <code>border-image</code> in use on a real project, or if you’ve used it, please let us know in the comments and I’ll be happy to admit I was wrong.</p>
+<h2 id="theres-an-empty-cells-property">10. There’s an <code>empty-cells</code> Property</h2>
+<p>This one has support everywhere including IE8, and it looks like this:</p>
+<div><div id="highlighter_489157" class="syntaxhighlighter  css"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="css plain">table {</code></div><div class="line number2 index1 alt1"><code class="css spaces">&nbsp;&nbsp;</code><code class="css keyword">empty-cells</code><code class="css plain">: </code><code class="css value">hide</code><code class="css plain">;</code></div><div class="line number3 index2 alt2"><code class="css plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>As you probably figured out, it’s used for HTML tables. It tells the browser whether to show or hide table cells that have no content in them. Try the toggle button in this demo to see the effect of changing the value of the <code>empty-cells</code> property:</p>
+<div><iframe id="cp_embed_yfhtq" src="./12 Little-Known CSS Facts_files/yfhtq.html" scrolling="no" frameborder="0" height="300" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>In this case, I had to ensure the borders were visible and not collapsed and I had to add some spacing between the cell borders. In some cases, this property would have no visual effect because there needs to be something visible on the table for this to make any difference.</p>
+<h2 id="font-style-oblique">11. The <code>font-style</code> Property Accepts a Value of “oblique”</h2>
+<p>Just about every time you see the <code>font-style</code> property, it’s used either with a value of “normal” or “italic”. But you can also give it a value of “oblique”:</p>
+<div><iframe id="cp_embed_lItBj" src="./12 Little-Known CSS Facts_files/lItBj.html" scrolling="no" frameborder="0" height="282" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>But what exactly does that mean? And why does it look the same as italic?</p>
+<p><a href="http://dev.w3.org/csswg/css-fonts/#font-style-prop">The spec explains</a> that the value “oblique”…</p>
+<blockquote><p>
+“…selects a font that is labeled as an oblique face, or an italic face if one is not.”
+</p></blockquote>
+<p>The description of “italic” in the spec is basically the same. The word “oblique” is <a href="https://en.wikipedia.org/wiki/Oblique_type">a typographic term</a> that basically represents slanted text, but not a true italic.</p>
+<p>Due to the way CSS handles oblique text, it’s interchangeable with italic unless (as the spec explains) the font being used has a face that is identified as oblique.</p>
+<p>I’ve never heard of a font that actually has an oblique face, but maybe I’m wrong. From the research I’ve done, it seems that it’s wrong for a font to offer both italic and oblique faces, because oblique is supposed to be a faux version of italic on fonts that don’t have a true italic.</p>
+<p>So, if I’m not mistaken, what this means is if a font does not have a true italic face, setting the CSS to <code>font-style: italic</code> will actually display the font as <code>font-style: oblique</code>.</p>
+<h2 id="word-wrap-is-the-same-as-overflow-wrap">12. <code>word-wrap</code> is the Same as <code>overflow-wrap</code></h2>
+<p>The <a href="http://www.impressivewebs.com/word-wrap-css3/">word-wrap property</a> is not used too often, but it’s very useful in specific circumstances. One often-used example is to help long unbroken strings of text (like URLs) to wrap, rather than break out of their container. Here’s an example:</p>
+<div><iframe id="cp_embed_DFqyI" src="./12 Little-Known CSS Facts_files/DFqyI.html" scrolling="no" frameborder="0" height="206" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></div>
+<p><script async="" src="./12 Little-Known CSS Facts_files/ei.js"></script></p>
+<p>Because this was originally a Microsoft creation, this property is supported in all browsers including Internet Explorer all the way back to IE5.5.</p>
+<p>Despite cross-browser and, from what I can see, consistent support, the W3C decided to replace <code>word-wrap</code> with <code>overflow-wrap</code> — I’m guessing due to the former name being considered a misnomer. <code>overflow-wrap</code> has the same values as <code>word-wrap</code>, and <code>word-wrap</code> is now considered “an alternate syntax” for <code>overflow-wrap</code>.</p>
+<p>While a few new browsers do support <code>overflow-wrap</code>, it seems pointless to bother with it since old browsers handle <code>word-wrap</code> just fine, and all browsers are required to continue to support <code>word-wrap</code> indefinitely, for legacy reasons.</p>
+<p>We can start using <code>overflow-wrap</code> when all in-use browsers auto update — but until then, I don’t see a point in changing from the old syntax.</p>
+<h2 id="how-many-were-new-to-you">How Many of These Were New To You?</h2>
+<p>Did you learn anything from this post? I hope so. Probably most experienced CSS developers knew many, if not all, of the above points. But likely those newer to CSS would benefit more from these.</p>
+<p>It would be interesting to see how many of these points were new to our readers. Post a comment below telling us how many were new to you (e.g. 6/12, 4/12, or whatever).</p>
+
+        </section>
+
+        <div class="article__author-bios">
+          
+    <div class="contributor contributor--large">
+
+          <figure class="contributor_avatar">
+      <a href="http://www.sitepoint.com/author/louis-lazaris1/">
+        <img src="./12 Little-Known CSS Facts_files/url.jpg" width="44" height="44" alt="Louis Lazaris" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo">      </a>
+    </figure>
+  
+      <div class="contributor_details">
+
+          <div class="contributor_name">
+    <a href="http://www.sitepoint.com/author/louis-lazaris1/">Louis Lazaris</a>
+  </div>
+
+  
+        <p class="contributor_longdesc">Louis is a dev blogger at <a href="http://www.impressivewebs.com/">Impressive Webs</a>, author, and is currently SitePoint's HTML, CSS and Mobile editor. He loves all things front-end, and curates <a href="http://webtoolsweekly.com/">Web Tools Weekly</a>, a newsletter for front-end developers primarily focused on tools.</p>
+
+        <ul class="contributor_social">
+          <li><a href="http://twitter.com/ImpressiveWebs" target="_blank"><i class="icon-twitter"></i></a></li><li><a href="https://plus.google.com/107512330611517129044/" target="_blank"><i class="icon-google-plus"></i></a></li>        </ul>
+      </div>
+    </div>
+
+          </div>
+
+                  <div class="related-content">
+            <h2>Related Articles</h2>
+            <ul class="article-list article-list--related">
+              <li class="article-list_item  tile post-tile">
+  <article class="article article--micro article--micro--related category-css " data-disqus-id="http://www.sitepoint.com/sass-extend-nobody-told-you/">
+    <header class="article_category"><h2 class="article_category_title"><a href="http://www.sitepoint.com/css/">CSS</a><a class="comment-info" href="http://www.sitepoint.com/sass-extend-nobody-told-you/#comments"><span class="comment-info__count">11</span><span class="comment-info__icon icon-comment"></span></a></h2></header>
+    
+    <section class="article_header">
+      <h1 class="article_title"><a href="http://www.sitepoint.com/sass-extend-nobody-told-you/">What Nobody Told You About Sass's @extend</a></h1>
+      <div class="contributor article_contributor">
+        <p class="contributor_name article_author-name">by <a href="http://www.sitepoint.com/author/hgiraudel/">Hugo Giraudel</a></p>
+      </div>
+      
+      <div class="article_meta-data"><p class="article_pub-date"><time datetime="2014-02-05 08:00:08" pubdate="">Feb 05, 2014</time></p></div>
+      </section>
+  </article>
+</li><li class="article-list_item  tile post-tile">
+  <article class="article article--micro article--micro--related category-css " data-disqus-id="http://www.sitepoint.com/css3-animations-101/">
+    <header class="article_category"><h2 class="article_category_title"><a href="http://www.sitepoint.com/css/">CSS</a><a class="comment-info" href="http://www.sitepoint.com/css3-animations-101/#comments"><span class="comment-info__count">3</span><span class="comment-info__icon icon-comment"></span></a></h2></header>
+    
+    <section class="article_header">
+      <h1 class="article_title"><a href="http://www.sitepoint.com/css3-animations-101/">CSS3 Animations 101: What are Animations?</a></h1>
+      <div class="contributor article_contributor">
+        <p class="contributor_name article_author-name">by <a href="http://www.sitepoint.com/author/craig-buckler/">Craig Buckler</a></p>
+      </div>
+      
+      <div class="article_meta-data"><p class="article_pub-date"><time datetime="2013-08-12 06:43:49" pubdate="">Aug 12, 2013</time></p></div>
+      </section>
+  </article>
+</li><li class="article-list_item  tile post-tile">
+  <article class="article article--micro article--micro--related category-javascript " data-disqus-id="http://www.sitepoint.com/top-10-front-end-development-frameworks/">
+    <header class="article_category"><h2 class="article_category_title"><a href="http://www.sitepoint.com/javascript/">JavaScript</a><a class="comment-info" href="http://www.sitepoint.com/top-10-front-end-development-frameworks/#comments"><span class="comment-info__count">28</span><span class="comment-info__icon icon-comment"></span></a></h2></header>
+    
+    <section class="article_header">
+      <h1 class="article_title"><a href="http://www.sitepoint.com/top-10-front-end-development-frameworks/">Top 10 Front-End Development Frameworks</a></h1>
+      <div class="contributor article_contributor">
+        <p class="contributor_name article_author-name">by <a href="http://www.sitepoint.com/author/igerchev/">Ivaylo Gerchev</a></p>
+      </div>
+      
+      <div class="article_meta-data"><p class="article_pub-date"><time datetime="2013-06-16 04:38:58" pubdate="">Jun 16, 2013</time></p></div>
+      </section>
+  </article>
+</li>          </ul>
+        </div>
+        
+        <div class="promo-panel">
+          <div class="widget maestro maestro-content-type-product " id="maestro-product-29"><div class="promo-panel_media-object"><img src="./12 Little-Known CSS Facts_files/jshtml-basics1_medium_3d.png"></div>
+<div class="promo-panel_content">
+  <h1 class="promo-panel_title">
+    Free book: Jump Start HTML5 Basics
+  </h1>
+  <p>Grab a free copy of one our latest ebooks! Packed with hints and tips on HTML5's most powerful new features.</p>
+  <form class="promo-panel_action"><input type="email" name="email" class="promo-panel_email" placeholder="email address"><input type="hidden" name="content" value="29"><button class="button radius">Claim Book<div class="spinner" role="progressbar" style="position: relative; width: 0px; z-index: 2000000000;"><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-0-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(0deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-1-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(27deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-2-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(55deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-3-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(83deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-4-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(110deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-5-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(138deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-6-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(166deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-7-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(193deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-8-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(221deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-9-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(249deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-10-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(276deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-11-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(304deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-12-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(332deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div></div></button></form>
+</div></div>        </div>
+
+                
+        <a id="comments"></a>
+        
+<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" width="100%" src="./12 Little-Known CSS Facts_files/saved_resource.html" scrolling="no" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 7566px !important;"></iframe><iframe id="dsq-indicator-north" data-disqus-uid="indicator-north" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" scrolling="no" style="width: 780px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 780px !important; max-width: 780px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe><iframe id="dsq-indicator-south" data-disqus-uid="indicator-south" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" scrolling="no" style="width: 780px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 780px !important; max-width: 780px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe></div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://www.sitepoint.com/12-little-known-css-facts/';
+    var disqus_identifier = '79806 http://www.sitepoint.com/?p=79806';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'sitepointproduction';
+    var disqus_title = "12 Little-Known CSS Facts";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=79806';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/www.sitepoint.com\/12-little-known-css-facts\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+      </article>
+    </div>
+  
+  <aside class="page_aside article_aside">
+    <div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-1"><!-- SP2013_Articles_300x250_1 -->
+<div id="div-gpt-ad-1392428092543-0" style="width:300px; height:250px;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1392428092543-0"); });</script>
+ <div id="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0" name="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-49"><!-- SP2013_Articles_300x600_1 -->
+<div id="div-gpt-ad-1392428092543-4" style="width:300px; height:600px;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1392428092543-4"); });</script>
+ <div id="google_ads_iframe_/7448792/SP2013_Articles_300x600_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/SP2013_Articles_300x600_1_0" name="google_ads_iframe_/7448792/SP2013_Articles_300x600_1_0" width="300" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div>  </aside>
+
+</main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="row">
+
+        <ul class="footer-links">
+          <li class="foot-link_item">
+            <h3>About</h3>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/about-us/">About us</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/advertising">Advertise</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/legals">Legals</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="mailto:feedback@sitepoint.com">Feedback</a>
+          </li>
+        </ul>
+
+        <ul class="footer-links">
+          <li class="foot-link_item">
+            <h3>Our Sites</h3>
+          </li>
+          <li class="foot-link_item">
+            <a href="https://learnable.com/" target="_blank">Learnable</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://reference.sitepoint.com/" target="_blank">Reference</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/hosting-reviews/" target="_blank">Hosting Reviews</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/web-foundations/">Web Foundations</a>
+          </li>
+        </ul>
+
+        <ul class="footer-links">
+          <li class="foot-link_item">
+            <h3>Connect</h3>
+          </li>
+          <li class="foot-link_item foot-link_item--icons">
+            <a href="http://www.sitepoint.com/feed"><i class="icon-rss icon-blocks icon-blocks--rss"></i></a>
+            <a href="http://www.sitepoint.com/newsletter"><i class="icon-envelope-alt icon-blocks icon-blocks--newsletter"></i></a>
+            <a href="https://www.facebook.com/sitepoint" target="_blank"><i class="icon-facebook icon-blocks icon-blocks--facebook"></i></a>
+            <a href="http://twitter.com/sitepointdotcom" target="_blank"><i class="icon-twitter icon-blocks icon-blocks--twitter"></i></a>
+            <a href="https://plus.google.com/+sitepoint" target="_blank"><i class="icon-google-plus icon-blocks icon-blocks--google-plus"></i></a>
+          </li>
+        </ul>
+
+        <p class="site-footer_copyright">
+          © 2000 – 2014 SitePoint Pty. Ltd.
+        </p>
+
+      </div>
+    </footer>
+
+    <div id="search-dropdown" style="top: 60px; left: auto; right: 20px;">
+      <div data-role="search-for">
+        <a class="search-link" href="http://www.sitepoint.com/12-little-known-css-facts/#">Search for...</a>
+      </div>
+      <ul data-role="results"></ul>
+    </div>
+
+    				<script type="text/javascript"><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) { 
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://www.sitepoint.com/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			<div class="triggered-cta-box-wrapper-bg" style="display: none;"></div>
+<div id="triggered-cta-box-wrapper" class="triggered-cta-box-wrapper triggered-cta-box-wrapper--fullpage" style="display: none;">
+  <a href="http://www.sitepoint.com/12-little-known-css-facts/#close" id="triggered-cta-box-close">x</a><!-- Free ebook: Triggered CTA Box custom style (201403-free-ebook-popup) -->
+<div class="close-link-wrapper">
+  <a href="http://www.sitepoint.com/12-little-known-css-facts/#" class="triggered-cta-box-close-link">Go to SitePoint.com</a>
+</div>
+<div class="triggered-cta-box campaign-free-ebook">
+  <div class="campaign-free-ebook__row1">
+    <div class="campaign-free-ebook__row1__column1">
+      <p class="logo-wrapper"><img src="./12 Little-Known CSS Facts_files/1392770725sp-logo-42x50.png" alt="SitePoint logo"></p>
+      <h1>Free book: Jump Start HTML5 Basics</h1>
+      <p>Grab a free copy of one our latest ebooks! Packed with hints and tips on HTML5's most powerful new features.</p>
+    </div>
+    <div class="campaign-free-ebook__row1__column2">
+      <img class="books-image" src="./12 Little-Known CSS Facts_files/jshtml-basics1_medium_3d(1).png" alt="Jump Start HTML Basics book cover image">
+    </div>
+  </div>
+  <div class="campaign-free-ebook__row2">
+    <form><div class="campaign-free-ebook__row2__div1"><div class="campaign-free-ebook__row2__div1__column1"><a target="_blank" href="https://learnable.com/voucher/ca50f49a39c33a1ddd898487" class="submit-btn btn-buy button success radius">Claim your free book now</a></div></div></form>
+  </div>
+</div></div>
+<script type="text/javascript">
+  window.triggeredCtaBox = {
+    boxSelector: "#triggered-cta-box-wrapper",
+    bgSelector: ".triggered-cta-box-wrapper-bg",
+    closeSelector: "#triggered-cta-box-close",
+    closeLinkSelector: ".triggered-cta-box-close-link",
+    campaign: "201404-free-ebook-popup",
+    boxType: "fullpage",
+    mobileEnabled: false,
+    cookieLife: 14,
+    triggerType: "time",
+    triggerRequiredPages: 1,
+    triggerValue: 4,
+    slideSpeed: 1000,
+    ajaxUrl: "https://www.sitepoint.com/wp-admin/admin-ajax.php"
+  };
+</script>
+<!--Plugin WP Missed Schedule 2013.1231.2013 Active - Tag 6707293c0218e2d8b7aa38d418ffa608-->
+
+<!-- This site is patched which an important unfixed problem since WordPress 2.5+ to 3.9+ -->
+
+
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="sitepoint.com"></div>
+<script id="parsely-script" async="" src="./12 Little-Known CSS Facts_files/p.js"></script></div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+
+<script type="text/javascript" src="./12 Little-Known CSS Facts_files/shCore.js"></script>
+<script type="text/javascript" src="./12 Little-Known CSS Facts_files/shBrushCss.js"></script>
+<script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://www.sitepoint.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://www.sitepoint.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.defaults['wrap-lines'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type="text/javascript" src="./12 Little-Known CSS Facts_files/scripts-foot-10b46f2e49a68a40c929e8444288ff84.js"></script>
+<script>
+                    $(document).ready(function() {
+                      $(".article_header__buttons .twitter-share-button").on("click", function (evt) {
+                        evt.preventDefault();
+
+                        var url = "https://twitter.com/intent/tweet?" + $.param({
+                          url: "http://www.sitepoint.com/12-little-known-css-facts/",
+                          text: "12 Little-Known CSS Facts",
+                          via: "sitepointdotcom"
+                        });
+
+                        var popupWidth = 550,
+                            popupHeight = 420,
+                            screenWidth = screen.width,
+                            screenHeight = screen.height,
+                            popupLeftOffset = Math.round(screenWidth / 2 - popupWidth / 2),
+                            popupTopOffset = 0;
+                        if (screenHeight > popupHeight) {
+                          popupTopOffset = Math.round(screenHeight / 2 - popupHeight / 2);
+                        }
+                        window.open(url, null, "scrollbars=yes,resizable=yes,toolbar=no,location=yes" + ", width=" + popupWidth + ", height=" + popupHeight + ", left=" + popupLeftOffset + ",top=" + popupTopOffset);
+                      });
+                    });
+                  </script><script>
+                    $(document).ready(function() {
+                      $(".article_header__buttons .subscribe-button").on("click", function (evt) {
+                        evt.preventDefault();
+
+                        var url = evt.target.href;
+
+                        var popupWidth = 550,
+                            popupHeight = 720,
+                            screenWidth = screen.width,
+                            screenHeight = screen.height,
+                            popupLeftOffset = Math.round(screenWidth / 2 - popupWidth / 2),
+                            popupTopOffset = 0;
+                        if (screenHeight > popupHeight) {
+                          popupTopOffset = Math.round(screenHeight / 2 - popupHeight / 2);
+                        }
+                        window.open(url, null, "scrollbars=yes,resizable=yes,toolbar=no,location=yes" + ", width=" + popupWidth + ", height=" + popupHeight + ", left=" + popupLeftOffset + ",top=" + popupTopOffset);
+                      });
+                    });
+                  </script><script>(function($){$(document).ready(function(){ if(typeof DISQUSWIDGETS != "undefined"){DISQUSWIDGETS.loadCount($, "sitepointproduction")} });})(jQuery);</script>
+  
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Object Caching 1094/1200 objects using memcached
+Content Delivery Network via Amazon Web Services: CloudFront: dab1nmslvvntp.cloudfront.net
+
+ Served from: www.sitepoint.com @ 2014-04-28 08:28:54 by W3 Total Cache --><iframe id="google_osd_static_frame_3331831775140" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

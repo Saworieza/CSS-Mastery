@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0054)http://www.brainjar.com/css/positioning/stackdemo.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>BrainJar.com: Stacking Demo</title>
+
+<link href="./BrainJar.com  Stacking Demo_files/default.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+#A {
+  background-color: #f0d0d0;
+  border: solid 1px #000000;
+  color: #000000;
+  padding: 8px;
+  position: absolute;
+  left: 400px;
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+}
+
+#A1 {
+  background-color: #c0a0a0;
+  border: solid 1px #000000;
+  color: #000000;
+  padding: 8px;
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  width: 200px;
+  height: 100px;
+  z-index: 300;
+}
+
+#B {
+  background-color: #d0f0d0;
+  border: solid 1px #000000;
+  color: #000000;
+  padding: 8px;
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  width: 200px;
+  height: 100px;
+  z-index: 200;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Normal page content. -->
+
+<div id="demoBox">
+
+<h3>Stacking Demo</h3>
+
+<p>More absolutely positioned DIVs, this time with <code>z-index</code>
+values defined. Again, DIV "A1" is contained within DIV "A". DIV "B" is
+independent.</p>
+
+<p>Note that "B" appears on top of "A1," even though "A1" has a higher
+<code>z-index</code> value. That's because its containing element, "A," has a
+lower <code>z-index</code> value than "B."</p>
+
+<p>Use your browser's <code>View Source</code> option to see the full source
+code.</p>
+
+</div>
+
+<div id="A">
+  <b>DIV A</b><br>
+  <code>z-index: 100;</code>
+  <div id="A1">
+    <b>DIV A1</b><br>
+    <code>z-index: 300;</code>
+  </div>
+</div>
+
+<div id="B">
+  <b>DIV B</b><br>
+  <code>z-index: 200;</code>
+</div>
+
+
+
+</body></html>

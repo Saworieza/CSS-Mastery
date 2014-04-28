@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>Blue Marble - CodePen</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <style>body {
+  background-color: #191919;
+}
+b.ball {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto 0;
+  background-color: #3b4ba3;
+  border-radius: 50%;
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);  
+  background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+}</style>
+
+</head>
+
+<body onload="_l='t';">
+
+  <b class="ball"></b>
+
+  <script>
+
+</script>
+
+  <script>
+/* 
+Blue Marble 
+By Rob Glazebrook
+
+A demonstration of using border-radius, linear-gradient, and box-shadow to create a convincing 3D sphere from a 2D box.
+
+For a more in-depth description, see the article on CSS Newbie: http://www.cssnewbie.com/making-a-sphere-in-css/
+
+*/
+  </script>
+
+  <script>
+    // Once the entire pen's loaded we send a message to embeds
+    // to resize again in case they're using auto to the size the embed
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+
+    // Remove all Iframes
+    var iframes = document.getElementsByTagName('iframe');
+
+    for (var i = iframes.length - 1; i >= 0; i--) {
+      iframes[i].outerHTML = "<p>remove</p>";
+    };
+  </script>
+
+
+
+</body></html>

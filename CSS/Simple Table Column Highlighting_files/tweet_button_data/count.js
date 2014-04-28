@@ -1,0 +1,1 @@
+twttr.receiveCount({"count":14,"url":"http:\/\/www.cssnewbie.com\/simple-table-column-highlighting\/"});

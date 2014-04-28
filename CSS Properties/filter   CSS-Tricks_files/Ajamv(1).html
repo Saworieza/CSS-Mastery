@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://s.codepen.io/Kseso/fullgrid/Ajamv?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>Drop-shadow vs box-shadow (2) - CodePen</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <style>body{
+  background: #D5D5D5;
+  font-family: museo-300;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.tri, .flecha {display: inline-block;margin: 15px;}
+
+.tri {
+text-align: left;
+width: 250px;
+height: 100px;
+background: #fff;
+position: relative;
+padding: 15px;
+box-sizing: border-box;
+}
+.tri:after {
+content:'';
+height: 0;
+width: 0;
+border-width: 20px 20px 20px 0;
+border-style: solid;
+border-color: rgba(255,255,255,0) rgba(255,255,255,1) rgba(255,255,255,0) rgba(255,255,255,0);
+position: absolute;
+top: 15px;
+left: -20px;
+}
+
+.flecha {
+  position: relative;
+  margin: -20px 110px 0;
+  width: 0;
+  height: 0;
+  border-top: 90px solid transparent;
+  border-right: 90px solid #FFC000;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+.flecha:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 30px solid #FFC000;
+  border-radius: 200px 0 0 0;
+  top: -119px;
+  left: -98px;
+  width: 120px;
+  height: 120px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+  	-moz-filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+		-ms-filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+		-o-filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+		filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+		}
+.box-shadow {box-shadow: 0px 0px 10px rgba(0,0,0,.5)}</style>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <div class="tri drop-shadow">filter: drop-shadow</div>
+<div class="tri box-shadow">box-shadow</div>
+<div style="clear:both"></div>
+<div class="flecha drop-shadow"></div>
+<div class="flecha box-shadow"></div>
+
+  <script>
+
+</script>
+
+  <script>
+//Diferencias entre ambos
+  </script>
+
+  <script>
+    (function() {
+
+      // Once the entire pen's loaded we send a message to embeds
+      // to resize again in case they're using auto to the size the embed
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+      }
+
+      // Remove all Iframes
+      var iframes = document.getElementsByTagName('iframe');
+
+      for (var i = iframes.length - 1; i >= 0; i--) {
+        iframes[i].outerHTML = "<p>remove</p>";
+      };
+
+    }());
+  </script>
+
+
+
+</body></html>

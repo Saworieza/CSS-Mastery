@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://s.codepen.io/zakkain/fullgrid/CBLnG?type=embed&animations=run -->
+<html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>CSS-Tricks Almanac: Text-Stroke - CodePen</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
+
+  <style>body {
+  padding: 0 0 0 3em;
+  background: whitesmoke;
+}
+
+h1 {
+  font-size: 4em;
+  -webkit-text-stroke: 3px darkgrey;
+  -webkit-text-fill-color: white;
+  -webkit-animation: fill 0.5s infinite alternate;
+}
+
+@-webkit-keyframes fill {
+  from {
+    -webkit-text-fill-color: steelblue;
+  }
+
+  to {
+    -webkit-text-fill-color: slategrey;
+  }
+}</style>
+
+    <script src="prefixfree.min.js"></script>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <h1>A header with attitude.</h1>
+
+  <script>
+
+</script>
+
+  <script>
+    (function() {
+
+      // Once the entire pen's loaded we send a message to embeds
+      // to resize again in case they're using auto to the size the embed
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+      }
+
+      // Remove all Iframes
+      var iframes = document.getElementsByTagName('iframe');
+
+      for (var i = iframes.length - 1; i >= 0; i--) {
+        iframes[i].outerHTML = "<p>remove</p>";
+      };
+
+    }());
+  </script>
+
+
+
+</body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://s.codepen.io/chriscoyier/fullgrid/EjuGb?type=embed&animations=run -->
+<html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>:valid &amp; :invalid inputs - CodePen</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
+
+  <style>input:invalid {
+  background: hsla(0, 90%, 70%, 1);
+}
+
+input:valid {
+  background: hsla(100, 90%, 70%, 1);
+}
+
+body {
+  padding: 3em;
+}
+label {
+  display: block;
+}
+input {
+  padding: 0.25em 0;
+  margin-bottom: 0.75em;
+}</style>
+
+    <script src="prefixfree.min.js"></script>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <label for="email">Email:</label>
+<input type="email" id="email" name="email">
+
+<label for="emailRequired">Email (required):</label>
+<input type="email" id="emailRequired" name="emailRequired" required="">
+
+<form action="http://s.codepen.io/chriscoyier/fullgrid/EjuGb?type=embed&animations=run#">
+  <label id="guess">Enter a number 1 through 9:</label>
+  <input type="text" id="guess" name="guess" pattern="[1-9]{1}" required="">
+</form>
+
+  <script>
+
+</script>
+
+  <script>
+    (function() {
+
+      // Once the entire pen's loaded we send a message to embeds
+      // to resize again in case they're using auto to the size the embed
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+      }
+
+      // Remove all Iframes
+      var iframes = document.getElementsByTagName('iframe');
+
+      for (var i = iframes.length - 1; i >= 0; i--) {
+        iframes[i].outerHTML = "<p>remove</p>";
+      };
+
+    }());
+  </script>
+
+
+
+</body></html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://s.codepen.io/jaredstephens/fullgrid/bKpJf?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>CodePen - A Pen by jaredstephens</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <style>p.fourtabs {
+	tab-size:4;
+	-moz-tab-size: 4;
+	-o-tab-size:  4;
+  white-space: pre-wrap;
+}
+
+pre.twelvetabs {
+	tab-size: 12;
+	-moz-tab-size: 12;
+	-o-tab-size:  12;
+}
+
+h4 {
+ color:#e08628;
+ margin-bottom: 0px;
+}
+
+body {
+ background-color:#efefef;
+ color:#3c3c3c;
+}</style>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+<h3>Example 1</h3>
+<h4>&lt;pre&gt; with default tab-size of 8 space characters</h4>
+<pre>without tab
+	with 1 tab
+		with 2 tabs
+</pre>
+
+<h3>Example 2</h3>
+
+<h4>&lt;p&gt; with tab-size customized to 4 space characters and 'white-space: pre-wrap'</h4>
+<p class="fourtabs">without tab
+	with 1 tab
+		with 2 tabs		
+</p>
+<h4>&lt;p&gt; with tab-size customized to 4 space characters, but without 'white-space: prewrap'</h4>
+<p>without tab
+	with 1 tab
+		with 2 tabs		
+</p>
+
+<h3>Example 3</h3>
+<h4>&lt;pre&gt; with tab-size set to 12 space characters</h4>
+<pre class="twelvetabs">without tab
+	with 1 tab
+		with 2 tabs	
+</pre>
+
+  <script>
+    (function() {
+
+      // Once the entire pen's loaded we send a message to embeds
+      // to resize again in case they're using auto to the size the embed
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+      }
+
+      // Remove all Iframes
+      var iframes = document.getElementsByTagName('iframe');
+
+      for (var i = iframes.length - 1; i >= 0; i--) {
+        iframes[i].outerHTML = "<p>remove</p>";
+      };
+
+    }());
+  </script>
+
+
+
+</body></html>

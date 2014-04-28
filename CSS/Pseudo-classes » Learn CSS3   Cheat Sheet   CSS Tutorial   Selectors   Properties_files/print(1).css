@@ -1,0 +1,71 @@
+
+
+
+/* specify media / hide from Mac/IE5 */
+@media print
+{
+
+
+	
+	
+	/* hide elements that are irrelevant to print */
+	#skipto, #navoutercontainer, #navbar, #topicauthors, #learnplaytabs, 
+	#usernotes h3, #usernotes .addnote, .familylinks, .related, 
+	#search, #navpanel, #adzcolumn, #tertiary
+	{
+		display:none;
+	}
+	
+	
+	/* move the logo to top left corner */
+	#header h1 span
+	{
+		left:5px;
+		top:-5px;
+	}
+	
+	
+	
+	/* refactor the main content area to fill available space */
+	#mainpanel
+	{
+		float:left;
+		margin:0;
+		padding:0;
+		width:100%;	
+	}
+	
+	#contentpanel
+	{
+		margin:0;
+		padding:0;
+		width:100%;
+	}
+	
+	#topicheader, #topicheader.hastabs
+	{
+		margin-left:0;
+		width:100%;
+	}
+	
+	#usernotes
+	{
+		margin-top:50px;
+	}
+	
+	
+	
+	
+	/* merge links into regualr text */
+	a
+	{
+		color:inherit !important;
+		text-decoration:none;
+	}
+	
+
+
+
+
+
+}

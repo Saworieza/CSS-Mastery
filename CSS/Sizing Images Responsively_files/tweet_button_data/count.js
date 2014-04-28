@@ -1,0 +1,1 @@
+twttr.receiveCount({"count":18,"url":"http:\/\/www.cssnewbie.com\/sizing-images-responsively\/"});

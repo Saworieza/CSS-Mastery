@@ -1,0 +1,523 @@
+/* @override 
+	http://aptdesignonline.com/wp-content/themes/aptdesign/style.css
+	http://aptdesignonline.com/wp-content/themes/aptdesign4/style.css
+*/
+
+/*
+THEME NAME: Apt Design 4
+THEME URI: http://www.aptdesignonline.com
+DESCRIPTION: A clean look, custom designed by Apt Design.
+TAGS: light, black, contrast, simple, clean
+VERSION: v4
+AUTHOR: Apt Design
+AUTHOR URI: http://www.aptdesignonline.com
+*/
+
+
+/* @group Layout */
+
+body {
+	width: 100%;
+	background: #fff url(images/background.jpg);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #484848;
+}
+
+
+div#content, .entry-content {
+	clear: both;
+	width: auto;
+	margin: 120px 10px 80px 10px;
+	padding: 0px;
+}
+
+
+div.lg_gallery, lg_slideshow_1, .lg_gallery img, lg_slideshow {
+
+	width: 300px;
+	height: 180px;
+
+	margin-top: 0px;
+	padding-top: 0px;
+	overflow-y: hidden;
+}
+
+
+.clearer {
+	clear: both;
+}
+
+/* @end */
+
+/* @group Header */
+
+
+div#blog-description, #blog-title {
+	display: none;
+}
+
+/* @end */
+
+/* @group Content */
+
+
+h1, h1.entry-title {
+  font-family: "proxima-nova-1","proxima-nova-2", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #000;
+	font-size: 2.2em;
+	text-shadow: #c7c7c7 2px 2px 2px;
+	line-height: 1em;
+	letter-spacing: -2px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+h1.entry-title a, h1 a, h2 a {
+	color: #000; 
+	text-decoration: none;
+}
+
+h1.entry-title a:hover {
+	color: #4f8bbf; 
+	text-decoration: none;
+	text-shadow: #c7c7c7 1px 1px 3px;
+}
+
+div.archive-meta {
+	color: #939393;
+	clear:both;
+	width:auto;
+	text-align:right;
+	font: .9em Georgia, "Times New Roman", Times, serif;
+	padding-right: 25px;
+}
+
+
+h2 {
+	color: #000;
+	font-size: 26px;
+	letter-spacing: -1px;
+	line-height: 100%;
+	margin-bottom: 2px;
+	margin-top: 15px;
+}
+
+
+div.gform_body {
+	padding: 10px;
+
+}
+
+
+h2.entry-title a {
+	color: #000;
+	margin-bottom: 0px;
+}
+
+h2.archive-entry-title a { 
+	font-family: "proxima-nova-1","proxima-nova-2", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 600;
+	color: #000;
+	font-size: 35px;
+	line-height: 120%;
+}
+
+.archive-post {
+	padding-bottom: 20px;
+}
+
+
+h2.archive-entry-title a:hover {
+	text-shadow: #aaa 0 2px 3px;
+	margin-bottom: 0px;
+}
+
+h3 {;
+	color: #000;
+	margin-bottom: 0;
+	letter-spacing: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font: 24px/130% "proxima-nova-1","proxima-nova-2", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+h4.testimonial {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+h4 {
+  font-family: "proxima-nova-1","proxima-nova-2", Arial, "Helvetica Neue", Helvetica, sans-serif;;
+
+	color: #000;
+	font-size: 18px;
+	line-height: 130%;
+	padding: 25px 0 5px;
+	text-transform: uppercase;
+	margin: 0;
+	letter-spacing: 0;
+}
+
+p {
+	padding-left: 0px;
+	padding-bottom: 15px;
+	padding-right: 0px;
+	padding-top: 5px;
+	margin: 0px;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a {
+	color: #4e8ad7;
+	text-decoration: none;
+}
+
+a:hover { 
+	color: #4e8ad7; 
+	text-decoration: none;
+}
+
+
+p a:hover { 
+	color: #000;
+	text-decoration: none;
+	text-shadow: #8c8c8c 0 2px 3px;
+	border-bottom: 1px solid #000;
+}
+
+ul {
+	padding: 0 10px 10px 50px;
+	margin: 0px;
+	font-size: 16px;
+	line-height: 175%;
+	list-style-type: circle;
+}
+
+ol {
+	padding: 0 10px 10px 50px;
+	margin: 0px;
+	font-size: 16px;
+	line-height: 175%;
+}
+
+
+ul li a:link {
+	list-style-image: none;
+}
+
+p img, a img {
+	border: solid 10px white;
+	
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	
+	height: auto;
+	max-width: 260px;
+}
+
+#logo img {
+	border: none;
+	box-shadow: none;
+}
+
+
+img.a:hover  {
+	border: none;
+}
+
+
+hr {
+	clear: both;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 0px;
+	height: 3px;
+	background: url(images/hr.jpg) repeat-x;
+}
+
+#social {
+	float: right;
+}
+
+/* @group page */
+
+
+
+.homepage-bottom-widget{
+	width: 100%;
+	text-align: center;
+}
+
+.homepage-bottom-widget a img {
+	border: none;
+	box-shadow: none;
+}
+
+#content div.homepage-bottom-widget h3 a, #content div.homepage-bottom-widget h3, #quotescollection_randomquote-0 p q {
+	color: #000;
+	text-align: center;
+	font: bold 25px/100% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-bottom: 20px;
+	margin: 0 0px 0px;
+}
+
+#quotescollection_randomquote-0 p {
+	padding: 0px;
+}
+
+#content div.homepage-bottom-widget a p {
+	text-transform: uppercase;
+	font: 11px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+/* @end */
+
+/* @group Post */
+
+.featured-image img {
+	margin-bottom: 20px;
+	border: solid 10px white;
+	
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	
+	height: auto;
+	max-width: 260px;
+
+}
+
+/* @end */
+
+
+/* @group Post */
+
+.post {
+	margin: 25px 0px 25px 0px;
+}
+
+.meta {
+	text-transform:uppercase;
+	padding: 10px;
+	margin-bottom: 10px;
+	font: .7em/160% Georgia, "Times New Roman", Times, serif;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	color: gray;
+	letter-spacing: 0;
+	word-spacing: 3px;
+}
+
+div.meta span a {
+	color: #000;
+}
+
+
+h4 img {
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+blockquote {
+	font: italic .9em/1.6em Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+
+.alignright,img.alignright{
+	float:right;
+	margin: 5px 0 10px 25px;
+}
+
+.alignleft,img.alignleft{
+float:left;
+margin: 5px 25px 10px 0;
+}
+
+div#sexy-share {
+	clear: both;
+	border-top: 3px double #000;
+	border-bottom: 3px double #000;
+
+}
+
+#related ol {
+	padding: 0px;
+}
+
+
+
+
+
+/* @end */
+
+
+
+/* @group Testimonials */
+
+.testimonial p{
+	display: block;
+	float: left;
+	border-bottom: 3px double #000;
+}
+
+.testimonial img {
+	display: block;
+	float: left;
+	margin-right: 20px;
+	clear: both;
+	margin-bottom: 20px;
+	
+	border: solid 10px white;
+	
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+}
+
+
+
+/* @end */
+
+p.wp-caption-text {
+	text-align: right;
+	color: #bbbbbb;
+	font-style: italic;
+	font-size: .8em;
+}
+
+a.more-link {
+	display: block;
+	text-align: center;
+	margin: 10px 0px;
+	background-color: #4f8bbf;
+	color: #fff;
+	background: url(images/more-about-this-project.png) center no-repeat;
+	height: 40px;
+	padding: 0px;
+
+}
+
+a.more-link:hover {
+	border: none;
+	text-decoration: none;
+}
+
+/* @end */
+/* @group Sidebar */
+
+div#sidebar {
+	width: 100%;
+	background: #000;
+	clear: both;
+	position: inherit;
+	padding: 10px 25px;
+	margin-bottom: 20px;
+	background: url(http://www.aptdesignonline.com/wp-content/themes/aptdesign4/images/mobile-nav-background.png) repeat;
+
+}
+
+div#logo {
+display: none;
+	width: 75px;
+	height: 30px;
+		
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#menu-main-menu, .menu-main-menu-container {
+	font: 18px/36px "proxima-nova-1","proxima-nova-2", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: lowercase;
+	display: inline;
+	clear: both;
+	text-align: center;
+	margin: 0px 10px;
+
+}
+
+
+#menu-main-menu ul {
+	margin-left: 20px;
+}
+
+#menu-main-menu li a {
+	color: #fff;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	list-style-type: none;
+	padding-right: 20px;
+
+}
+
+
+#menu-main-menu a:hover {
+	text-decoration: none;
+	color: #4e8ad7;
+
+}
+
+
+/* @end */
+
+
+
+
+/* @end */
+
+
+#nav-below{
+	clear: both;
+	padding-top: 50px;
+}
+
+
+.nav-next, .nav-previous {
+	float: left;
+}
+
+.blog-nav-previous a img, .blog-nav-next a img {
+	border: none;
+	box-shadow: none;
+}
+
+div.portfolio-nav-previous, div.portfolio-nav-next, div.blog-nav-previous, div.blog-nav-next {
+	float: left;
+	padding: 5px 15px;
+	margin-bottom: 15px;
+	height: 45px;
+	width: 125px;
+	border: none;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+
+}
+
+
+div#nav-below img {
+	border: none;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}

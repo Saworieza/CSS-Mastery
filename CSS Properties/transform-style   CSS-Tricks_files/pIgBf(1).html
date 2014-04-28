@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://s.codepen.io/impressivewebs/fullgrid/pIgBf?type=embed&animations=run -->
+<html class=" -webkit- js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>CodePen - A Pen by impressivewebs</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
+
+  <style>button {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 20px;
+}
+
+.wrap {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+  background: transparent;
+  perspective: 600;
+}
+
+.parent {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: aquamarine;
+  transform-style: preserve-3d;
+  transform: rotateY(245deg);
+}
+
+.parent-flat {
+  transform-style: flat; 
+}
+
+.parent > div {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.one {
+  background-color: goldenrod;
+  transform: translateZ(-100px) rotateY(45deg);
+}
+
+.two {
+  background-color: green;
+  transform: translateZ(50px) rotateX(20deg);
+  transform-origin: 50% top;
+}</style>
+
+    <script src="prefixfree.min.js"></script>
+
+    <script src="modernizr.js"></script>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <div class="wrap">
+    <div class="parent">
+      <div class="one"></div>
+      <div class="two"></div>
+    </div>
+</div>
+
+<button>toggle transform-style</button>
+
+  <script></script></body></html>

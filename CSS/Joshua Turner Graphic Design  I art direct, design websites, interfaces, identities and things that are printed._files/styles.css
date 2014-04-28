@@ -1,0 +1,155 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {font-family: 'Brawler', Georgia, Times, serif;}
+/* 	body{background:#fff url(../i/grid.png)top center repeat-y;} */
+	p {color:#808080; line-height: 1.725em; margin-bottom: 1em; font-size: .875em;}
+	p strong {font-weight: normal; color:#000;}
+	
+	/*link styles*/
+	a:link {color:#ff1300; text-decoration: none;}
+	a:visited {color:#ff1300;}
+	a:hover {color:#000; text-decoration: none;}
+	a:active {color:#000;} 	
+	
+	/*Top Banner*/
+	.banner .row {text-align: left; background: transparent url(../i/border.png) bottom repeat-x; padding: 2.4em 0 1.6504em;}
+	h1 {text-indent:-9999em; width:361px; height:25px; background: transparent url(../i/joshuaturnergraphicdesign.png) top center no-repeat;  display:block;}
+	
+	/*Navigation*/
+	.nav {text-align:left;}
+	.nav ul {margin:0; padding: 0; font-size: .875em; float:right; }
+	.nav ul li {float:left; padding:.125em 0 0 2.0em;}
+	.nav ul li a {padding:0.125em 0.375em;}
+	.nav ul li a:hover{background:#ff1300; color:#fff;}
+	.nav ul li a.current{color:#fff;background:#000;} 
+	
+	/*Social Nav*/
+	.nav ul li.social {
+		margin-left:.325em;
+		padding: 0;
+		margin-top: -0.225em;	
+		}
+		
+	.nav ul li.socialfirst {
+		margin-left: 3.5em;
+		margin-top: -0.225em;	
+		padding: 0;
+		}
+		
+	.nav ul li a.twitter, .nav ul li a.dribbble, .nav ul li a.forrst {
+		text-indent: -9999em; 
+		padding:0; margin:0; 
+		height:29px; 
+		width:30px; 
+		display:block;
+		background: url(../i/social.png) top left no-repeat;
+		}
+		
+	.nav ul li a.dribbble {
+		background-position: -33px 0;	
+		}		
+
+	.nav ul li a.forrst {
+		background-position: -66px 0;	
+		}		
+
+	.nav ul li.social a:hover, .nav ul li.socialfirst a:hover {background-position: 0 -29px;}
+	.nav ul li.social a.dribbble:hover {background-position: -33px -29px;}
+	.nav ul li.social a.forrst:hover {background-position: -66px -29px;}
+		
+	.intro .nav ul li.socialfirst, .intro .nav ul li.social{margin-top:-0.825em;}
+		
+		
+	.branding {margin-bottom: 2.4em;}
+	.branding .sevencol img { float: left; margin: 2.625em 0 0 9.7866%;}
+	.brandstatement {padding-top:5.55em;}	
+	.brandstatement p {line-height:1.455em; padding-left:21.613%;} 
+	
+	/*Section Intro*/
+	.intro .row {background: transparent url(../i/border.png) top repeat-x; padding: 2.2em 0;}
+	.intro img {float: left; margin-right:20px;}
+	.intro p {float:left; width:55.96%; line-height: 1.455em;}
+	.intro p b {color:#ff1300;}
+	.intro .nav {line-height:0;}
+	
+	
+	.first .row {padding-top:3.1em; background: transparent url(../i/introrule.png) top center no-repeat;}
+	.final .row {margin-bottom: 2.4em;}
+		
+	/*portfolio description*/
+	.description{padding:.35em 0 0 0;}
+	.description h2 {font-size:1.3125em; padding:0.2325em 0 0.1em;}
+	.description h3{font-size:0.875em; background:#000; color:#fff; -webkit-font-smoothing: antialiased; padding:2px 4px; display:inline;  }
+	.description p {font-size:0.875em; line-height:1.455em;padding-bottom: 1.5em;}
+
+	.container.portfolioitem {padding-bottom:36px;}
+
+	.about span {float:left; background: transparent url(../i/J.png) top left no-repeat; text-indent: -9999px; width:29px; height:33px; margin-top:3px;}
+	#about .threecol {text-align:center;}
+	#about .moi {padding-bottom: 2em;}
+	.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; } 
+	.clearfix {display:inline-block;}
+	/* Hide from IE Mac \*/
+	.clearfix {display:block;}
+	/* End hide from IE Mac */
+	
+	
+/* ============================= */
+/* ! Layout for tablet version   */
+/* ============================= */	
+	@media only screen and (max-width: 1023px) {
+
+	body{font-size: 1em;}
+	.description {padding:0;}
+	.description p {padding-bottom:0;}
+	.nav ul li {float:left; padding:.45em 0 0 1.8em;}
+	.nav ul li.socialfirst {
+		margin-left: 1.5em;
+		margin-top: 0;	
+		padding: 0;
+		}
+	.nav ul li.social {
+		margin-top: 0;	
+		}
+	img.heading {max-width:60%;} 
+
+	}
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {}
+	
+	.banner .row {text-align: left; background: transparent url(../i/border.png) bottom repeat-x; padding: 1.4em 0 0.6504em;}
+
+	.branding .sevencol img { float: none; margin: 1.355em 0 1.625em 0 ;}
+	.brandstatement {padding-top:0;}	
+	.brandstatement p {line-height:1.325em; padding-left:0;} 
+	
+	.nav ul {display: none;}
+	.intro img {float:none; margin:0;}
+	.intro p {float:none; width:100%; }
+	
+	#about .threecol img {float:none;}
+	img.heading {max-width:20%;} 
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

@@ -1,0 +1,1 @@
+twttr.receiveCount({"count":22,"url":"http:\/\/www.cssnewbie.com\/embedding-video-responsive-site\/"});

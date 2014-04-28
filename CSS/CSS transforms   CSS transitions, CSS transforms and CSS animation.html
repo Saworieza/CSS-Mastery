@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://css3.bradshawenterprises.com/transforms/ -->
+<html lang="en" class=" js cssanimations csstransforms no-csstransforms3d csstransitions cssfilters"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  
+    <meta name="twitter:card" content="summary">
+          <title>CSS transforms | CSS transitions, CSS transforms and CSS animation</title>
+      <meta name="description" content="How to use CSS transforms in Safari, Chrome, Firefox, Opera and Internet Explorer 10">
+      <meta name="twitter:title" content="CSS transforms | CSS transitions, CSS transforms and CSS animation">
+      <meta name="twitter:description" content="How to use CSS transforms in Safari, Chrome, Firefox, Opera and Internet Explorer 10">
+            <meta name="twitter:site" content="@richbradshaw">
+      <meta name="google-site-verification" content="zTH7hEgeKVTkOu0F5bO5Guw9iRHWBJdCX0RpMASGZVI">
+      <meta name="readability-verification" content="c8jHSrt95TDJkTCHeYdz3m5H3tcmuQmzfbHPK7kG">
+
+      <meta name="twitter:creator" content="@richbradshaw">
+
+      <link href="http://css3.bradshawenterprises.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+      <link href="http://css3.bradshawenterprises.com/css/style.css" rel="stylesheet">
+      <style type="text/css">
+        body {
+          padding-bottom: 40px;
+        }
+      </style>
+      
+      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- CSS3 -->
+    <script id="facebook-jssdk" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/all.js"></script><script id="twitter-wjs" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/widgets.js"></script><script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/cb=gapi.loaded_1" async=""></script><script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/dc.js"></script><script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16444273-1']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <script>
+      if (document.referrer.match(/google\.com/gi) && document.referrer.match(/cd/gi)) {
+        var myString = document.referrer;
+        var r        = myString.match(/cd=(.*?)&/);
+        var rank     = parseInt(r[1]);
+        var kw       = myString.match(/q=(.*?)&/);
+
+        if (kw[1].length > 0) {
+          var keyWord  = decodeURI(kw[1]);
+        } else {
+          keyWord = "(not provided)";
+        }
+
+        var p        = document.location.pathname;
+        _gaq.push(['_trackEvent', 'RankTracker', keyWord, p, rank, true]);
+      }
+    </script>
+    
+
+    <link rel="shortcut icon" href="http://css3.bradshawenterprises.com/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://css3.bradshawenterprises.com/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://css3.bradshawenterprises.com/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://css3.bradshawenterprises.com/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://css3.bradshawenterprises.com/apple-touch-icon-57-precomposed.png">
+    <script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/modernizr.js"></script>
+    <script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/jquery.min.js"></script>
+
+    <style>
+            body {
+        font-family:sans-serif;      }
+    </style>
+  <script type="text/javascript" async="" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/embed.js"></script><script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_connect_bar_container div,.fb_connect_bar_container span,.fb_connect_bar_container a,.fb_connect_bar_container img,.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}.fb_connect_bar a:hover{color:#fff}.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}.fb_connect_bar div a,.fb_connect_bar span,.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style></head>
+
+<body onload="prettyPrint()" data-spy="scroll" data-twttr-rendered="true">
+  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/8n77RrR4jg0.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/8n77RrR4jg0(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f3c67d8c8" frameborder="0" allowtransparency="true" scrolling="no" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/ping.html" style="display: none;"></iframe></div></div></div>
+
+  <div class="container">
+  <!-- <div class="row">
+  <div class="span12">
+    <h1>CSS3 Transitions, Transforms and Animation Tutorial</h1>
+  </div>
+</div>
+ -->
+  <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+        <ul class="nav">
+          <a class="brand" href="http://css3.bradshawenterprises.com/">CSS3 = Awesome</a>
+
+          <li class="dropdown">
+            <a href="http://css3.bradshawenterprises.com/transforms/#" class="dropdown-toggle" data-toggle="dropdown">
+                  The Basics
+                  <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="http://css3.bradshawenterprises.com/transitions/">Transitions</a></li>
+              <li class=""><a href="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/CSS transforms   CSS transitions, CSS transforms and CSS animation.html">Transforms</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/animations/">Animations</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/filters/">Filters</a></li>
+            </ul>
+          </li>
+
+
+          <li class="dropdown">
+            <a href="http://css3.bradshawenterprises.com/transforms/#" class="dropdown-toggle" data-toggle="dropdown">
+                  Examples
+                  <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="http://css3.bradshawenterprises.com/cfimg/">Cross Fading</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/sliding/">Sliding</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/flip/">3D Flipping</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/accordions/">Accordions</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="http://css3.bradshawenterprises.com/transforms/#" class="dropdown-toggle" data-toggle="dropdown">
+                  Notes
+                  <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="http://css3.bradshawenterprises.com/legacy/">Legacy</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/which-vendor-prefixes-are-needed/">Which Vendor Prefixes are needed?</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/support/">Browser Support</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/references/">Read More…</a></li>
+            </ul>
+          </li>
+
+           <li class="dropdown">
+            <a href="http://css3.bradshawenterprises.com/transforms/#" class="dropdown-toggle" data-toggle="dropdown">
+                  Techniques
+                  <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="http://css3.bradshawenterprises.com/animating_height/">Animating height to auto</a></li>
+               <li><a href="http://css3.bradshawenterprises.com/transition-callbacks/">Callbacks for transitions</a></li>
+               <li><a href="http://css3.bradshawenterprises.com/animation-callbacks/">Callbacks for animations</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="http://css3.bradshawenterprises.com/transforms/#" class="dropdown-toggle" data-toggle="dropdown">
+                  Blog
+                  <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                              <li><a href="http://css3.bradshawenterprises.com/blog/css-variables/">How to use CSS Variables</a></li>
+                              <li><a href="http://css3.bradshawenterprises.com/blog/why-sass/">SASS is awesome!</a></li>
+                              <li><a href="http://css3.bradshawenterprises.com/blog/retina-image-replacement-for-new-ipad/">Retina Image Replacement for the New iPad</a></li>
+                              <li><a href="http://css3.bradshawenterprises.com/blog/jquery-vs-css3-transitions/">Speed/framerate comparison between jQuery and CSS3 transitions</a></li>
+                          </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+        <div class="row">
+      <div id="sub_nav" class="span2">
+        <div data-spy="affix" data-offset-top="0" class="affixed affix">
+        <ul class="nav nav-tabs nav-stacked">            <li class="active"><a href="http://css3.bradshawenterprises.com/transforms/#how2transforms">How to use transforms</a></li>
+                      <li><a href="http://css3.bradshawenterprises.com/transforms/#css3dtransforms">CSS 3D Transforms</a></li>
+                      <li><a href="http://css3.bradshawenterprises.com/transforms/#cube3d">A cube made with 3D CSS transforms</a></li>
+                      <li><a href="http://css3.bradshawenterprises.com/transforms/#cubecarousel">A 3D image slider</a></li>
+                      <li><a href="http://css3.bradshawenterprises.com/transforms/#playground">3D transforms playground</a></li>
+                      <li><a href="http://css3.bradshawenterprises.com/transforms/#advanced">Advanced usage</a></li>
+                    <li><a href="http://css3.bradshawenterprises.com/transforms/#comments"><i class="icon-comment-alt"></i> Comments</a></li>
+        </ul>
+                <div id="sm">
+          <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 106px; height: 24px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 106px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1397360358301" name="I0_1397360358301" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div>
+          <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/tweet_button.1397165098.html" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 136px; height: 28px;"></iframe>
+          <div class="fb-like fb_iframe_widget" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="lucida grande" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=168959539846703&amp;font=lucida%20grande&amp;href=http%3A%2F%2Fcss3.bradshawenterprises.com%2Ftransforms%2F&amp;layout=button_count&amp;locale=en_GB&amp;sdk=joey&amp;send=false&amp;show_faces=true&amp;width=450"><span style="vertical-align: bottom; width: 76px; height: 20px;"><iframe name="f28d343038" width="450px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/like.html" class="" style="border: none; visibility: visible; width: 76px; height: 20px;"></iframe></span></div>
+        </div>
+                </div>
+      </div>
+      <div id="textContent" class="span10">
+        
+        <section>
+  <div class="page-header">
+    <h1>CSS Transforms</h1>
+    <script async="" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7181696033265659" data-ad-slot="0969051732" data-adsbygoogle-status="done"><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>      <div class="csscss3-2d-transformsMessage alert alert-error" style="display:none;">
+    <i class="icon-warning-sign"></i> Your browser doesn't support CSS css3-2d-transforms :( Try one of the browsers mentioned below.
+  </div>  </div>
+
+  <h2>Browser Support for 2D CSS Transforms</h2>
+<div class="row browser_support">
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-chrome.png" alt="Google Chrome"><p>1.0</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-safari.png" alt="Apple Safari"><p>3.2</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-firefox.png" alt="Mozilla Firefox"><p>3.5</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-ie.png" alt="Microsoft Internet Explorer"><p>9</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-opera.png" alt="Opera"><p>10.5</p></div>
+</div><section id="how2transforms">
+<h2>How to use transforms</h2>
+<p>There are two categories of transform - 2D transforms and 3D transforms. 2D transforms are more widely supported, whereas 3D transforms are only in newer browers.</p>
+<h2>2D examples</h2>
+<style>
+#transDemo1 {
+  margin-bottom:20px;
+}
+#transDemo1 div:not(.clear) {
+  width:70px;
+  height:180px;
+  margin:10px 20px;
+  padding:10px;
+  border:1px red solid;
+  float:left;
+}
+#transDemo1 #skew {
+  -webkit-transform:skew(35deg);
+  -moz-transform:skew(35deg);
+  -ms-transform:skew(35deg);
+  transform:skew(35deg);
+}
+
+#transDemo1 #scale {
+  -webkit-transform:scale(1,0.5);
+  -moz-transform:scale(1,0.5);
+  -ms-transform:scale(1,0.5);
+  transform:scale(1,0.5);
+}
+
+#transDemo1 #rotate {
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+#transDemo1 #translate {
+  -webkit-transform:translate(10px, 20px);
+  -moz-transform:translate(10px, 20px);
+  -ms-transform:translate(10px, 20px);
+  transform:translate(10px, 20px);
+}
+#transDemo1 #rotate-skew-scale-translate {
+  -webkit-transform:skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px);
+  -moz-transform:skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px);
+  -ms-transform:skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px);
+  transform:skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px);
+}
+</style>
+<div id="transDemo1">
+  <div id="skew">This div has been skewed - note that the text is still selectable.</div>
+  <div id="scale">This div has been scaled - again, the text is real text.</div>
+  <div id="rotate">This div has been rotated - you get the idea about the text!</div>
+  <div id="translate">This div has been translated 10px down, and 20px across.</div>
+  <div id="rotate-skew-scale-translate">This div has all four types!</div>
+  <div class="clear"></div>
+</div>
+<p>The code for these looks like this, but with the appropriate vendor prefixes added:</p>
+<pre class="prettyprint lang-css"><span class="com">#skew {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">skew</span><span class="pun">(</span><span class="lit">35deg</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#scale {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">scale</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="lit">0.5</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#rotate {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">rotate</span><span class="pun">(</span><span class="lit">45deg</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#translate {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">translate</span><span class="pun">(</span><span class="lit">10px</span><span class="pun">,</span><span class="pln"> </span><span class="lit">20px</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#rotate-skew-scale-translate {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">skew</span><span class="pun">(</span><span class="lit">30deg</span><span class="pun">)</span><span class="pln"> scale</span><span class="pun">(</span><span class="lit">1.1</span><span class="pun">,</span><span class="lit">1.1</span><span class="pun">)</span><span class="pln"> rotate</span><span class="pun">(</span><span class="lit">40deg</span><span class="pun">)</span><span class="pln"> translate</span><span class="pun">(</span><span class="lit">10px</span><span class="pun">,</span><span class="pln"> </span><span class="lit">20px</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>CSS transforms also be animated using transitions - try hovering on the div below.</p>
+<style>
+#transDemo2 div {
+  height:100px;
+  width:100px;
+  border:1px red solid;
+  margin:10px auto;
+  text-align:center;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+
+}
+
+#transDemo2 div:hover, #transDemo2 div.hover_effect {
+  -webkit-transform:rotate(720deg) scale(2,2);
+  -moz-transform:rotate(720deg) scale(2,2);
+  -ms-transform:rotate(720deg) scale(2,2);
+  transform:rotate(720deg) scale(2,2);
+}
+</style>
+<div id="transDemo2">
+  <div class="hover">Hover on me and I'll spin and scale!</div>
+</div>
+</section>
+<section id="css3dtransforms">
+<h1>CSS 3D Transforms</h1>
+  <div class="css3dtransformsMessage alert alert-error" style="">
+    <i class="icon-warning-sign"></i> Your browser doesn't support CSS 3D Transforms :( Try one of the browsers mentioned below.
+  </div>
+  <h2>Browser Support for 3D CSS Transforms</h2>
+<div class="row browser_support">
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-chrome.png" alt="Google Chrome"><p>12.0</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-safari.png" alt="Apple Safari"><p>4.0</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-firefox.png" alt="Mozilla Firefox"><p>10.0</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-ie.png" alt="Microsoft Internet Explorer"><p>10.0</p></div>
+<div class="span2"><img width="128" height="128" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/128-opera.png" alt="Opera"><p>-</p></div>
+</div>
+<p>3D CSS transforms are similar to 2D CSS transforms. The basic properties are <code>translate3d</code>, <code>scale3d</code>, <code>rotateX</code>, <code>rotateY</code> and <code>rotateZ</code>. <code>translate3d</code> and <code>scale3d</code> take three arguments for x,y and z, whereas the rotates just take an angle. Here are some examples:</p>
+<style>
+#transDemo4 {
+  width:400px;
+  height:190px;
+  margin:0 auto 10px;
+  border:1px #aaa solid;
+  padding:10px;
+}
+
+
+#transDemo4 div:not(.clear) {
+  -webkit-transition:all 2s ease-in-out;
+  -moz-transition:all 2s ease-in-out;
+  -ms-transition:all 2s ease-in-out;
+  transition:all 2s ease-in-out;
+
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 100px;
+
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 100px;
+
+  -ms-perspective: 800px;
+  -ms-perspective-origin: 50% 100px;
+
+
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+
+  width:70px;
+  height:130px;
+  margin:10px 20px;
+  padding:10px;
+  border:1px blue solid;
+  float:left;
+}
+
+#transDemo4:hover #rotateX, #transDemo4.hover_effect #rotateX {
+  -webkit-transform:rotateX(180deg);
+  -moz-transform:rotateX(180deg);
+  -ms-transform:rotateX(180deg);
+  transform:rotateX(180deg);
+}
+#transDemo4:hover #rotateY, #transDemo4.hover_effect #rotateY {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -ms-transform:rotateY(180deg);
+  transform:rotateY(180deg);
+}
+#transDemo4:hover #rotateZ, #transDemo4.hover_effect #rotateZ {
+  -webkit-transform:rotateZ(180deg);
+  -moz-transform:rotateZ(180deg);
+  -ms-transform:rotateZ(180deg);
+  transform:rotateZ(180deg);
+}
+</style>
+<div id="transDemo4" class="shadow hover">
+  <div id="rotateX">rotateX</div>
+  <div id="rotateY">rotateY</div>
+  <div id="rotateZ">rotateZ</div>
+  <p class="center">Hover me</p>
+  <div class="clear"></div>
+</div>
+<p>The simplified code for those looks like this:</p>
+<pre class="prettyprint lang-css"><span class="com">#transDemo4 div {</span><span class="pln">
+  transition</span><span class="pun">:</span><span class="pln">all </span><span class="lit">2s</span><span class="pln"> ease</span><span class="pun">-</span><span class="kwd">in</span><span class="pun">-</span><span class="kwd">out</span><span class="pun">;</span><span class="pln">
+  perspective</span><span class="pun">:</span><span class="pln"> </span><span class="lit">800px</span><span class="pun">;</span><span class="pln">
+  perspective</span><span class="pun">-</span><span class="pln">origin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">%</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#transDemo4:hover #rotateX {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">rotateX</span><span class="pun">(</span><span class="lit">180deg</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#transDemo4:hover #rotateY {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">rotateY</span><span class="pun">(</span><span class="lit">180deg</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#transDemo4:hover #rotateZ {</span><span class="pln">
+  transform</span><span class="pun">:</span><span class="pln">rotateZ</span><span class="pun">(</span><span class="lit">180deg</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></pre>
+</section>
+<section id="cube3d">
+<h2>A cube made with 3D CSS transforms</h2>
+<style>
+#transDemo3 {
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 100px;
+
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 100px;
+
+  -ms-perspective: 800px;
+  -ms-perspective-origin: 50% 100px;
+
+
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  margin:50px auto;
+  width:400px;
+  float:left;
+}
+
+#transDemo3 #cube {
+  position: relative;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 100px 0;
+  -moz-transform-style: preserve-3d;
+  -moz-transform-origin: 50% 100px 0;
+  -ms-transform-style: preserve-3d;
+  -ms-transform-origin: 50% 100px 0;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100px 0;
+}
+
+#transDemo3 #Ycube,#transDemo3 #Zcube {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#transDemo3 .face {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.3);
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+  border:1px #aaa solid;
+}
+
+#transDemo3 .face p {
+  font-size:160px;
+  line-height:1;
+  text-align:center;
+  margin:0;
+  padding:0;
+  color:rgba(0,0,0,0.75);
+}
+
+#cube .one  {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
+  -ms-transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#cube .two {
+  -webkit-transform: translateZ(100px);
+  -moz-transform: translateZ(100px);
+  -ms-transform: translateZ(100px);
+  transform: translateZ(100px);
+}
+
+#cube .three {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
+  -ms-transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube .four {
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+  -moz-transform: rotateY(180deg) translateZ(100px);
+  -ms-transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(100px);
+     background-color: rgba(0, 255, 0, 0.5);
+}
+
+#cube .five {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
+  -ms-transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+  -moz-transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+  -ms-transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+  transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+     background-color: rgba(0, 0, 255, 0.5);
+}
+
+#td3controls {
+  width:290px;
+  float:right;
+}
+
+#td3controls label, #td3controls input {
+  float:left;
+  width:100%;
+}
+</style>
+<script>
+$(document).ready(function() {
+  $('#td3controls #td3xrot').change(function () {
+      $('#cube').css("transform","rotateX("+$('#td3controls input#td3xrot').val()+"deg)");
+      $('label[for="td3xrot"]').html("X rotation ("+$('#td3controls input#td3xrot').val()+" deg)")
+  });
+  $('#td3controls #td3yrot').change(function () {
+      $('#Ycube').css("transform","rotateY("+$('#td3controls input#td3yrot').val()+"deg)");
+      $('label[for="td3yrot"]').html("Y rotation ("+$('#td3controls input#td3yrot').val()+" deg)")
+  });
+  $('#td3controls #td3zrot').change(function () {
+      $('#Zcube').css("transform","rotateZ("+$('#td3controls input#td3zrot').val()+"deg)");
+      $('label[for="td3zrot"]').html("Z rotation ("+$('#td3controls input#td3zrot').val()+" deg)")
+  });
+  $('#td3controls #td3perspective').change(function () {
+      $('#transDemo3').css("perspective",$('#td3controls input#td3perspective').val()+"px");
+      $('label[for="td3perspective"]').html("Perspective ("+$('#td3controls input#td3perspective').val()+" px)")
+  });
+});
+</script>
+<div id="transDemo3">
+  <div id="Zcube">
+  <div id="Ycube">
+  <div id="cube">
+    <div class="face one">
+      <p>1</p>
+    </div>
+    <div class="face two">
+      <p>2</p>
+    </div>
+    <div class="face three">
+      <p>3</p>
+    </div>
+    <div class="face four">
+      <p>4</p>
+    </div>
+    <div class="face five">
+      <p>5</p>
+    </div>
+    <div class="face six">
+      <p>6</p>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="td3controls">
+  <label for="td3xrot">X rotation (0 deg)</label>
+  <input id="td3xrot" type="range" min="-180" max="180" default="0">
+  <label for="td3yrot">Y rotation (0 deg)</label>
+  <input id="td3yrot" type="range" min="-180" max="180" default="0">
+  <label for="td3zrot">Z rotation (0 deg)</label>
+  <input id="td3zrot" type="range" min="-180" max="180" default="0">
+  <label for="td3perspective">Perspective (800 px)</label>
+  <input id="td3perspective" type="range" min="200" max="2000" default="800">
+</div>
+<div class="clear"></div>
+<p>Have a play with the controls - there's no transition here, just the sliders to control it. Note that I'm only using javascript to update the css values - all the maths needed is done by the browser automatically.</p>
+</section>
+
+
+<section id="cubecarousel">
+  <h2>A 3D image slider</h2>
+  <p>Note that because of the way a cube works, the image is moved out towards the screen, and is bigger than it should be. You should move it back by half the width of an image to make sure it is normal size.</p>
+
+  <style>
+  #controls, #transparency {
+    text-align:center;
+  }
+  #controls span {
+    padding-right:2em;
+    cursor:pointer;
+  }
+
+  #cubeCarousel {
+    -webkit-perspective: 800;
+    -moz-perspective: 800px;
+    -ms-perspective: 800;
+    perspective: 800;
+
+    -webkit-perspective-origin: 50% 100px;
+    -moz-perspective-origin: 50% 100px;
+    -ms-perspective-origin: 50% 100px;
+    perspective-origin: 50% 100px;
+
+    margin:100px auto 20px auto;
+    width:450px;
+    height:400px;
+  }
+
+  #cubeCarousel #cubeSpinner {
+    position: relative;
+    margin: 0 auto;
+    height: 281px;
+    width: 450px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transform-origin: 50% 100px 0;
+    -moz-transform-origin: 50% 100px 0;
+    -ms-transform-origin: 50% 100px 0;
+    transform-origin: 50% 100px 0;
+
+    -webkit-transition:all 1.0s ease-in-out;
+    -moz-transition:all 1.0s ease-in-out;
+    -ms-transition:all 1.0s ease-in-out;
+    transition:all 1.0s ease-in-out;
+
+  }
+
+  #cubeCarousel #Ycube,#cubeCarousel #Zcube {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #cubeCarousel .face {
+    position: absolute;
+    height: 281px;
+    width: 450px;
+    padding: 0px;
+  }
+
+
+  #cubeSpinner .one {
+    -webkit-transform: translateZ(225px);
+    -moz-transform: translateZ(225px);
+    -ms-transform: translateZ(225px);
+    transform: translateZ(225px);
+  }
+
+  #cubeSpinner .two {
+    -webkit-transform: rotateY(90deg) translateZ(225px);
+    -moz-transform: rotateY(90deg) translateZ(225px);
+    -ms-transform: rotateY(90deg) translateZ(225px);
+    transform: rotateY(90deg) translateZ(225px);
+  }
+
+  #cubeSpinner .three {
+    -webkit-transform: rotateY(180deg) translateZ(225px);
+    -moz-transform: rotateY(180deg) translateZ(225px);
+    -ms-transform: rotateY(180deg) translateZ(225px);
+    transform: rotateY(180deg) translateZ(225px);
+  }
+
+  #cubeSpinner .four {
+    -webkit-transform: rotateY(-90deg) translateZ(225px);
+    -moz-transform: rotateY(-90deg) translateZ(225px);
+    -ms-transform: rotateY(-90deg) translateZ(225px);
+    transform: rotateY(-90deg) translateZ(225px);
+  }
+
+  .trans {
+    opacity:0.7;
+  }
+
+  </style>
+  <script>
+    $(document).ready(function() {
+
+      $("#controls").on('click', 'span', function(){
+        $("#cubeSpinner").css("transform","rotateY("+($(this).index() * -90)+"deg)");
+        $("#controls span").removeClass("selected");
+        $(this).addClass("selected");
+      });
+
+      $("#transparency").click(function() {
+        $("#cubeSpinner img").toggleClass("trans");
+        $(this).toggleClass("selected");
+      });
+
+    });
+  </script>
+  <div id="cubeCarousel">
+    <div id="cubeSpinner">
+
+      <div class="face one">
+        <img src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/Cirques.jpg">
+      </div>
+      <div class="face two">
+        <img src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/Clown Fish.jpg">
+      </div>
+      <div class="face three">
+        <img src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/Stones.jpg">
+      </div>
+      <div class="face four">
+        <img src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/Summit.jpg">
+      </div>
+    </div>
+  </div>
+
+  <p id="controls">
+    <span class="selected">Image 1</span>
+    <span>Image 2</span>
+    <span>Image 3</span>
+    <span>Image 4</span>
+  </p>
+  <p id="transparency">Click me to toggle transparency</p>
+
+</section>
+
+
+<section id="playground">
+<h2>3D transforms playground</h2>
+<style>
+#transPlay {
+  margin:50px auto;
+  width:500px;
+  position:relative;
+
+}
+
+#transPlayStage {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
+#transPlayControls {
+  width:290px;
+  float:right;
+}
+
+#transPlayControls label, #transPlayControls input {
+  float:left;
+  width:100%;
+}
+#transPlay div {
+  position: absolute;
+  top:0;
+  left:0;
+  width:200px;
+  height:200px;
+  outline:1px black solid;
+}
+#transPlayOriginal {
+  background-color:rgba(255,0,0,0.2);
+}
+#transPlayChanged {
+  background-color: rgba(255,0,0,0.5);
+}
+</style>
+<script>
+$(document).ready(function() {
+  var vP = "";
+  if ($.browser.webkit) {
+    vP = "-webkit-";
+  } else if ($.browser.mozilla) {
+    vP = "-moz-";
+  } else if ($.browser.opera) {
+    vP = "-ms-";
+  }
+  var transPlayChanged = $('#transPlayChanged'),
+    transPlayStage = $("#transPlayStage"),
+
+    transPlayPerspective = $("#transPlayPerspective"),
+
+    transPlayOriginX = $("#transPlayOriginX"),
+    transPlayOriginY = $("#transPlayOriginY"),
+
+    transPlayX = $('#transPlayX'),
+    transPlayY = $('#transPlayY'),
+    transPlayZ = $('#transPlayZ'),
+
+    transPlayXRot = $('#transPlayXRot'),
+    transPlayYRot = $('#transPlayYRot'),
+    transPlayZRot = $('#transPlayZRot');
+
+  transPlayZ.val(0);
+  transPlayPerspective.val(800);
+
+  transPlayChanged.css(vP+"transform","translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)");
+
+  $('#transPlayControls input').change(function () {
+      $('label[for="'+$(this).attr("id")+'"] span').html($(this).val());
+
+      transPlayChanged.css(vP+"transform","translateX("+
+        transPlayX.val()+"px) translateY("+
+        transPlayY.val()+"px) translateZ("+
+        transPlayZ.val()+"px) rotateX("+
+        transPlayXRot.val()+"deg) rotateY("+
+        transPlayYRot.val()+"deg) rotateZ("+
+        transPlayZRot.val()+"deg)");
+
+      transPlayStage.css(vP+"perspective", transPlayPerspective.val());
+
+      transPlayChanged.css(vP+"transform-origin-x", transPlayOriginX.val()+"%");
+      transPlayChanged.css(vP+"transform-origin-y", transPlayOriginY.val()+"%");
+  });
+});
+</script>
+<div id="transPlay">
+  <div id="transPlayStage">
+  <div id="transPlayOriginal"><p>Original</p></div>
+  <div id="transPlayChanged" style="-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);"><p>Transformed</p></div>
+  </div>
+</div>
+<div id="transPlayControls">
+  <label for="transPlayX">∆X (<span>0</span> px)</label>
+  <input id="transPlayX" type="range" min="-170" max="170" default="0">
+  <label for="transPlayY">∆Y (<span>0</span> px)</label>
+  <input id="transPlayY" type="range" min="-170" max="170" default="0">
+  <label for="transPlayZ">∆Z (<span>0</span> px)</label>
+  <input id="transPlayZ" type="range" min="-400" max="170" default="0">
+
+  <label for="transPlayXRot">X rotation (<span>0</span> deg)</label>
+  <input id="transPlayXRot" type="range" min="-180" max="180" default="0">
+  <label for="transPlayYRot">Y rotation (<span>0</span> deg)</label>
+  <input id="transPlayYRot" type="range" min="-180" max="180" default="0">
+  <label for="transPlayZRot">Z rotation (<span>0</span> deg)</label>
+  <input id="transPlayZRot" type="range" min="-180" max="180" default="0">
+
+  <label for="transPlayPerspective">Perspective (<span>800</span> px)</label>
+  <input id="transPlayPerspective" type="range" min="100" max="1000" default="800">
+
+  <label for="transPlayOriginX">Transform origin (horizontal) (<span>50</span> %)</label>
+  <input id="transPlayOriginX" type="range" min="0" max="100" default="50">
+
+  <label for="transPlayOriginY">Transform origin (vertical) (<span>50</span> %)</label>
+  <input id="transPlayOriginY" type="range" min="0" max="100" default="50">
+
+</div>
+<div class="clear"></div>
+
+<p>For more information read both the <a href="http://www.webkit.org/blog/386/3d-transforms/">Webkit blog entry from when 3D transforms were first implemented</a>, <a href="http://desandro.github.com/3dtransforms/">David Desandro's awesome examples</a> and <a href="http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_3d-transforms.htm">Microsoft's 3D transforms test drive</a>.</p>
+</section>
+<section id="advanced">
+<h2>Advanced usage</h2>
+<p>Though it's rare that you'll need it, it's worth noting that the raw matrix implementations are exposed as well. As an example, the skew transform above has a skew of 35 degrees. To find the internal representation, you can use javascript to find the computed style. In this case, <code>skew(35deg)</code> is represented by <code>matrix(1, 0, 0.7002075382097097, 1, 0, 0)</code>. The astute among you will note that this is a 2×3 matrix. To use them for normal arithmetic, add a third row of <code>0, 0, 1</code>.</p>
+<p>CSS 3D transforms are represented similarly, with a 4×4 matrix.</p>
+<p>Understanding how to create these matrices is probably out of the scope of this tutorial, but an undergraduate understanding of matrix algebra should suffice. Read the <a href="http://en.wikipedia.org/wiki/Transformation_matrix#Examples_in_2D_graphics">Wikipedia article on transformation matrices</a> for a quick primer.</p>
+<p>For the exact methods, read the part of the spec about <a href="http://www.w3.org/TR/css3-2d-transforms/#matrix-decomposition">2D matrix decomposition</a> and <a href="http://www.w3.org/TR/css3-3d-transforms/#cssmatrix-interface">3D matrix interface</a>.</p>
+</section>
+</section>
+<ul class="pager">
+  <li>
+    <a href="http://css3.bradshawenterprises.com/transitions/"><i class="icon-arrow-left"></i> Previous</a>
+  </li>
+  <li>
+    <a href="http://css3.bradshawenterprises.com/animations/">Next <i class="icon-arrow-right"></i></a>
+  </li>
+</ul>
+
+        <section id="comments">
+	<h2>Comments/Questions?</h2>
+	<p>Please add any questions/corrections/extra info below. Please be courteous to other users.</p>
+	<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" width="100%" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/saved_resource.html" scrolling="no" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 3286px !important;"></iframe></div>
+	<script type="text/javascript">
+	var disqus_shortname = 'css3bradshaw';
+
+					var disqus_identifier = 'transforms';
+												(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+				</script>
+				<noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+				
+			</section>
+			      </div>
+    </div>
+
+    
+    <hr>
+<footer>
+  <div id="footerLinks" class="row">
+    <div class="span3">
+      <h2>The Basics</h2>
+      <ul>
+        <li><a href="http://css3.bradshawenterprises.com/transitions/">CSS3 Transitions</a></li>
+        <li><a href="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/CSS transforms   CSS transitions, CSS transforms and CSS animation.html">CSS3 Transforms</a></li>
+        <li><a href="http://css3.bradshawenterprises.com/animations/">CSS3 Animations</a></li>
+        <li><a href="http://css3.bradshawenterprises.com/filters/">CSS3 Filters</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <h2>Examples of use</h2>
+      <ul>
+        <li><a href="http://css3.bradshawenterprises.com/cfimg/">Cross Fading</a></li>
+        <li><a href="http://css3.bradshawenterprises.com/sliding/">Sliding</a></li>
+        <li><a href="http://css3.bradshawenterprises.com/flip/">3D Flipping</a></li>
+        <li><a href="http://css3.bradshawenterprises.com/accordions/">Accordions</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <h2>Notes</h2>
+      <ul>
+        <li><a href="http://css3.bradshawenterprises.com/legacy/">Legacy</a></li>
+        <li><a href="http://css3.bradshawenterprises.com/support/">Browser Support</a></li>
+        <li><a href="http://css3.bradshawenterprises.com/references/">What to read next</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <h2>Blog</h2>
+      <ul>
+              <li><a href="http://css3.bradshawenterprises.com/blog/css-variables/">How to use CSS Variables</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/blog/why-sass/">SASS is awesome!</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/blog/retina-image-replacement-for-new-ipad/">Retina Image Replacement for the New iPad</a></li>
+              <li><a href="http://css3.bradshawenterprises.com/blog/jquery-vs-css3-transitions/">Speed/framerate comparison between jQuery and CSS3 transitions</a></li>
+            </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="span12 muted">
+      <p>To make as easy as possible, I'm putting style and script tags in each section, just before the demo. This isn't recommended for production use!</p>
+      <p>Any suggestions/improvements/etc, contact me via my Gmail account (rich.bradshaw), or on Twitter (<a href="http://twitter.com/richbradshaw">richbradshaw</a>).</p>
+    </div>
+  </div>
+  <div class="row" id="footerBottom">
+    <div class="span12">
+            <p>© Rich Bradshaw of <a href="http://www.focalstrategy.com/">Focal Strategy</a> 2010 - 2012</p>
+      <a href="http://stackexchange.com/users/2e2b88856f8e4c1ea377453a19fc416e">
+        <img src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/2e2b88856f8e4c1ea377453a19fc416e.png" width="208" height="58" alt="profile for Rich Bradshaw on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Rich Bradshaw on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+      </a>
+
+      <a rel="author" href="https://plus.google.com/105249724614922381234?rel=author">
+        <img src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/gplus-32.png" width="32" height="32">
+      </a>
+
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  <div style="position: absolute; top: -250px; left: -250px;"><a href="http://css3.bradshawenterprises.com/hippedhundredfold.php">avenue-origin</a></div>
+  <script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/prettify.js"></script>
+<script type="text/javascript" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/plusone.js" gapi_processed="true"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=168959539846703";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/bootstrap-transition.js"></script>
+  <script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/bootstrap-modal.js"></script>
+<script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/bootstrap-dropdown.js"></script>
+<script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/bootstrap-scrollspy.js"></script>
+              <script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/bootstrap-affix.js"></script>
+<script src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/template.js"></script>
+
+
+
+<!-- Cached on Tue, 25 Feb 2014 22:34:25 +0000 --><iframe name="oauth2relay791332468" id="oauth2relay791332468" src="./CSS transforms   CSS transitions, CSS transforms and CSS animation_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

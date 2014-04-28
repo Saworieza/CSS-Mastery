@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0048)http://reference.sitepoint.com/css/pseudoclasses -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Pseudo-classes » Learn CSS3 | Cheat Sheet | CSS Tutorial | Selectors | Properties</title>
+
+	
+	<meta name="robots" content="all">
+	<meta name="description" content="Learn CSS at the SitePoint CSS Reference » Learn CSS3 | Cheat Sheet | CSS Tutorial | Selectors | Properties
+. With full descriptions, working examples, and browser compatibility information on the entire CSS language.">
+	<link rel="Shortcut Icon" href="http://www.sitepoint.com/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" href="http://reference.sitepoint.com/static/reference/images/apple-touch-icon.png">
+		<script type="text/javascript" async="" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/dc.js"></script><script async="" type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/gpt.js"></script><script type="text/javascript">
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+			var gads = document.createElement('script');
+			gads.async = true;
+			gads.type = 'text/javascript';
+			var useSSL = 'https:' == document.location.protocol;
+			gads.src = (useSSL ? 'https:' : 'http:') + 
+			'//www.googletagservices.com/tag/js/gpt.js';
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(gads, node);
+		})();
+	</script>
+	<script type="text/javascript">
+		googletag.cmd.push(function() {
+	googletag.defineSlot('/7448792/Reference_16_CSS_728x90', [728, 90], 'div-gpt-ad-1328645581350-0').addService(googletag.pubads());
+googletag.defineSlot('/7448792/Reference_CSS_300x250', [300, 250], 'div-gpt-ad-1343690131663-0').addService(googletag.pubads());
+
+		googletag.defineSlot('/7448792/Ref_300x250_Low', [300, 250], 'div-gpt-ad-1368745521411-0').addService(googletag.pubads());
+		googletag.defineSlot('/7448792/Ref_728x90_Low', [728, 90], 'div-gpt-ad-1368745396842-0').addService(googletag.pubads());
+
+		googletag.pubads().setTargeting("OpenX",["true", "false"]);
+		googletag.pubads().setTargeting("Tribal",["true", "false"]);
+		googletag.pubads().enableSingleRequest();
+		googletag.enableServices();
+		});
+	</script>
+	<link rel="stylesheet" id="sitepoint-fonts-css" href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/css" type="text/css" media="all">
+
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js?ver=3.6"></script>
+
+  <style>
+    .top-bar {
+         width: 100%;
+         height: 60px;
+         zoom: 1;
+         background:#3a3a3a;
+    }
+    .top-bar_search .searchquery, .top-bar_search .searchquery {
+        background: #323232;
+    }
+
+    .top-bar_search .searchquery:hover, .top-bar_search .searchquery:focus {
+        background: #1e1e1e;
+    }
+    .top-bar_search button:before {
+         top: -.75em;
+         background-image: url(http://www.sitepoint.com/wp-includes/images/admin-bar-sprite.png?d=20120830);
+         background-repeat: no-repeat;
+         background-position: 3px 2px;
+         border: 1px solid #000;
+         color: #fff;
+         content: '';
+         display: block;
+         font-size: 1.3em;
+         height: 30px;
+         left: 20px;
+         margin: 0px;
+         padding: 0px;
+         position: absolute;
+         width: 30px;
+    }
+  </style>
+<![endif]-->
+
+<link rel="stylesheet" href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/format.css" media="screen,projection,print" type="text/css">
+<link rel="stylesheet" href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/screen.css" media="screen,projection,print" type="text/css">
+<link rel="stylesheet" href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/print.css" media="print" type="text/css">
+<link rel="stylesheet" href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/print(1).css" media="print" type="text/css">
+<link rel="stylesheet" href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/promobar.css" media="screen" type="text/css">
+<!--[if lte IE 7]><link rel="stylesheet" href="http://reference.sitepoint.com/static/common/styles/ie.css?v=2.2.8" media="screen,projection,print" type="text/css" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" href="http://reference.sitepoint.com/static/reference/styles/ie7.css?v=2.2.8" media="screen,projection,print" type="text/css" /><![endif]-->
+<!--[if IE]><link rel="stylesheet" href="http://reference.sitepoint.com/static/reference/styles/ie8.css?v=2.2.8" media="screen,projection,print" type="text/css" /><![endif]-->
+<link rel="stylesheet" href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/redesign.css" media="screen,projection,print" type="text/css">
+<script type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/jquery.min.js"></script><script async="" type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/pubads_impl_35.js"></script>
+<script type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/osd.js"></script></head>
+<body class="topicview">
+
+	<!--[if gte IE 8]><!-->
+	<script type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/promobar.js"></script>
+	
+	<!--<![endif]-->
+
+			<!-- SitePoint overlay ad -->	
+		<script type="text/javascript">
+		var SPMetrics_options = {
+		    'original_referrer': document.referrer,
+		    'context': 'reference',
+		    'category': 'css',
+		    'group' : '5'
+		};
+		</script>
+	
+	<script>$(document).ready(function(){
+        $("ul.Superfish").superfish();
+    });</script> 
+<header class="main-header" role="banner">
+  <nav class="top-bar" role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <div class="logo">
+          <a class="logomark" href="http://sitepoint.com/">
+            <svg width="91" height="20">
+               <image xlink:href="http://sitepoint.com/forums/images/styles/TheBeaconLight/style_blue/sitepoint.svg" src="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/logo.sitepoint.png" width="91" height="20">  </image>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+
+  <section class="top-bar-section">
+      <ul class="right">
+        <li class="has-dropdown">
+          <a href="http://reference.sitepoint.com/css/pseudoclasses#">Topics</a>
+          <ul class="dropdown">
+            <li>
+              <a class="category-html menuitem" href="http://sitepoint.com/html/">HTML</a>
+            </li>
+            <li>
+              <a class="category-css menuitem" href="http://sitepoint.com/css/">CSS</a>
+            </li>
+            <li>
+              <a class="category-javascript menuitem" href="http://sitepoint.com/javascript/">JS</a>
+            </li>
+            <li>
+              <a class="category-php menuitem" href="http://sitepoint.com/php/">PHP</a>
+            </li>
+            <li>
+              <a class="category-ruby menuitem" href="http://sitepoint.com/ruby/">Ruby</a>
+            </li>
+            <li>
+              <a class="category-mobile menuitem" href="http://sitepoint.com/mobile/">Mobile</a>
+            </li>
+            <li>
+              <a class="category-ux menuitem" href="http://sitepoint.com/ux/">UX</a>
+            </li>
+            <li>
+              <a class="category-design menuitem" href="http://sitepoint.com/design/">Design</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://sitepoint.com/store">Store</a>
+        </li>
+        <li>
+          <a href="http://sitepoint.com/forums">Forums</a>
+        </li>
+        <li>
+          <a href="http://sitepoint.com/newsletter">Subscribe</a>
+        </li>
+        <li class="top-bar_search">
+          <form method="get" action="http://sitepoint.com/">
+            <input autocomplete="off" class="searchquery" id="s" name="s" placeholder="Search…" type="text">
+            <button></button>
+          </form>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</header>
+
+
+	<div id="pagecontent" class="clearfix">
+
+		<div id="navbar">
+
+	<div class="structural-label">Crumbtrail</div>
+	<ol class="crumbtrail">
+		<li><a href="http://www.sitepoint.com/" rel="nofollow">SitePoint</a></li>
+																	<li><a rel="nofollow" href="http://reference.sitepoint.com/">Reference</a></li>
+																<li><a rel="nofollow" href="http://reference.sitepoint.com/css">CSS</a></li>
+																<li><a rel="nofollow" href="http://reference.sitepoint.com/css/selectorref">CSS Selectors</a></li>
+										<li><strong>Pseudo-classes</strong><em> (this page)</em></li>
+			</ol>
+
+
+	<ul id="navbarlinks">
+
+	</ul>
+
+			<div id="topicauthors">
+			by
+			 Tommy Olsson and Paul O’Brien					</div>
+	</div>
+<!--#spf_debug#-->
+	<div id="dubious-additional-container-div">
+
+		<a class="nomargin" name="begincontent"></a>
+
+		<div id="mainpanel" class="topicbody article">
+
+			
+			<div id="contentpanel">
+				<div id="contentpanelcontent">
+					
+<div><div id="pseudoclasses">
+
+
+  <div id="topicheader" class="topicheader"><h1>Pseudo-classes</h1></div><div class="summary"></div>
+
+  
+
+  <div class="topiccontent">
+    <p>A pseudo-class is similar to a class in HTML, but it’s not specified
+    explicitly in the markup. Some pseudo-classes are dynamic—they’re applied
+    as a result of user interaction with the document.</p>
+
+
+    <p>A pseudo-class starts with a colon (<span class="synph"><span class="oper">:</span></span>). No
+    whitespace may appear between a type selector or universal selector and
+    the colon, nor can whitespace appear after the colon.</p>
+
+
+    <p>CSS1 introduced the <a title="matches link elements that are unvisited" href="http://reference.sitepoint.com/css/pseudoclass-link"><code class="cssselector">:link</code></a>,
+    <a title="matches link elements that have been visited" href="http://reference.sitepoint.com/css/pseudoclass-visited"><code class="cssselector">:visited</code></a>,
+    and <a title="matches any element that’s being activated by the user" href="http://reference.sitepoint.com/css/pseudoclass-active"><code class="cssselector">:active</code></a>
+    pseudo-classes, but only for the HTML <code class="element">a</code> element. These
+    pseudo-classes represented the state of links—unvisited, visited, or
+    currently being selected—in a web page document. In CSS1, all three
+    pseudo-classes were mutually exclusive.</p>
+
+
+    <p>CSS2 expanded the range of pseudo-classes and ensured that they could
+    be applied to any element. <code class="cssselector">:link</code> and
+    <code class="cssselector">:visited</code> now apply to any element defined as a
+    link in the document language. While they remain mutually exclusive, the
+    <code class="cssselector">:active</code> pseudo-class now joins <a title="matches elements that are being designated by a pointing device" href="http://reference.sitepoint.com/css/pseudoclass-hover"><code class="cssselector">:hover</code></a> and
+    <a title="matches any element that’s currently in focus" href="http://reference.sitepoint.com/css/pseudoclass-focus"><code class="cssselector">:focus</code></a> in
+    the group of dynamic pseudo-classes. The <code class="cssselector">:hover</code>
+    pseudo-class matches elements that are being designated by a pointing
+    device (for example, elements that the user’s hovering the cursor over);
+    <code class="cssselector">:active</code> matches any element that’s being
+    activated by the user; and <code class="cssselector">:focus</code> matches any
+    element that is currently in focus (that is, accepting input).</p>
+
+
+    <p>CSS2 also introduced the <a title="allows elements to be matched on the basis of their languages" href="http://reference.sitepoint.com/css/pseudoclass-lang"><code class="cssselector">:lang</code></a>
+    pseudo-class to allow an element to be matched on the basis of its
+    language, and the <a title="matches any element that’s the first child element of its parent" href="http://reference.sitepoint.com/css/pseudoclass-firstchild"><code class="cssselector">:first-child</code></a>
+    pseudo-class to match an element that’s the first child element of its
+    parent.</p>
+
+
+    <p>CSS3 promises an even <a title="" href="http://reference.sitepoint.com/css/css3psuedoclasses">greater range
+    of powerful pseudo-classes</a>.</p>
+
+
+    <p>Remember that pseudo-classes, like <a title="matches an element with a specific id attribute value" href="http://reference.sitepoint.com/css/idselector">ID
+    selectors</a> and <a title="selects elements based on attribute values" href="http://reference.sitepoint.com/css/attributeselector">attribute
+    selectors</a>, act like modifiers on <a title="matches elements with the specified element type name" href="http://reference.sitepoint.com/css/elementtypeselector">type selectors</a> and the <a title="matches any element type" href="http://reference.sitepoint.com/css/universalselector">universal selector</a>: they specify
+    additional constraints for the selector pattern, but they don’t specify
+    other elements. For instance, the selector
+    <code class="cssselector">li:first-child</code> matches a list item that’s the
+    first child of its parent; it <em>doesn’t</em> match the first child of a
+    list item.</p>
+
+
+    <p>A simple selector can contain more than one pseudo-class if the
+    pseudo-classes aren’t mutually exclusive. For example, the selectors
+    <code class="cssselector">a:link:hover</code> and
+    <code class="cssselector">a:visited:hover</code> are valid, but
+    <code class="cssselector">a:link:visited</code> isn’t because
+    <code class="cssselector">:link</code> and <code class="cssselector">:visited</code>
+    are mutually exclusive. An element is either an unvisited link or a
+    visited link.</p>
+
+
+    <p>The order of declaration is very important for the dynamic
+    pseudo-classes <code class="cssselector">:hover</code>,
+    <code class="cssselector">:focus</code>, and <code class="cssselector">:active</code>,
+    depending on what you wish to achieve. The most commonly desired behavior
+    for links is as follows:</p>
+
+
+    <pre><code class="css">a:link {
+  ⋮ <span>declarations</span>
+}
+a:visited {
+  ⋮ <span>declarations</span>
+}
+a:focus {
+  ⋮ <span>declarations</span>
+}
+a:hover {
+  ⋮ <span>declarations</span>
+}
+a:active {
+  ⋮ <span>declarations</span>
+}</code></pre>
+
+
+    <div class="admonition tip"><div class="notetitle"><strong>Tip: </strong>Dynamic Pseudo-class Mnemonics</div>
+
+      
+
+      <p>Several mnemonics have been devised to help us remember this order,
+      including “LoVe Frogs HAppy,” “Las Vegas Fights Hell’s Angels,” and—for
+      the <cite>Star Wars</cite> fans—“Lord Vader, Former Handle Anakin.”</p>
+
+    </div>
+
+
+    <p>The <code class="cssselector">:link</code> and
+    <code class="cssselector">:visited</code> pseudo-classes should generally come
+    first.<a name="fnsrc_1" href="http://reference.sitepoint.com/css/pseudoclasses#fntarg_1" class="fnref" id="fnsrc_1"><sup>1</sup></a> Next should be <code class="cssselector">:focus</code>
+    and <code class="cssselector">:hover</code>—they’re specified now so that they
+    override and apply to both visited and unvisited links. If
+    <code class="cssselector">:focus</code> precedes
+    <code class="cssselector">:hover</code>, the hover effect will apply to links
+    with keyboard input focus. The <code class="cssselector">:active</code>
+    pseudo-class should always come last, since we usually want to indicate
+    clearly any links that have been activated.</p>
+
+
+    <p>This isn’t the only useful order, nor is it in any way the “right”
+    order. The order in which you specify your pseudo-classes will depend on
+    the effects you want to show with different combinations of states. It’s
+    possible, for instance, that you might want to have different hover or
+    focus effects on visited and unvisited links. In that case, you could
+    combine pseudo-classes: <code class="cssselector">a:link:hover</code>.</p>
+
+
+    <p>If you want to apply special styling to the hover state of a link that
+    also has keyboard input focus, use
+    <code class="cssselector">a:focus:hover</code>.</p>
+
+  </div>
+
+<div><h2>In this Section</h2>
+<ol class="childlinks">
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/pseudoclass-link">:link</a><br>
+matches link elements that are unvisited</li>
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/pseudoclass-visited">:visited</a><br>
+matches link elements that have been visited</li>
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/pseudoclass-active">:active</a><br>
+matches any element that’s being activated by the user</li>
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/pseudoclass-hover">:hover</a><br>
+matches elements that are being designated by a pointing device</li>
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/pseudoclass-focus">:focus</a><br>
+matches any element that’s currently in focus</li>
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/pseudoclass-firstchild">:first-child</a><br>
+matches any element that’s the first child element of its parent</li>
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/pseudoclass-lang">:lang(C)</a><br>
+allows elements to be matched on the basis of their languages</li>
+<li class="olchildlink"><a href="http://reference.sitepoint.com/css/css3psuedoclasses">CSS3 Pseudo-classes</a><br>
+</li>
+</ol>
+</div>
+<div class="footnotes"><h2>Footnotes</h2><p><a class="fn" name="fntarg_1" href="http://reference.sitepoint.com/css/pseudoclasses#fnsrc_1" id="fntarg_1"><sup>1</sup></a>  For a discussion about the pros and cons of different
+    pseudo-class orders, see <a title="" href="http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states/">http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states/</a>.</p></div>
+</div>
+<div class="familylinks"><h2 class="structural-label">Previous / Next page</h2><ol><li class="previouslink"><a href="http://reference.sitepoint.com/css/generalsiblingselector" title="Previous page: General Sibling Selector"><span></span>
+			Previous
+		</a></li>
+<li class="nextlink"><a href="http://reference.sitepoint.com/css/pseudoclass-link" title="Next page: :link"><span></span>
+			Next
+		</a></li>
+</ol></div><div class="related"></div></div>
+
+					<div id="usernotes" class="usernotes">
+						<h2>User-contributed notes</h2>
+
+
+	
+		
+				<div id="usernote1196" class="note typo">
+					<dl class="noteinfo">
+						<dt class="noteid">ID: </dt>
+						<dd class="noteid"><a href="http://reference.sitepoint.com/css/pseudoclasses#usernote1196">#5</a></dd>
+						<dt class="author">Contributed: </dt>
+						<dd class="author">by <a href="http://reference.sitepoint.com/users/197945">Louis Lazaris</a></dd>
+						<dt class="date">Date: </dt>
+						<dd class="date"><span class="sitepoint-datetime">Thu, 14 Jul 2011 16:43:09 GMT</span></dd>
+																	</dl>
+                    <div class="notecontent"><span></span>
+                        <p>In the left-hand tree menu navigation, in the list of CSS3 pseudo-classes, the ":checked" class is called ":checked Pseudo-class". This seems inconsistent, as none of the other pseudo-classes are listed like that. For example, it doesn't say ":last-child Pseudo-class", it just says ":last-child".</p>                    </div>
+				</div>
+
+			
+	
+		
+				
+			
+	
+		
+				
+			
+	
+		
+				
+			
+	
+		
+				
+			
+	
+
+
+					</div>
+				</div>
+			</div>
+			<div id="adzcolumn">
+				<h2 class="structural-label">Related Products</h2>
+<div id="adzbannerCustom">
+<div style="padding-bottom:10px;"><!-- Reference_CSS_300x250 -->
+<div id="div-gpt-ad-1343690131663-0" style="width:300px; height:250px;">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1343690131663-0'); });
+</script><div id="google_ads_iframe_/7448792/Reference_CSS_300x250_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Reference_CSS_300x250_0" name="google_ads_iframe_/7448792/Reference_CSS_300x250_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/7448792/Reference_CSS_300x250_0__hidden__" name="google_ads_iframe_/7448792/Reference_CSS_300x250_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe>
+</div></div>
+	<!-- Ref_300x250_Low -->
+	<div id="div-gpt-ad-1368745521411-0" style="width:300px; height:250px; padding-bottom:10px;">
+		<script type="text/javascript">
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1368745521411-0'); });
+		</script><div id="google_ads_iframe_/7448792/Ref_300x250_Low_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Ref_300x250_Low_0" name="google_ads_iframe_/7448792/Ref_300x250_Low_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div>
+	</div>
+</div>
+
+			</div>
+		</div>
+
+		<div id="navpanel">
+			<h2>SitePoint CSS Reference » Learn CSS3 | Cheat Sheet | CSS Tutorial | Selectors | Properties
+ Index</h2>
+			
+<div id="index">
+<h3 class="hasmenu"><span><a href="http://reference.sitepoint.com/css/propertyref" title="CSS Properties">CSS Properties</a><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu33" class="twisty" title="Click to open">...</a></span></h3>
+
+<ul id="navpanel-menu33"><li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu0" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/boxproperties" title="Box Properties">Box Properties</a></span>
+<ul id="navpanel-menu0"><li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu1" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/dimensions" title="Dimensions">Dimensions</a></span>
+<ul id="navpanel-menu1"><li><span><a href="http://reference.sitepoint.com/css/height" title="height">height</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/min-height" title="min-height">min-height</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/max-height" title="max-height">max-height</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/width" title="width">width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/min-width" title="min-width">min-width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/max-width" title="max-width">max-width</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu2" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/margins" title="Margins">Margins</a></span>
+<ul id="navpanel-menu2"><li><span><a href="http://reference.sitepoint.com/css/margin-top" title="margin-top">margin-top</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/margin-right" title="margin-right">margin-right</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/margin-bottom" title="margin-bottom">margin-bottom</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/margin-left" title="margin-left">margin-left</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/margin" title="margin">margin</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu3" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/paddinglayout" title="Padding">Padding</a></span>
+<ul id="navpanel-menu3"><li><span><a href="http://reference.sitepoint.com/css/padding-top" title="padding-top">padding-top</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/padding-right" title="padding-right">padding-right</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/padding-bottom" title="padding-bottom">padding-bottom</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/padding-left" title="padding-left">padding-left</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/padding" title="padding">padding</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu4" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/bordersoutlines" title="Borders and Outlines">Borders and Outlines</a></span>
+<ul id="navpanel-menu4"><li><span><a href="http://reference.sitepoint.com/css/border-top-color" title="border-top-color">border-top-color</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-top-style" title="border-top-style">border-top-style</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-top-width" title="border-top-width">border-top-width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-top" title="border-top">border-top</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-right-color" title="border-right-color">border-right-color</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-right-style" title="border-right-style">border-right-style</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-right-width" title="border-right-width">border-right-width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-right" title="border-right">border-right</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-bottom-color" title="border-bottom-color">border-bottom-color</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-bottom-style" title="border-bottom-style">border-bottom-style</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-bottom-width" title="border-bottom-width">border-bottom-width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-bottom" title="border-bottom">border-bottom</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-left-color" title="border-left-color">border-left-color</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-left-style" title="border-left-style">border-left-style</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-left-width" title="border-left-width">border-left-width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-left" title="border-left">border-left</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-color" title="border-color">border-color</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-style" title="border-style">border-style</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-width" title="border-width">border-width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border" title="border">border</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/outline-color" title="outline-color">outline-color</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/outline-style" title="outline-style">outline-style</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/outline-width" title="outline-width">outline-width</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/outline" title="outline">outline</a></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu5" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/layout" title="Layout Properties">Layout Properties</a></span>
+<ul id="navpanel-menu5"><li><span><a href="http://reference.sitepoint.com/css/display" title="display">display</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/position" title="position">position</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/float" title="float">float</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/clear" title="clear">clear</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/visibility" title="visibility">visibility</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/top" title="top">top</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/right" title="right">right</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/bottom" title="bottom">bottom</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/left" title="left">left</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/z-index" title="z-index">z-index</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/overflow" title="overflow">overflow</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/clip" title="clip">clip</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu6" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/listproperties" title="List Properties">List Properties</a></span>
+<ul id="navpanel-menu6"><li><span><a href="http://reference.sitepoint.com/css/list-style-type" title="list-style-type">list-style-type</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/list-style-position" title="list-style-position">list-style-position</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/list-style-image" title="list-style-image">list-style-image</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/list-style" title="list-style">list-style</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu7" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/tableproperties" title="Table Properties">Table Properties</a></span>
+<ul id="navpanel-menu7"><li><span><a href="http://reference.sitepoint.com/css/table-layout" title="table-layout">table-layout</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-collapse" title="border-collapse">border-collapse</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/border-spacing" title="border-spacing">border-spacing</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/empty-cells" title="empty-cells">empty-cells</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/caption-side" title="caption-side">caption-side</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu8" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/colorsbackgrounds" title="Color and Backgrounds">Color and Backgrounds</a></span>
+<ul id="navpanel-menu8"><li><span><a href="http://reference.sitepoint.com/css/background-color" title="background-color">background-color</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/background-image" title="background-image">background-image</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/background-repeat" title="background-repeat">background-repeat</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/background-position" title="background-position">background-position</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/background-attachment" title="background-attachment">background-attachment</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/background" title="background">background</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/color" title="color">color</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu9" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/typography" title="Typographical Properties">Typographical Properties</a></span>
+<ul id="navpanel-menu9"><li><span><a href="http://reference.sitepoint.com/css/font-family" title="font-family">font-family</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/font-size" title="font-size">font-size</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/font-weight" title="font-weight">font-weight</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/font-style" title="font-style">font-style</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/font-variant" title="font-variant">font-variant</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/font" title="font">font</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/letter-spacing" title="letter-spacing">letter-spacing</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/word-spacing" title="word-spacing">word-spacing</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/line-height" title="line-height">line-height</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/text-align" title="text-align">text-align</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/text-decoration" title="text-decoration">text-decoration</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/text-indent" title="text-indent">text-indent</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/text-transform" title="text-transform">text-transform</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/text-shadow" title="text-shadow">text-shadow</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/vertical-align" title="vertical-align">vertical-align</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/white-space" title="white-space">white-space</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/direction" title="direction">direction</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/unicode-bidi" title="unicode-bidi">unicode-bidi</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu10" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/generatedcontent" title="Generated Content">Generated Content</a></span>
+<ul id="navpanel-menu10"><li><span><a href="http://reference.sitepoint.com/css/content" title="content">content</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/counter-increment" title="counter-increment">counter-increment</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/counter-reset" title="counter-reset">counter-reset</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/quotes" title="quotes">quotes</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu11" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/userinterface" title="User Interface Properties">User Interface Properties</a></span>
+<ul id="navpanel-menu11"><li><span><a href="http://reference.sitepoint.com/css/cursor" title="cursor">cursor</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu12" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/pagedmedia" title="Paged Media Properties">Paged Media Properties</a></span>
+<ul id="navpanel-menu12"><li><span><a href="http://reference.sitepoint.com/css/page-break-before" title="page-break-before">page-break-before</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/page-break-inside" title="page-break-inside">page-break-inside</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/page-break-after" title="page-break-after">page-break-after</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/orphans" title="orphans">orphans</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/widows" title="widows">widows</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu13" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/vendorspecific" title="Vendor-specific Properties">Vendor-specific Properties</a></span>
+<ul id="navpanel-menu13"><li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu14" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/mozextensions" title="Mozilla Extensions">Mozilla Extensions</a></span>
+<ul id="navpanel-menu14"><li><span><a href="http://reference.sitepoint.com/css/moz-border-radius" title="-moz-border-radius">-moz-border-radius</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/moz-box-sizing" title="-moz-box-sizing">-moz-box-sizing</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/moz-inline-box" title="The display Property Value: -moz-inline-box">The display Property Value: -moz-inline-box</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu15" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/ieextentions" title="Internet Explorer Extensions">Internet Explorer Extensions</a></span>
+<ul id="navpanel-menu15"><li><span><a href="http://reference.sitepoint.com/css/zoom" title="zoom">zoom</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/filter" title="filter">filter</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/behavior" title="behavior">behavior</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/expression" title="The expression Property Value">The expression Property Value</a></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span><a href="http://reference.sitepoint.com/css/properties-alphabetic" title="Alphabetic Property Index">Alphabetic Property Index</a></span></li>
+</ul>
+<h3 class="containsactive hasmenu"><span><a href="http://reference.sitepoint.com/css/selectorref" title="CSS Selectors (this section)">CSS Selectors</a><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu34" class="twisty open" title="Click to close">...</a></span></h3>
+
+<ul class="containsactive" id="navpanel-menu34" style="display: block;"><li><span><a href="http://reference.sitepoint.com/css/universalselector" title="Universal Selector">Universal Selector</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/elementtypeselector" title="Element Type Selector">Element Type Selector</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/classselector" title="Class Selector">Class Selector</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/idselector" title="ID Selector">ID Selector</a></span></li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu16" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/attributeselector" title="Attribute Selector">Attribute Selector</a></span>
+<ul id="navpanel-menu16"><li><span><a href="http://reference.sitepoint.com/css/css3attributeselectors" title="CSS3 Attribute Selectors">CSS3 Attribute Selectors</a></span></li>
+</ul>
+</li>
+<li><span><a href="http://reference.sitepoint.com/css/selectorgrouping" title="Selector Grouping">Selector Grouping</a></span></li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu17" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/combinators" title="Combinators">Combinators</a></span>
+<ul id="navpanel-menu17"><li><span><a href="http://reference.sitepoint.com/css/descendantselector" title="Descendant Selector">Descendant Selector</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/childselector" title="Child Selector">Child Selector</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/adjacentsiblingselector" title="Adjacent Sibling Selector">Adjacent Sibling Selector</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/generalsiblingselector" title="General Sibling Selector">General Sibling Selector</a></span></li>
+</ul>
+</li>
+<li class="active hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu18" class="twisty open" title="Click to close">...</a><a href="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties.html" title="Pseudo-classes (this page)">Pseudo-classes</a></span>
+<em> (you are here)</em><ul id="navpanel-menu18" style="display: block;"><li><span><a href="http://reference.sitepoint.com/css/pseudoclass-link" title=":link">:link</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-visited" title=":visited">:visited</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-active" title=":active">:active</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-hover" title=":hover">:hover</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-focus" title=":focus">:focus</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-firstchild" title=":first-child">:first-child</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-lang" title=":lang(C)">:lang(C)</a></span></li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu19" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/css3psuedoclasses" title="CSS3 Pseudo-classes">CSS3 Pseudo-classes</a></span>
+<ul id="navpanel-menu19"><li><span><a href="http://reference.sitepoint.com/css/pseudoclass-nthchild" title=":nth-child(N)">:nth-child(N)</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-nthlastchild" title=":nth-last-child(N)">:nth-last-child(N)</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-nthoftype" title=":nth-of-type(N)">:nth-of-type(N)</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-nthlastoftype" title=":nth-last-of-type(N)">:nth-last-of-type(N)</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/understandingnthchildexpressions" title="Understanding :nth-child Pseudo-class Expressions">Understanding :nth-child Pseudo-class Expressions</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-lastchild" title=":last-child">:last-child</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-firstoftype" title=":first-of-type">:first-of-type</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-lastoftype" title=":last-of-type">:last-of-type</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-onlychild" title=":only-child">:only-child</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-onlyoftype" title=":only-of-type">:only-of-type</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-root" title=":root">:root</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-empty" title=":empty">:empty</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-target" title=":target">:target</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-enabled" title=":enabled">:enabled</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-disabled" title=":disabled">:disabled</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-checked" title=":checked Pseudo-class">:checked Pseudo-class</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoclass-not" title=":not(S)">:not(S)</a></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu20" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/pseudoelements" title="Pseudo-elements">Pseudo-elements</a></span>
+<ul id="navpanel-menu20"><li><span><a href="http://reference.sitepoint.com/css/pseudoelement-firstletter" title=":first-letter">:first-letter</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoelement-firstline" title=":first-line">:first-line</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoelement-before" title=":before">:before</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoelement-after" title=":after">:after</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/pseudoelement-selection" title="::selection">::selection</a></span></li>
+</ul>
+</li>
+</ul>
+<h3 class="hasmenu"><span><a href="http://reference.sitepoint.com/css/atrulesref" title="CSS At-rules">CSS At-rules</a><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu35" class="twisty" title="Click to open">...</a></span></h3>
+
+<ul id="navpanel-menu35"><li><span><a href="http://reference.sitepoint.com/css/at-charset" title="@charset">@charset</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/at-import" title="@import">@import</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/at-media" title="@media">@media</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/at-page" title="@page">@page</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/at-fontface" title="@font-face">@font-face</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/at-namespace" title="@namespace">@namespace</a></span></li>
+</ul>
+<h3 class="hasmenu"><span><a href="http://reference.sitepoint.com/css/concepts" title="CSS Concepts">CSS Concepts</a><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu36" class="twisty" title="Click to open">...</a></span></h3>
+
+<ul id="navpanel-menu36"><li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu21" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/css" title="What Is CSS?">What Is CSS?</a></span>
+<ul id="navpanel-menu21"><li><span><a href="http://reference.sitepoint.com/css/csshistory" title="CSS Versions">CSS Versions</a></span></li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu22" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/linkingcss" title="Linking CSS to a Web Document">Linking CSS to a Web Document</a></span>
+<ul id="navpanel-menu22"><li><span><a href="http://reference.sitepoint.com/css/mediaqueries" title="Media Queries">Media Queries</a></span></li>
+</ul>
+</li>
+<li><span><a href="http://reference.sitepoint.com/css/doctypesniffing" title="Standards Mode, Quirks Mode, and Doctype Sniffing">Standards Mode, Quirks Mode, and Doctype Sniffing</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu23" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/syntax" title="General Syntax and Nomenclature">General Syntax and Nomenclature</a></span>
+<ul id="navpanel-menu23"><li><span><a href="http://reference.sitepoint.com/css/statements" title="Statements">Statements</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/atrules" title="At-rules">At-rules</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/rulesets" title="Rule Sets">Rule Sets</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/selectors" title="Selectors">Selectors</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/declarationblocks" title="Declaration Blocks">Declaration Blocks</a></span></li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu24" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/declarations" title="Declarations, Properties, and Values">Declarations, Properties, and Values</a></span>
+<ul id="navpanel-menu24"><li><span><a href="http://reference.sitepoint.com/css/keywords" title="Keywords">Keywords</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/lengthunits" title="Lengths and Units">Lengths and Units</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/percentages" title="Percentages">Percentages</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/colorvalues" title="Colors">Colors</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/numbers" title="Numbers">Numbers</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/strings" title="Strings">Strings</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/uris" title="URIs">URIs</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/defaultvalues" title="Initial Values">Initial Values</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/shorthandproperties" title="Shorthand Properties">Shorthand Properties</a></span></li>
+</ul>
+</li>
+<li><span><a href="http://reference.sitepoint.com/css/comments" title="CSS Comments">CSS Comments</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/identifiers" title="CSS Identifiers">CSS Identifiers</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/cssescapenotation" title="CSS Escape Notation">CSS Escape Notation</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/syntaxerrors" title="CSS Syntax Errors">CSS Syntax Errors</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu25" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/inheritancecascade" title="The Cascade, Specificity, and Inheritance">The Cascade, Specificity, and Inheritance</a></span>
+<ul id="navpanel-menu25"><li><span><a href="http://reference.sitepoint.com/css/cascade" title="The Cascade">The Cascade</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/importantdeclarations" title="!important Declarations">!important Declarations</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/specificity" title="Specificity">Specificity</a></span></li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu26" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/inheritance" title="Inheritance">Inheritance</a></span>
+<ul id="navpanel-menu26"><li><span><a href="http://reference.sitepoint.com/css/inheritvalue" title="The CSS Property Value inherit">The CSS Property Value inherit</a></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu27" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/csslayout" title="CSS Layout and Formatting">CSS Layout and Formatting</a></span>
+<ul id="navpanel-menu27"><li><span><a href="http://reference.sitepoint.com/css/viewport" title="The Viewport, the Page Box, and the Canvas">The Viewport, the Page Box, and the Canvas</a></span></li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu28" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/boxmodel" title="The CSS Box Model">The CSS Box Model</a></span>
+<ul id="navpanel-menu28"><li><span><a href="http://reference.sitepoint.com/css/containingblock" title="Containing Block">Containing Block</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/collapsingmargins" title="Collapsing Margins">Collapsing Margins</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/ie5boxmodel" title="The Internet Explorer 5 Box Model">The Internet Explorer 5 Box Model</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/haslayout" title="The Internet Explorer hasLayout Property">The Internet Explorer hasLayout Property</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu29" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/formattingcontext" title="Formatting Concepts">Formatting Concepts</a></span>
+<ul id="navpanel-menu29"><li><span><a href="http://reference.sitepoint.com/css/blockformatting" title="Block Formatting">Block Formatting</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/inlineformatting" title="Inline Formatting">Inline Formatting</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/listformatting" title="List Formatting">List Formatting</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/tableformatting" title="Table Formatting">Table Formatting</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/replacedelements" title="Replaced Elements">Replaced Elements</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu30" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/positioning" title="Positioning">Positioning</a></span>
+<ul id="navpanel-menu30"><li><span><a href="http://reference.sitepoint.com/css/relativepositioning" title="Relative Positioning">Relative Positioning</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/absolutepositioning" title="Absolute Positioning">Absolute Positioning</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/fixedpositioning" title="Fixed Positioning">Fixed Positioning</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/stacking" title="Stacking Contexts">Stacking Contexts</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/floatclear" title="Floating and Clearing">Floating and Clearing</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/displaypositionfloat" title="The Relationship Between display, position, and float">The Relationship Between display, position, and float</a></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu31" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/workaroundsfiltershacks" title="Workarounds, Filters, and Hacks">Workarounds, Filters, and Hacks</a></span>
+<ul id="navpanel-menu31"><li><span><a href="http://reference.sitepoint.com/css/conditionalcomments" title="Internet Explorer Conditional Comments">Internet Explorer Conditional Comments</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/workaroundsfilters" title="Workarounds and Filters">Workarounds and Filters</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/hacks" title="CSS Hacks">CSS Hacks</a></span></li>
+</ul>
+</li>
+<li class="hasmenu"><span><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu32" class="twisty" title="Click to open">...</a><a href="http://reference.sitepoint.com/css/htmlxhtml" title="Differences Between HTML and XHTML">Differences Between HTML and XHTML</a></span>
+<ul id="navpanel-menu32"><li><span><a href="http://reference.sitepoint.com/css/mimetypes" title="MIME Types">MIME Types</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/casesensitivity" title="Case Sensitivity">Case Sensitivity</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/optionaltags" title="Optional Tags">Optional Tags</a></span></li>
+<li><span><a href="http://reference.sitepoint.com/css/rootelementproperties" title="Root Element Properties">Root Element Properties</a></span></li>
+</ul>
+</li>
+</ul>
+<h3><span><a href="http://reference.sitepoint.com/css/demos">
+					CSS
+				 Examples</a></span></h3><h3 class="hasmenu"><span><strong>CSS Tools</strong><a href="http://reference.sitepoint.com/css/pseudoclasses#navpanel-menu37" class="twisty" title="Click to open">...</a></span></h3><ul id="navpanel-menu37"><li><span><a href="http://tools.sitepoint.com/codeburner/">CodeBurner</a></span></li></ul></div>
+			<script src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/foldertree.js" type="text/javascript"></script>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Ref_728x90_Low -->
+<div id="div-gpt-ad-1368745396842-0" style="width:728px; height:90px; margin-left: auto; margin-right: auto; padding-bottom: 10px;">
+	<script type="text/javascript">
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1368745396842-0'); });
+	</script><div id="google_ads_iframe_/7448792/Ref_728x90_Low_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Ref_728x90_Low_0" name="google_ads_iframe_/7448792/Ref_728x90_Low_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div>
+</div>
+
+
+
+<footer class="site-footer">
+
+    <div class="row">
+
+    <ul class="footer-links">
+        <li class="foot-link_item">
+            <h3>About</h3>
+        </li>
+        <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/about-us/">About us</a>
+        </li>
+        <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/advertising">Advertise</a>
+        </li>
+        <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/legals">Legals</a>
+        </li>
+        <li class="foot-link_item">
+            <a href="mailto:feedback@sitepoint.com">Feedback</a>
+        </li>
+    </ul>
+
+    <ul class="footer-links">
+        <li class="foot-link_item">
+            <h3>Our Sites</h3>
+        </li>
+        <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/" target="_blank">SitePoint</a>
+        </li>
+        <li class="foot-link_item">
+            <a href="http://www.learnable.com/" target="_blank">Learnable</a>
+        </li>
+        <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/forums/" target="_blank">Forums</a>
+        </li>
+    </ul>
+
+    <ul class="footer-links">
+        <li class="foot-link_item">
+            <h3>Connect</h3>
+        </li>
+        <li class="foot-link_item foot-link_item--icons">
+            <a href="http://www.sitepoint.com/newsletter"><i class="icon-newsletter icon-blocks icon-blocks--newsletter"></i></a>
+            <a href="https://www.facebook.com/sitepoint" target="_blank"><i class="icon-facebook icon-blocks icon-blocks--facebook"></i></a>
+            <a href="http://twitter.com/sitepointdotcom" target="_blank"><i class="icon-twitter icon-blocks icon-blocks--twitter"></i></a>
+        </li>
+    </ul>
+
+    </div>
+
+</footer>
+
+
+
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30131-1']);
+        _gaq.push(['_setDomainName', '.sitepoint.com']);
+        _gaq.push(['_setCustomVar', 1, 'Context', 'Reference', 3]);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+<img src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/seg" width="1" height="1">
+<script type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/DateTimeHelper.js"></script>
+<script type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/convert-sitepoint-datetime.js"></script>
+<script type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/XHRHelper.js"></script>
+<script type="text/javascript" src="./Pseudo-classes » Learn CSS3   Cheat Sheet   CSS Tutorial   Selectors   Properties_files/view-single-comment.js"></script>
+
+
+</body></html>

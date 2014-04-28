@@ -1,0 +1,138 @@
+
+
+@media screen, projection, print {
+
+
+#promobar {
+  font-family: Helvetica, "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+  background: white url("http://sitepointstatic.com/frontpage/images/blue.jpg") repeat-x 48px 0px;
+  padding-bottom: 3px;
+}
+
+#promobar div#inner {
+  width: 960px;
+  height: 48px;
+  margin: 0 auto 0px auto;
+  position: relative;
+}
+#plunger {
+    background: transparent url("http://sitepointstatic.com/frontpage/images/plunger.png") 0px 0px repeat-y;
+    position: relative;
+    float:left;
+    width:140px;
+    height:58px;
+    margin: 0 0 -10px -20px
+}
+
+
+
+#promobar div#inner span#pitchtitle2 { /* GIVEAWAY TIME */
+	color:#fff;
+	text-shadow:0px 0px 5px #000000;
+	font-weight:700;
+	font-size:14px;
+	display:block;
+	margin: 7px 0 0 0px;
+	text-transform:uppercase;
+	float:left;
+	}
+
+#promobar div#inner span#pitchdesc2{  /* css crashcourse  */
+	display:block;
+	color:#fff;
+        text-transform:uppercase;
+	font-size:14px;
+	font-weight:700;
+	margin: 7px 0 0 0px;
+	float:left;
+	padding: 0 20px 0 0px;
+	
+        text-shadow:0px 0px 5px #000000;
+
+	
+}
+#pitchdesc2 a:link, #pitchdesc2 a:visited {
+	text-decoration:none;
+	color:#fff;
+}
+#pitchdesc2 a:hover{
+	color:#ffe;
+}
+
+#pitchdesc  a, #limited a  {
+	text-transform:uppercase;
+	color:#fff;	
+	text-decoration:none;
+	text-shadow: 0px 0px 5px #300;
+	letter-spacing:-.5px
+	}
+
+
+a#close_button:link, a#close_button:visited {
+  background-position: bottom left;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  color: #fff
+}
+
+
+a#close_button:hover {
+	background-position:top left;
+	color:#fff;
+	}
+	
+#dontshow {
+	margin:0 0 0 0;
+	display:none
+	}
+#dontshow a{
+	font-size:12px;
+	color:#ffffcc;
+	text-decoration:none;
+	}
+p#close{
+	margin:0px 0 0 0;
+	border:1px solid #000
+	}
+p#close a{
+	font-size:13px;
+	font-weight:700;
+	color:#ffffcc;
+	text-decoration:none
+	}
+#guidance {
+        margin-top:5px;
+        
+}
+
+a#clickhere {
+  z-index:100;
+  width:125px;
+  height:45px;
+  display:block;
+  -webkit-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  -ms-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  transform:rotate(-6deg);
+  position:absolute;
+  left:577px;
+  top:17px;
+}
+
+a#closepb {
+  position:absolute;  
+  right:3px;
+  z-index:105;
+  text-decoration:none;
+}
+
+a#closepb img {
+  height:30px;
+  width:30px;
+}
+
+
+}
+

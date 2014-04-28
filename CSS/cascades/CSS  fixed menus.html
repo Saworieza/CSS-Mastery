@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- saved from url=(0050)http://www.w3.org/Style/Examples/007/menus.en.html -->
+<html lang="en"><head profile="http://www.w3.org/2006/03/hcard"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CSS: fixed menus</title>
+
+  
+  <meta content="width=device-width" name="viewport">
+  <link href="http://www.w3.org/Style/CSS/w3c-2010/main" media="screen, handheld, projection, tv" rel="stylesheet" title="Main">
+  <link href="http://www.w3.org/Style/CSS/floatspan-n" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade">
+  <link href="http://www.w3.org/Style/CSS/daily-color" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade">
+  <link href="http://www.w3.org/Style/CSS/floatspan" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade (older browsers)">
+  <link href="http://www.w3.org/Style/CSS/daily-color" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade (older browsers)">
+  <link href="http://www.w3.org/Style/CSS/asymmetric" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Asymmetric">
+  <link href="http://www.w3.org/Style/CSS/draft" media="screen, projection, tv" rel="alternate stylesheet" title="Draft 3">
+  <link href="http://www.w3.org/Style/CSS/draft-rg" media="screen, projection, tv" rel="alternate stylesheet" title="Draft 2">
+  <link href="http://www.w3.org/Style/CSS/twocolumn-print" media="print" rel="stylesheet">
+  <link href="http://www.w3.org/" rel="home" title="W3C">
+  <link href="http://www.w3.org/Style/CSS/" rel="top" title="CSS">
+  <link href="http://www.w3.org/Style/CSS/" rel="first" title="CSS">
+  <link href="http://www.w3.org/Style/CSS/Planet/" rel="last" title="The Future Of CSS (syndicator)">
+  <link href="http://www.w3.org/Style/CSS/current-work" rel="chapter" title="Roadmap">
+  <link href="http://www.w3.org/Style/Examples/007/" rel="chapter" title="Examples">
+  <link href="http://www.w3.org/Consortium/activities" rel="bookmark" title="Activities">
+  <link href="http://www.w3.org/TR/" rel="bookmark" title="Tech. reports">
+  <link href="http://www.w3.org/Consortium/Translation/" rel="bookmark" title="Translations">
+  <link href="http://www.w3.org/Status" rel="bookmark" title="Software">
+  <link href="http://www.w3.org/Consortium/siteindex" rel="index" title="Site index">
+  <link href="http://search.w3.org/" rel="search" title="Search">
+  <link href="http://www.w3.org/Consortium/Legal/ipr-notice.html#Copyright" rel="copyright" title="Copyright">
+  <style type="text/css">
+  #menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin: -2.5em 0 0 0;
+    z-index: 5;
+    background: hsla(80, 90%, 40%, 0.7);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-align: left;
+    border: solid hsla(80, 90%, 40%, 0.5);
+    border-right: none;
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    box-shadow: 0 1px 3px black;
+    border-radius: 3em 0.5em 0.5em 3em;
+  }
+  #menu li { margin: 0 }
+  #menu a { color: inherit }
+
+  /* Make menu absolute, not fixed, on IE 5 & 6 */
+  #menu { position: absolute }
+  *>#menu { position: fixed }
+
+  p.stb { text-indent: 0; margin-top: 0.83em }
+  p.mtb { text-indent: 0; margin-top: 2.17em }
+  p.ltb { text-indent: 0; margin-top: 3.08em }
+</style>
+  <link href="http://www.w3.org/Style/Examples/007/" rel="up" title="Tips &amp; tricks">
+  <link href="http://www.w3.org/Style/Examples/007/figures" rel="prev" title="Captions">
+  <link href="http://www.w3.org/Style/Examples/007/indent" rel="next" title="Indent">
+  <link href="http://www.carionltd.com/Style/Example007/menus.html" hreflang="az" rel="alternate" title="Azərbaycan">
+  <link href="http://dichev.com/Style/Examples/007/menus/" hreflang="bg" rel="alternate" title="Български">
+  <link href="http://www.ich-lerne-css.de/Style/Examples/007/menus.html" hreflang="de" rel="alternate" title="Deutsch">
+  <link href="http://www.greekcom.org/Style/Examples/007/menus.htm" hreflang="el" rel="alternate" title="Ελληνικά">
+  <link href="./CSS  fixed menus_files/CSS  fixed menus.html" hreflang="en" rel="alternate" title="English">
+  <link href="http://www.spanish-translator-services.com/espanol/t/007/menus.html" hreflang="es" rel="alternate" title="Español">
+  <link href="http://www.w3.org/Style/Examples/007/menus.fr.html" hreflang="fr" rel="alternate" title="Français">
+  <link href="http://www.accountzen.com/007/menus.html" hreflang="hr" rel="alternate" title="Hrvatski">
+  <link href="http://www.erasparsa.com/w3/Style/Examples/007/menus/" hreflang="id" rel="alternate" title="Bahasa Indonesia">
+  <link href="http://www.raggiorosso.com/Style/Examples/007/menus.html" hreflang="it" rel="alternate" title="Italiano">
+  <link href="http://www.bjornenki.com/articles/w3_style_examples_007_menus" hreflang="nb" rel="alternate" title="Norsk">
+  <link href="http://www.w3.org/Style/Examples/007/menus.nl.html" hreflang="nl" rel="alternate" title="Nederlands">
+  <link href="http://www.tlumaczenia-angielski.info/w3c/css/menus.html" hreflang="pl" rel="alternate" title="Polski">
+  <link href="http://www.maujor.com/w3ctuto/pinned.html" hreflang="pt-br" rel="alternate" title="Português brasileiro">
+  <link href="http://www.internetbootcamp.net/007/menus" hreflang="pt-pt" rel="alternate" title="Português">
+  <link href="http://html-ro.appspot.com/Style/Examples/007/menus.html" hreflang="ro" rel="alternate" title="Română">
+  <link href="http://www.indeep76.com/Style/Example007/menus.html" hreflang="ru" rel="alternate" title="Русский">
+  <link href="http://css-al.com/menus.htm" hreflang="sq" rel="alternate" title="Shqip">
+  <link href="http://www.codingbasic.com/style/example/007/menus.html" hreflang="th" rel="alternate" title="ไทย">
+  <link href="http://tl.tz8.de/style-examples-007-menus.html" hreflang="tl" rel="alternate" title="Tagalog">
+  <link href="http://www.indeep76.com/Style/Example007ukr/menus.html" hreflang="uk" rel="alternate" title="Українська">
+  <link href="http://www.300yards.com/007/menus.html" hreflang="vi" rel="alternate" title="Tiếng Việt">
+  <link href="http://www.certifiedchinesetranslation.com/openaccess/CSS/menus.html" hreflang="zh-hans" rel="alternate" title="简体中文">
+  <link href="http://www.certifiedchinesetranslation.com/openaccess/CSS/menus-tc.html" hreflang="zh-hant" rel="alternate" title="繁體中文">
+
+ </head><body>
+  <div class="section" id="language">
+   <p><a href="http://www.w3.org/Style/Examples/007/menus.en.html#translations">Languages</a>
+  </p></div>
+
+  <h1><em>Web Style Sheets</em> CSS tips &amp; tricks</h1>
+
+  <div class="section" id="intro">
+   <p>See also the <a href="http://www.w3.org/Style/Examples/007/">index</a> of all tips.
+
+   </p><p class="stb">On this page:
+
+   </p><ul>
+    <li><a href="http://www.w3.org/Style/Examples/007/menus.en.html#L384">A pinned-down menu</a>
+
+    </li><li><a href="http://www.w3.org/Style/Examples/007/menus.en.html#details">More details</a>
+
+    </li><li><a href="http://www.w3.org/Style/Examples/007/menus.en.html#FAQ">FAQ: IE 5 &amp; 6 on Windows?</a>
+   </li></ul>
+  </div>
+
+  <ul id="menu">
+   <li><a href="http://www.w3.org/Style/Examples/007/menus.en.html#L384">Section 1</a>
+
+   </li><li><a href="http://www.w3.org/Style/Examples/007/menus.en.html#details">Section 2</a>
+
+   </li><li><a href="http://www.w3.org/Style/Examples/007/menus.en.html#FAQ">Section 3</a>
+  </li></ul>
+
+  <div class="section" id="L384">
+   <h2>A pinned-down menu</h2>
+
+   <p>The menu you see on the right on this page is simply a UL list.
+    But, it stays fixed when you scroll the page. (You may have to make
+    the window smaller to get a scroll bar first.) All the work to make
+    it stay in place is done by rules in the style sheet. Here is the
+    mark-up of the menu, it is taken straight from the source of this
+    page:
+
+   </p><pre>&lt;ul id=menu&gt;
+&lt;li&gt;&lt;a href="#L384"&gt;Section 1&lt;/a&gt;
+&lt;li&gt;&lt;a href="#details"&gt;Section 2&lt;/a&gt;
+&lt;li&gt;&lt;a href="#FAQ"&gt;Section 3&lt;/a&gt;
+&lt;/ul&gt;</pre>
+
+   <p>In a browser without CSS, or with CSS turned off, it will just be
+    a normal list with links. But with CSS, thanks to the rules below,
+    it will appear to “float” on top of the page, pinned to the
+    right side of the browser window:
+
+   </p><pre>#menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+}</pre>
+
+   <p>The interesting rule here is the '<code>position: fixed</code>',
+    that makes the DIV stay fixed on the screen. The '<code>top:
+    50%</code>' and '<code>right: 0</code>' determine where the DIV is
+    displayed, in this case: 50% down from the top of the window, and a
+    constant 0px from the right. Other properties, margins, borders,
+    colors, etc., can be added according to personal taste.
+
+   </p><p>There exist also 'left' and 'bottom' properties, to anchor the
+    element to the left or bottom of the screen.
+  </p></div>
+
+  <div class="section" id="details">
+   <h2>More details</h2>
+
+   <p>More precisely: Once an element has been fixed with
+    '<code>position: fixed</code>', the three properties 'left',
+    'width' and 'right' together determine the horizontal position and
+    size, relative to the window. (CSS uses the more general word
+    <em>viewport;</em> a window is an example of a viewport.)
+
+   </p><p>You need at most two of the three properties, i.e., left &amp;
+    width, right &amp; width, or left &amp; right. Setting just one of
+    the three, or none at all is also possible. In that case, CSS will
+    use the element's natural (“intrinsic”) size and/or position,
+    as needed, for any properties that are left at their default value
+    ('auto').
+
+   </p><p>The same holds for the trio 'top', 'height' and 'bottom'. You
+    need to set at most two of them: 'top' if you want to control the
+    distance from the top of the window, 'bottom' to control the
+    distance from the bottom, and 'height' if you want to specify a
+    fixed height.
+
+   </p><p>If you look at the actual style sheet embedded in this page, you
+    will see some additional rules that appear to contradict each
+    other. Those are there to protect against bugs in a few older
+    browsers. See <a href="http://www.w3.org/Style/Examples/007/menus.en.html#FAQ">below.</a>
+  </p></div>
+
+  <div class="section" id="FAQ">
+   <h2>FAQ: IE 5 &amp; 6 on Windows?</h2>
+
+   <p>If you look at this page with Microsoft Internet Explorer 5 or 6
+    on Windows (“WinIE5” and “WinIE6”), you'll notice that it
+    doesn't work. Many people ask me about that, so here is bit of
+    explanation. In brief: the bug is in the browser, not in this page.
+
+   </p><p>WinIE5 and WinIE6 don't implement 'fixed'. That is unfortunate,
+    but the bigger problem is that they also don't parse the 'position'
+    property correctly. A browser that doesn't know 'fixed' should
+    throw away the rule 'position: fixed' and fall back to whatever the
+    previous value of 'position' in the style sheet was. We could then
+    add 'position: absolute' just before the 'fixed' and the browser
+    would use that. But in WinIE 5 and 6 that is not what happens.
+    Apparently the keyword 'fixed' is somehow interpreted as 'static'.
+
+   </p><p>You cannot make WinIE5 and 6 support 'fixed', but there is a
+    work-around for the parsing problem. Johannes Koch alerted me to
+    this trick (from his <a href="http://w3development.de/css/hide_css_from_browsers/">collection
+    of work-arounds</a>). First replace the 'position: fixed' in the
+    style rules above by 'position: absolute' and then insert the
+    following rule in the style sheet:
+
+   </p><pre>*&gt;#intro {position: fixed}</pre>
+
+   <p>The effect of this is that browsers that know about the '&gt;'
+    (child) selector of CSS will use this rule, but browsers that
+    don't, in particular WinIE5 and WinIE6, will ignore it. The rule
+    'position: absolute' will be used instead and the menu will be in
+    the right place, except that it will not stay fixed when you
+    scroll.
+
+   </p><p>It is important that there are no spaces around the '&gt;'.
+  </p></div>
+
+  <div class="section" id="banner">
+   <h2>Site navigation</h2>
+
+   <form action="http://www.w3.org/Help/search">
+    <ul>
+     <li class="home"><a href="http://www.w3.org/" rel="home"><img alt="W3C" src="./CSS  fixed menus_files/w3c_home"></a>
+
+     </li><li><a href="http://www.w3.org/Style/CSS/">CSS home</a>
+
+     </li><li><a href="http://www.w3.org/Style/CSS/learning">Learn &amp; use</a>
+
+     </li><li><a href="http://www.w3.org/Style/CSS/software">Soft­ware</a>
+
+     </li><li><a href="http://www.w3.org/Style/CSS/current-work" title="Participate in the development of the CSS standard">Par­tic­i­pate
+      / <span title="All specifications and drafts">drafts</span></a>
+
+     </li><li class="search"><input accesskey="E" id="inputField" maxlength="255" name="q" size="10"><button accesskey="G" name="sa" type="submit"><img alt="Search" src="./CSS  fixed menus_files/search-button" title="Search"></button>
+    </li></ul>
+   </form>
+  </div>
+
+  <div class="section" id="endmatter">
+   <address class="vcard"><img alt="" class="photo" src="./CSS  fixed menus_files/bert3-small.jpg"> <a class="fn url" href="http://www.w3.org/People/Bos/">Bert Bos</a>, <span class="role">style
+    activity lead</span><br>
+    <small><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright" rel="copyright">Copyright</a> © 1994–2013 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym><sup>®</sup></a></small></address>
+
+   <p>Created 17 January 2001;<br>
+    Last updated Thu 12 Dec 2013 06:20:47 AM CET
+  </p></div>
+
+  <div class="section" id="translations">
+   <h2>Languages</h2>
+
+   <ul>
+    <li><a href="http://www.carionltd.com/Style/Example007/menus.html" hreflang="az" rel="alternate">Azərbaycan</a>
+
+    </li><li><a href="http://dichev.com/Style/Examples/007/menus/" hreflang="bg" rel="alternate">Български</a>
+
+    </li><li><a href="http://www.ich-lerne-css.de/Style/Examples/007/menus.html" hreflang="de" rel="alternate">Deutsch</a>
+
+    </li><li><a href="http://www.greekcom.org/Style/Examples/007/menus.htm" hreflang="el" rel="alternate">Ελληνικά</a>
+
+    </li><li><a href="./CSS  fixed menus_files/CSS  fixed menus.html" hreflang="en" rel="alternate">English</a>
+
+    </li><li><a href="http://www.spanish-translator-services.com/espanol/t/007/menus.html" hreflang="es" rel="alternate">Español</a>
+
+    </li><li><a href="http://www.w3.org/Style/Examples/007/menus.fr.html" hreflang="fr" rel="alternate">Français</a>
+
+    </li><li><a href="http://www.accountzen.com/007/menus.html" hreflang="hr" rel="alternate">Hrvatski</a>
+
+    </li><li><a href="http://www.erasparsa.com/w3/Style/Examples/007/menus/" hreflang="id" rel="alternate">Bahasa Indonesia</a>
+
+    </li><li><a href="http://www.raggiorosso.com/Style/Examples/007/menus.html" hreflang="it" rel="alternate">Italiano</a>
+
+    </li><li><a href="http://www.bjornenki.com/articles/w3_style_examples_007_menus" hreflang="nb" rel="alternate">Norsk</a>
+
+    </li><li><a href="http://www.w3.org/Style/Examples/007/menus.nl.html" hreflang="nl" rel="alternate">Nederlands</a>
+
+    </li><li><a href="http://www.tlumaczenia-angielski.info/w3c/css/menus.html" hreflang="pl" rel="alternate">Polski</a>
+
+    </li><li><a href="http://www.maujor.com/w3ctuto/pinned.html" hreflang="pt-br" rel="alternate">Português brasileiro</a>
+
+    </li><li><a href="http://www.internetbootcamp.net/007/menus" hreflang="pt-pt" rel="alternate">Português</a>
+
+    </li><li><a href="http://html-ro.appspot.com/Style/Examples/007/menus.html" hreflang="ro" rel="alternate">Română</a>
+
+    </li><li><a href="http://www.indeep76.com/Style/Example007/menus.html" hreflang="ru" rel="alternate">Русский</a>
+
+    </li><li><a href="http://css-al.com/menus.htm" hreflang="sq" rel="alternate">Shqip</a>
+
+    </li><li><a href="http://www.codingbasic.com/style/example/007/menus.html" hreflang="th" rel="alternate">ไทย</a>
+
+    </li><li><a href="http://tl.tz8.de/style-examples-007-menus.html" hreflang="tl" rel="alternate">Tagalog</a>
+
+    </li><li><a href="http://www.indeep76.com/Style/Example007ukr/menus.html" hreflang="uk" rel="alternate">Українська</a>
+
+    </li><li><a href="http://www.300yards.com/007/menus.html" hreflang="vi" rel="alternate">Tiếng Việt</a>
+
+    </li><li><a href="http://www.certifiedchinesetranslation.com/openaccess/CSS/menus.html" hreflang="zh-hans" rel="alternate">简体中文</a>
+
+    </li><li><a href="http://www.certifiedchinesetranslation.com/openaccess/CSS/menus-tc.html" hreflang="zh-hant" rel="alternate">繁體中文</a>
+   </li></ul>
+
+   <p><a href="http://www.w3.org/Style/CSS/translating">About the translations</a>
+  </p></div>
+  <!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-declaration:"~/SGML/HTML4.dcl"
+sgml-default-doctype-name:"html"
+sgml-minimize-attributes:t
+sgml-nofill-elements:("pre" "style" "br")
+End:
+-->
+</body></html>

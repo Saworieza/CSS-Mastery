@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://s.codepen.io/zakkain/fullgrid/dseHt?type=embed&animations=run -->
+<html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>CSS-Tricks: pointer-events - CodePen</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
+
+  <style>.avoid-clicks {
+  display: block;
+  width: 8em;
+  height: 8em;
+  background: rgba(51,51,51,0.85);
+  position: absolute;
+  top: 1em;
+  left: 4em;
+  padding: 0.75em;
+  pointer-events: none;
+  color: whitesmoke;
+}
+
+body {
+  font: 14px/1.4 "Trebuchet MS", sans-serif;
+  padding: 3em;
+  max-width: 600px;
+  background: whitesmoke;
+}
+
+p {
+  padding: 0.75em;
+  background: #ddd;
+}</style>
+
+    <script src="prefixfree.min.js"></script>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <p>This is some basic flow content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos ipsum sunt repellat nisi modi voluptatum ipsa eligendi minima cumque. Accusantium laudantium autem quae earum eaque expedita quia molestiae in.</p>
+
+<div class="avoid-clicks">try selecting text through me</div>
+
+  <script>
+
+</script>
+
+  <script>
+    (function() {
+
+      // Once the entire pen's loaded we send a message to embeds
+      // to resize again in case they're using auto to the size the embed
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+      }
+
+      // Remove all Iframes
+      var iframes = document.getElementsByTagName('iframe');
+
+      for (var i = iframes.length - 1; i >= 0; i--) {
+        iframes[i].outerHTML = "<p>remove</p>";
+      };
+
+    }());
+  </script>
+
+
+
+</body></html>

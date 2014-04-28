@@ -1,0 +1,1 @@
+document.write('\x3cscript src\x3d\x22http://www.googletagservices.com/tag/js/gpt.js\x22\x3e \ngoogletag.pubads().definePassback( \n\x27/1006593/Forums-Forum_Top\x27, [728, 90]) \n.display(); \n\x3c/script\x3e');document.write('');

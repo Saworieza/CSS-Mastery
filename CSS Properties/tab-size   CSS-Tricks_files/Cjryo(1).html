@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)http://s.codepen.io/tjacobdesign/fullgrid/Cjryo?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>tab-size polyfill - CodePen</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <style>pre, textarea {
+  tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  -webkit-tab-size: 4;
+}</style>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <h1>A Tab-Size Polyfill</h1>
+
+<p>About as simple as it gets. This script checks if your browser supports <code>tab-size</code>, and if not converts all tabs to a certain number of spaces.</p>
+
+<p>This polyfill is purely a vanity thing, for those of us who can’t stand uber-wide tab characters.</p>
+
+<pre><code>
+	My tab is only 4 spaces wide!
+</code></pre>
+
+<textarea>	Mine too!
+</textarea>
+
+  <script>
+//Set your tab size here, and in the CSS.
+var tabSize = 4;
+var codeElements = document.getElementsByTagName('code'),
+    textareas = document.getElementsByTagName('textarea'),
+    e = document.createElement('i');
+
+if(e.style.tabSize !== '' && e.style.MozTabSize !== '' && e.style.oTabSize !== '')
+{
+  console.log(e.style);
+  replaceTabs(codeElements);
+  replaceTabs(textareas);
+}
+
+function replaceTabs(ele)
+{
+  for(var i = 0; i < ele.length; i++)
+  {
+    ele[i].innerHTML = ele[i].innerHTML.replace(/\t/g, repeat(" ", tabSize));
+  }
+}
+
+function repeat(st, n) {
+   var s = "";
+   while (--n >= 0) {
+     s += st
+   }
+   return s;
+}
+  </script>
+
+  <script>
+    (function() {
+
+      // Once the entire pen's loaded we send a message to embeds
+      // to resize again in case they're using auto to the size the embed
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+      }
+
+      // Remove all Iframes
+      var iframes = document.getElementsByTagName('iframe');
+
+      for (var i = iframes.length - 1; i >= 0; i--) {
+        iframes[i].outerHTML = "<p>remove</p>";
+      };
+
+    }());
+  </script>
+
+
+
+</body></html>

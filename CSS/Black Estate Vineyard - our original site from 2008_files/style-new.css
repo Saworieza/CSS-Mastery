@@ -1,0 +1,793 @@
+body {
+	background-color: #0d0d0d;
+	color: #dfdfdf;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background: #0d0d0d url(../i/map.jpg) 130% bottom no-repeat;
+	padding-bottom: 250px; /* for the map */
+	position: relative;
+}
+
+a:link, a:visited {
+	color: #dfdfdf;
+	text-decoration: underline;
+}
+a:active, a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+p {
+	margin: 20px 0;
+	font-size: 115%;
+	font-family: "Times New Roman";
+	line-height: 1.4;
+}
+
+#container {
+	background: url(../i/bottle-page-top.jpg) 710px 50px no-repeat;
+	position: relative;
+	padding-top: 1px;
+}
+
+#nav {
+	display: block;
+	position: absolute;
+	top: 360px;
+	left: 0;
+	background: url(../i/grey-90pc.png) left top repeat;
+	width: 140px;
+}
+
+#nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+
+#nav ul li {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	float: left;
+	width: 100%;
+}
+
+#nav a {
+	display: block;
+	line-height: 33px;
+	padding: 0 10px;
+	border-bottom: 1px solid #333;
+	text-decoration: none;
+	color: #fff;
+}
+
+#nav a.last {
+	border-bottom: none;
+}
+
+#nav a:hover, #nav a:active {
+	color: #f3f3f3;
+	background-image: url(../i/black-90pc.png);
+	color: #999;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	line-height: 1.35;			
+}
+
+h1#title-subline {
+	margin: 85px 0 0 0;
+	font-size: 140%;
+}
+
+h1#title {
+	margin: 30px 0 60px 0;
+	text-indent: -1000px;
+	width: 325px;
+	height: 120px;
+	background: url(../i/blackestate-logo.gif) left top no-repeat;
+}
+
+h2 {
+	font-size: 260%;
+	margin-top: 80px;
+	padding-top: 20px;
+}
+
+h2#home {
+	margin-top: 0;
+}
+
+h2#vineyard {
+	text-indent: -3000px;
+	background: url(../i/vineyard.gif) left bottom no-repeat;
+	width: 497px;
+	height: 147px;
+	margin-bottom: -10px;
+	margin-left: -50px;
+	margin-top: 50px;
+}
+
+
+h2#wines {
+	text-indent: -3000px;
+	background: url(../i/wines.gif) left bottom no-repeat;
+	width: 581px;
+	height: 162px;	
+	margin-top: 30px;
+}
+
+div#wine-making-title {
+	text-indent: -3000px;
+	background: url(../i/wine-making.gif) left bottom no-repeat;
+	width: 457px;
+	height: 126px;
+	margin-left: -20px;
+	margin-top: 0px;
+}
+
+div#wine-making-title h2 {
+	margin-top: 0;
+}
+
+h2#black-list {
+	text-indent: -3000px;
+	background: url(../i/pssst.gif) left bottom no-repeat;
+	width: 785px;
+	height: 87px;	
+	margin: 60px 0 0 0;
+}
+
+h2#contact {
+	text-indent: -3000px;
+	background: url(../i/contact.gif) left bottom no-repeat;
+	width: 345px;
+	height: 79px;		
+}
+
+h2#order {
+	text-indent: -3000px;
+	background: url(../i/order.gif) left bottom no-repeat;
+	width: 514px;
+	height: 54px;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+h2#stockists-title {
+	text-indent: -3000px;
+	background: url(../i/stockists.gif) left bottom no-repeat;
+	width: 228;
+	height: 53px;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+h2#the-region {
+	margin-bottom: 0;
+}
+
+hr {
+	color: #333;
+	background-color: #333;
+	border: 1px solid #333;
+	border-width: 1px 0 0 0;
+}
+
+.drop-cap {
+	float: left;
+	font-size: 100px;
+	line-height: 0.8;
+	padding: 0px 10px 10px 0;
+}
+
+/*
+#news {
+	position: absolute;
+	left: 720px;
+	top: 750px;
+	width: 220px;
+	margin: 0;	
+}
+
+#news-inner {
+	margin: 5px 0 0 0;
+	padding: 1px 10px;
+	border-top: 1px solid #666;
+	background-color: #181818;
+	color: #aaa;
+	font-size: 90%;
+}
+
+#news h3 {
+	margin-bottom: 0;
+	color: #fff;
+}
+
+#news blockquote p {
+	margin: 10px 0;
+	line-height: 1.2;
+}
+*/
+
+/* NEWS STYLES ADDED 20 JAN 09 */
+#news {
+	position: absolute;
+	left: 720px;
+	top: 750px;
+	width: 220px;
+	margin: 0;
+}
+#news-inner {
+	margin: 5px 0 0 0;
+	border-top: 3px double #666;
+	background-color: #181818;
+	color: #aaa;
+	font-size: 90%;
+	padding: 1px 0;
+	height: 700px;
+	width: 220px;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#news-scrollbox {
+	width: 4000px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#news h3 {
+	margin-bottom: 0;
+	color: #fff;
+}
+
+#news-navbox {
+	display: none;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	background: #000;
+	width: 100%;
+	font-size: 1.2em;
+}
+#news-navbox a {
+	cursor: pointer;
+	width: auto;
+	display: block;
+	margin: 0;
+	padding: 10px 5px;
+	float: left;
+	color: #666;
+}
+#news-navbox a.archive-r {
+	float: right;
+}
+#news-navbox a.next {
+	float: right;
+	padding-left: 25px;
+	background: url(../i/arrow-right.gif) 5px center no-repeat;
+}
+#news-navbox a.previous {
+	padding-left: 25px;
+	background: url(../i/arrow-left.gif) 5px center no-repeat;
+}
+
+#news ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#news ul li {
+	margin: 0 10px;
+	padding: 0;
+	width: 200px;
+	height: 698px;
+	float: left;
+	position: relative;
+}
+#news ul li h4 {
+	background: #000;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 0.5em;
+	margin-bottom: 1em;
+
+}
+#news ul li p {
+	margin: 0 0 1em 0;
+}
+#news ul li img {
+	margin-top: 1em;
+	display: block;
+}
+#news li blockquote {
+	margin: 1em 0;
+}
+#news li blockquote p {
+	margin: 10px 0;
+	line-height: 1.2;
+}
+#news ul li .footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#news ul li .footer p {
+	margin: 10px 0;
+}
+
+
+#news ul li.archive {
+	margin: 0;
+	width: 220px;
+}
+#news ul.archive {
+	/*border-top: 1px solid #333;*/
+}
+#news ul.archive li {
+	border-bottom: 1px solid #333;
+	height: auto;
+	float: left;
+	clear: left;
+	width: 100%;
+	padding: 1em 0;
+	margin: 0;
+}
+
+#news ul.archive li a {
+	background: url(../i/arrow-right.gif) 5px 5px no-repeat;
+	padding-left: 25px;
+	display: block;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+#news ul.archive li a span {
+	display: block;
+	font-size: 0.83em;
+}
+
+img.with-caption {
+	display: block;
+}
+
+.image-caption {
+	display: block;
+	background-color: #000;
+	margin: 0;
+	padding: 0 10px;
+	line-height: 33px;
+}
+
+
+blockquote, .subhead {
+	font-size: 140%;
+	line-height: 1.35;
+	padding: 0px 0;
+	border: 1px solid #333;
+	border-width: 1px 0;
+}
+
+.subhead {
+	padding: 10px 0;
+	font-size: 160%;
+}
+
+.wide-punchout {
+	font-style: italic;
+	border: none;
+	margin: 1em 0 1em -160px;
+	font-size: 200%;
+	color: #999;
+}
+
+.punchout {
+	font-style: italic;
+	border: none;
+	margin: 3em 0 0.5em 0;
+	line-height: 27px;
+	font-size: 160%;
+	color: #999;			
+}
+
+.thinking-right {
+	text-align: right;
+	margin-top: 110px;
+	font-size: 220%;
+	color: #ddd;
+	font-style: normal;
+	line-height: 36px;
+}
+
+img.labelled {
+	display: block;
+}
+
+.caption {
+	display: block;
+	position: absolute;
+	margin: -45px 0 20px 0;
+	background: url(../i/black-90pc.png) left top repeat;
+	padding: 5px 15px 5px 30px;
+	font-size: 140%;
+	color: #dfdfdf;
+}
+
+.small {
+	font-size: 100%;
+}
+
+
+#the-wines {
+	margin: -30px 0 80px 0;
+	padding-top: 1px;
+	font-size: 90%;
+	color: #aaa;
+}
+
+#the-wines h3 {
+	font-size: 130%;
+	margin-top: 50px;
+	color: #dfdfdf;
+}
+
+#wine1, #wine2, #wine3, #wine4, #wine5 {
+	height: 570px;
+}
+
+#wine1 {background: url(../i/bottles/RI12.jpg) 10px 50px no-repeat;}
+#wine2 {background: url(../i/bottles/PN11.jpg) 10px 50px no-repeat;}
+#wine3 {background: url(../i/bottles/OSCH11.jpg) 10px 50px no-repeat;}
+#wine4 {background: url(../i/bottles/PNSO11.jpg) 10px 50px no-repeat;
+        margin-left: 320px;
+        padding-left: 0;}
+#wine5 {background: url(../i/bottles/CH11.jpg) 10px 50px no-repeat;}
+
+
+#season-report-switcher {
+	margin-top: 105px;
+	float: right;
+	line-height: 30px;
+	border: 1px solid #666;
+	width: 240px;
+	color: #999;
+	padding: 0 10px;
+	background: url(../i/13.gif) 235px center no-repeat;
+}
+
+#season-report-switcher:hover, 
+#season-report-switcher:active {
+	background-color: #222;
+}
+
+#people h3.name, .title, .email {
+	color: #F5CC24;
+	font-size: 100%;
+	margin: 0;
+}
+
+#people .title {
+	font-style: italic;
+}
+
+#people hr.balance {
+	height: 1px;
+}
+
+#contact-details {
+	font-size: 120%;
+}
+
+#contact-details a {
+	background: url(../i/13.gif) left 60% no-repeat;
+	text-decoration: none;
+	display: block;
+	margin-left: -25px;
+	padding-left: 25px;
+}
+
+#friendly {
+	border: none;
+	font-size: 200%;
+	margin: 150px 0 20px 0;
+}
+
+input, button {
+	color: #fff;
+	padding: 0 10px;
+	line-height: 30px;
+	height: 28px;
+	border: 1px solid #666;
+	background-color: #000;
+	margin: 0;
+	width: 240px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 120%;
+}
+
+input.showing-label {
+	font-style: italic;
+	color: #999;
+}
+
+input#signup-email {
+	float: left;
+}
+
+textarea {
+	width: 240px;
+	padding: 5px 10px;
+	color: #fff;
+	background-color: #000;
+	border: 1px solid #666;
+	height: 5em;
+}
+
+button, input#signup-submit {
+	text-indent: -1000px;
+	overflow: hidden;
+	background: #000 url(../i/submit.gif) 50% 50% no-repeat;
+	margin: 0;
+	border-left: none;
+	width: 35px;
+	height: 30px;
+}
+
+input#signup-submit {
+	text-indent: 0;
+	width: auto;
+	border-left: 1px solid #666;
+	padding-right: 30px;
+	background-position: 90% 50%;
+}
+
+button:active {
+	background-color: #222;
+	background-position: 70% 50%;
+}
+
+#blacklist-contact-wrapper {
+	background: url(../i/bottle-page-top.jpg) right 200px no-repeat;
+}
+
+.wines-links {
+	padding: 0;
+	margin: 153px 0 0 0;
+/*	margin-top: 190px; this is for having no stockists*/
+	font-style: italic;
+	font-size: 120%;
+}
+.wines-links li {
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.wines-links li a {
+	padding-left: 20px;
+	background: url(../i/13.gif) left 60% no-repeat;	
+}
+
+
+dl {
+	font-size: 120%;
+}
+
+dt {
+	float: left;
+	width: 60px;
+}
+
+dd {
+	margin-left: 62px;
+	color: #800;
+}
+
+
+.history-wrapper {
+	margin-top: 150px;
+	margin-bottom: -30px;
+}
+#history {
+	background: url(../i/history-back.gif) left bottom repeat-x;
+	border-top: 1px solid #333;
+}
+
+#history dl {
+	font-size: 100%;
+	width: 49%;
+	float: left;
+	padding-top: 30px;
+}
+
+#history dt {
+	padding: 0;
+	margin: 0;
+	margin-left: 15px;
+	font-size: 120%;
+	width: 55px;
+	height: 85px;
+	color: #800;
+	clear: left;
+	line-height: 1.3;
+}
+
+#history dd {
+	padding: 0;
+	margin: 2px 0 0 0;
+	float: left;
+	color: #dfdfdf;
+	width: 140px;
+	height: 85px;
+	line-height: 1.4;
+	font-size: 90%;
+}
+
+#the-wines a {
+	text-decoration: underline;	
+}
+
+.order {
+	font-size: 120%;
+}
+
+#panel {
+	display: none;
+	position: absolute;
+	z-index: 13;
+	margin: 0;
+	background: url(../i/red-50pc.png) left top repeat;
+	zoom: 1;
+}
+
+#panel .panel-close-link {
+	float: right;
+	padding: 10px 20px;
+}
+
+#panel-inner {
+	margin: 20px 10px 20px 30px;
+}
+
+#panel-mask {
+	display: none;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	zoom: 1;
+}
+
+#panel input {
+	width: 80%;
+	font-size: 100%;
+	background-color: #fff;
+	color: #000;
+	border: 1px inset #eee;
+}
+
+#panel input:disabled {
+	background-color: #ccc;
+	color: #666;
+}
+
+#panel input.quantity {
+	width: 2em;
+	padding: 5px;
+	text-align: center;
+	font-size: 120%;
+	margin-right: 5px;
+}
+
+#panel button {
+	background-color: #800;
+	border: 1px solid white;
+	border-width: 1px 0;
+	text-indent: 0;
+	width: auto;
+	color: #fff;
+	font-size: 100%;
+	background-position: 5px 50%;
+	padding-left: 27px;
+}
+
+#panel button:active {
+	background-position: 10px 50%;
+}
+
+#panel button:disabled {
+	color: #666;
+}
+
+.panel-content {
+	display: none;
+}
+
+.order-table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.order-table td, .order-table th {
+	padding: 5px 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+.order-table td {
+	border: 1px solid #844;
+	border-width: 1px 0;
+}
+
+.order-status-message, #maillist-error {
+	font-weight: bold;
+}
+
+.order-status-message p, .order-status-message ul {
+	margin: 0;
+}
+
+.order-status-message {
+	margin-top: -10px;
+}
+
+#panel blockquote.punchout {
+	color: #eee;
+	margin: 30px 0;
+	font-weight: normal;
+}
+
+ul.flat {
+	list-style-type: none;
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul.flat li {
+	margin: 3px 0;
+	padding: 0;
+}
+
+h3.stockist-location {
+	border-bottom: 1px solid #EFE0E1;
+}
+
+.hidden {
+	display: none;
+}
+
+.expanded .hidden {
+	display: block;
+}
+
+.grid_2point25 {
+    width: 160px;
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.banner {
+    padding-bottom: 20px;
+}
+
+.banner p {
+    font-family: Georgia;
+    margin: 0;
+    font-size: 100%;
+}

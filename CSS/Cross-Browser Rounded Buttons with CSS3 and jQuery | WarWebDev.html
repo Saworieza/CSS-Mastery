@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Cross-Browser Rounded Buttons with CSS3 and jQuery | WarWebDev</title>
+    <meta charset="UTF-8">           
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link rel="profile" href="http://gmpg.org/xfn/11">        
+    <link rel="pingback" href="http://warwebdev.com/xmlrpc.php">     
+    <!--[if lt IE 9]>
+		<script src="http://warwebdev.com/wp-content/themes/alpha-trinity/assets/html5shiv.js" type="text/javascript"></script>
+	<![endif]-->     
+    <link rel="alternate" type="application/rss+xml" title="WarWebDev » Feed" href="http://warwebdev.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="WarWebDev » Comments Feed" href="http://warwebdev.com/comments/feed/">
+<link rel="stylesheet" id="cptchStylesheet-css" href="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="alphatrinity_style-css" href="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/style_002.css" type="text/css" media="all">
+<script src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/ga.js" async="" type="text/javascript"></script><script src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/jquery.js"></script>
+<script type="text/javascript" src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/scripts.js"></script>
+<script type="text/javascript" src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/masonry.js"></script>
+<script type="text/javascript" src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://warwebdev.com/xmlrpc.php?rsd">
+<link rel="prev" title="Advanced Web Design Without Code? A How-To with Webydo" href="http://warwebdev.com/2014/01/advanced-web-design-without-code-a-how-to-with-webydo/">
+<link rel="canonical" href="http://warwebdev.com/2014/01/cross-browser-rounded-buttons-with-css3-and-jquery/">
+<link rel="shortlink" href="http://warwebdev.com/?p=720">
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-24048099-26'], ['_gat._anonymizeIp'], ['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-24048099-26']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+    <style type="text/css">
+        a:hover {color: ;}
+        .thumb {background-color:}        
+    </style>
+    </head>
+<body class="single single-post postid-720 single-format-standard">
+	<div class="container"><div class="sidebar four columns">
+	<p id="blog-name"><a href="http://warwebdev.com/">WarWebDev</a></p>
+	<p id="blog-description">WebDev News</p>	
+		
+	<form role="search" method="get" class="search-form" action="http://warwebdev.com/">
+	<label>		
+		<input class="search-field" placeholder="Search..." name="s" title="Search for:" type="search">
+	</label>
+	<input class="search-submit" value="Search" type="submit">
+</form>			<aside id="recent-posts-3" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://warwebdev.com/2014/01/cross-browser-rounded-buttons-with-css3-and-jquery/">Cross-Browser Rounded Buttons with CSS3 and jQuery</a>
+							<span class="post-date">January 8, 2014</span>
+						</li>
+					<li>
+				<a href="http://warwebdev.com/2014/01/advanced-web-design-without-code-a-how-to-with-webydo/">Advanced Web Design Without Code? A How-To with Webydo</a>
+							<span class="post-date">January 8, 2014</span>
+						</li>
+					<li>
+				<a href="http://warwebdev.com/2014/01/sj-mega-products-ii-for-joomshopping/">SJ Mega Products II for JoomShopping</a>
+							<span class="post-date">January 8, 2014</span>
+						</li>
+					<li>
+				<a href="http://warwebdev.com/2014/01/call-for-nominations-for-trademark-team-manager/">Call for Nominations for Trademark Team Manager</a>
+							<span class="post-date">January 8, 2014</span>
+						</li>
+					<li>
+				<a href="http://warwebdev.com/2014/01/joomla-community-magazine-january-2014/">Joomla Community Magazine | January 2014</a>
+							<span class="post-date">January 8, 2014</span>
+						</li>
+				</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><h3 class="widget-title">Calendar</h3><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>January 2014</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://warwebdev.com/2013/12/" title="View posts for December 2013">« Dec</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="2" class="pad">&nbsp;</td><td><a href="http://warwebdev.com/2014/01/01/" title="BIG PARTY SALE!, Banner Printing Attribute for Virtuemart, Sliders v3.3.5 released, Making a Sphere in CSS, Vida Theme, Vanillashow, With The New Year, WebResourcesDepot Has A New Owner..">1</a></td><td><a href="http://warwebdev.com/2014/01/02/" title="Flirtymania, Coucou Icons – 64 Fun &amp; Quirky Icons, The JED Terms of Service Updated, A Look at Ruby 2.1, Gnomenations">2</a></td><td><a href="http://warwebdev.com/2014/01/03/" title="Tooltips v3.4.2 released, Free Script For Exporting Photoshop Layers To SVG, JD Subscriptions, Happy new year with FLEXIcontent, Red Pen – Fast and Productive Way to Get Feedback, Joomla Two Factor Authentication Multi-Step Flow, Quick Read, What’s The Biggest Challenge In Your Freelance Business Right Now?">3</a></td><td><a href="http://warwebdev.com/2014/01/04/" title="CSS3 Multi-column Layouts, Email Protector v1.2.3 released, Thank You (2013 Edition), Phoca Panorama, Starting out as an affiliate? Build one of the four websites below to earn money quickly, Testing in Node.js, Wemahu, Modals v4.7.1 released">4</a></td><td><a href="http://warwebdev.com/2014/01/05/" title="Snippets v3.3.1 released, JE Animation menu, Phoca Panorama 3.0.0 Released, Hackpad – Sharing Smart Collaborative Documents, Advanced Order Manager for HikaShop">5</a></td>
+	</tr>
+	<tr>
+		<td><a href="http://warwebdev.com/2014/01/06/" title="Becoming a PHP Professional: Practical Teamwork, Lost World’s Fairs, CountDown Discount for Virtuemart, Webydo vs. WordPress vs. Wix: Who Wins The Web Design Race? (Infographic), Loading Scripts with&nbsp;jQuery, Web Standards Killed The HTML Star, What’s Cool for Designers this Week #44, What’s The Biggest Challenge In Your Freelance Business Right Now?, Go for Rubyists, II, Writing Robust Web Applications – The Lost Art of Exception Handling, 2014 is The Year For Professional Web Designers: See How Webydo Is Leading This New Era, Summernote: Powerful WYSIWYG-Editor for Bootstrap 3, Acceptance Testing With Codeception, Build Awesome Interactive Globes with Planetary.js, Infographic: 2013 Flat Design Vs. Realism, 14 Creative And Quirky Fonts For Free Download, 15 Amazing Tools to Showcase Your Online Portfolio, 12 Free Healthy Apps for Freelancers and Others, Drag-Drop Reordering Without jQuery: Sortable, How to Use IndexedDB to Handle 3D WebGL Assets, Rails Assets – Free Assets Management in Rails, 2014 – The Year of Ecommerce Design?, 45 Stunning Calendar Icon Sets For Free Download, Showcase Of Fresh Photoshop Text Effect Tutorials, Handsome Bootstrap Themes Free for Download, Add Content Management Functionality to Any Sites, JavaScript State Manager For Responsive Websites – Simple State Manager, 45 Fresh And Free WordPress Themes, Most Beautiful Website Designs of 2013, 35 Website Layouts using Flat Illustrated Graphics and Icons, LayoutIt! Free And Powerful Boilerplate For Your Next Bootstrap 3 Project, Declare Breakpoints Only Once With Unison.js, Browser Trends January 2014: a Yearly Review, JA Bookshop, Joomla &amp; MijoShop template, J!Blesta">6</a></td><td><a href="http://warwebdev.com/2014/01/07/" title="JO Facebook Image Gallery Grid, Do Not Track, JB Article Seo Checklist, Single Login, Easy Quick Contact, Website Preloader, Profit Button, BM Tab Ajax Slider For K2, Klixo IP FORM, JO Auto Twitter for ZOO, JA Bookshop, Joomla &amp; MijoShop template, Take a sneak peek at the JSN Corsa template with 5 powerful Joomla extensions supported. Get 30% off, Leviathan 1.4 (J2.5/J3.x) Update Released, Myth – A CSS Preprocessor For Nodejs, Codeblock.js: Edit and Run JavaScript Directly from Within Your Browser, “A nicer color palette for the web.”, Foundation 5 Interchange – Creating Dynamic Page Content, Message Queues: Comparing Beanstalkd, IronMQ and Amazon SQS, Brushlovers – Free Photoshop Brushes, Styles and Patterns En Masse, Introduction to HTML5 Desktop Apps With Node-Webkit, JavaScript Generators and Preventing Callback Hell, Simple Table Column Highlighting, Selectivizr, HTML5 and Even Fancier Forms, A JavaScript Currency Conversion Script, Cross-Browser Support for HTML5 Placeholder Text in Forms, Intelligent Select Box Filtering, 12 Free Healthy Apps for Freelancers and Others, 2014 – The Year of Ecommerce Design?, Using New Relic Custom Metrics to Monitor All the Things, 20 Distinctive Navigation Menu Designs, Noo Slider 2, UIkit 2.1 released, The Intrinsic Value of Blogging, A CRUD JavaScript&nbsp;Class, Game of Thrones Typography by Mattia Castiglioni, 10 Free Blank WordPress Themes, SJ Frontpage for JoomShopping">7</a></td><td id="today"><a href="http://warwebdev.com/2014/01/08/" title="Joomla Community Magazine | January 2014, Call for Nominations for Trademark Team Manager, SJ Mega Products II for JoomShopping, Advanced Web Design Without Code? A How-To with Webydo, Cross-Browser Rounded Buttons with CSS3 and jQuery">8</a></td><td>9</td><td>10</td><td>11</td><td>12</td>
+	</tr>
+	<tr>
+		<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+	</tr>
+	<tr>
+		<td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+	</tr>
+	<tr>
+		<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+		<td class="pad" colspan="2">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href="http://warwebdev.com/2014/01/">January 2014</a>&nbsp;(111)</li>
+	<li><a href="http://warwebdev.com/2013/12/">December 2013</a>&nbsp;(566)</li>
+		</ul>
+</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-375"><a href="http://warwebdev.com/category/css/" title="View all posts filed under CSS">CSS</a> (34)
+</li>
+	<li class="cat-item cat-item-238"><a href="http://warwebdev.com/category/general/" title="View all posts filed under General">General</a> (440)
+</li>
+	<li class="cat-item cat-item-392"><a href="http://warwebdev.com/category/javascript/" title="View all posts filed under JavaScript">JavaScript</a> (10)
+</li>
+	<li class="cat-item cat-item-2"><a href="http://warwebdev.com/category/joomla-extensions/" title="View all posts filed under Joomla! Extensions">Joomla! Extensions</a> (98)
+</li>
+	<li class="cat-item cat-item-103"><a href="http://warwebdev.com/category/joomla-related-news/" title="View all posts filed under Joomla! Related News">Joomla! Related News</a> (90)
+</li>
+	<li class="cat-item cat-item-702"><a href="http://warwebdev.com/category/php/" title="View all posts filed under PHP">PHP</a> (5)
+</li>
+		</ul>
+</aside>	<p id="copyright">© 2014 WarWebDev</p>			  		
+</div>	
+	<article class="nine columns">
+		<div id="post-720" class="post-720 post type-post status-publish format-standard hentry category-css tag-buttons tag-crossbrowser tag-css3 tag-jquery tag-rounded">					 
+						<h1 id="main-heading">Cross-Browser Rounded Buttons with CSS3 and jQuery</h1>
+			<p id="meta">January 8, 2014 - <a href="http://warwebdev.com/category/css/" title="View all posts in CSS" rel="category tag">CSS</a></p>				  	
+			<!-- Google Ads Injected by Adsense Explosion--><div class="adsxpls" id="adsxpls1" style="padding:7px; float: left; padding-left: 0px; margin: 0px;"><!-- AdSense Plugin Explosion num: 1 --><ins data-adsbygoogle-status="done" class="adsbygoogle adsgoogle1" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8835885338821910" data-ad-slot=""><ins style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="280" scrolling="no" width="336"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><!-- google_ad_section_start --><p>I was tasked with 
+replacing several dozen Photoshop-generated rounded buttons on a large 
+site with a flexible HTML/CSS/JS equivalent. I wanted it to be simple 
+and leave the code as clean as possible. It also needed to work in all 
+modern browsers. This is my solution.
+</p><div class="crp_related">
+<h3>Related Reading</h3>
+<ul>
+<li><a href="http://www.cssnewbie.com/making-a-sphere-in-css/" class="crp_title">Making a Sphere in CSS</a></li>
+<li><a href="http://www.cssnewbie.com/pure-css-bouncing-ball/" class="crp_title">A Pure CSS Bouncing Ball</a></li>
+<li><a href="http://www.cssnewbie.com/use-a-css-preprocessor/" class="crp_title">Use a CSS Preprocessor</a></li>
+<li><a href="http://www.cssnewbie.com/simple-table-column-highlighting/" class="crp_title">Simple Table Column Highlighting</a></li>
+<li><a href="http://www.cssnewbie.com/javascript-currency-conversion-script/" class="crp_title">A JavaScript Currency Conversion Script</a></li>
+</ul>
+</div>
+<div class="feedflare"> <a href="http://feeds.feedburner.com/%7Eff/cssnewbie?a=qfQBF8Cflj8:-Rr8fWzP1wg:yIl2AUoC8zA"><img src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/cssnewbie.gif" border="0"></a> <a href="http://feeds.feedburner.com/%7Eff/cssnewbie?a=qfQBF8Cflj8:-Rr8fWzP1wg:V_sGLiPBpWU"><img src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/cssnewbie_003.gif" border="0"></a> <a href="http://feeds.feedburner.com/%7Eff/cssnewbie?a=qfQBF8Cflj8:-Rr8fWzP1wg:F7zBnMyn0Lo"><img src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/cssnewbie_004.gif" border="0"></a> <a href="http://feeds.feedburner.com/%7Eff/cssnewbie?a=qfQBF8Cflj8:-Rr8fWzP1wg:gIN9vFwOqvQ"><img src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/cssnewbie_005.gif" border="0"></a> <a href="http://feeds.feedburner.com/%7Eff/cssnewbie?a=qfQBF8Cflj8:-Rr8fWzP1wg:l6gmwiTKsz0"><img src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/cssnewbie_006.gif" border="0"></a> <a href="http://feeds.feedburner.com/%7Eff/cssnewbie?a=qfQBF8Cflj8:-Rr8fWzP1wg:D7DqB2pKExk"><img src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/cssnewbie_002.gif" border="0"></a> </div>
+<p><img src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/qfQBF8Cflj8.gif"><br><!-- Google Ads Injected by Adsense Explosion--></p><div class="adsxpls" id="adsxpls2" style="padding:7px; float: right; padding-right: 0; margin: 0px;"><!-- AdSense Plugin Explosion num: 2 --><ins data-adsbygoogle-status="done" class="adsbygoogle adsgoogle2" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8835885338821910" data-ad-slot=""><ins style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" frameborder="0" height="280" scrolling="no" width="336"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<a rel="nofollow" href="http://feedproxy.google.com/%7Er/cssnewbie/%7E3/qfQBF8Cflj8/">CSS Newbie</a><p></p>
+<!-- google_ad_section_end -->			<p class="tags">› tags: <a href="http://warwebdev.com/tag/buttons/">buttons</a> <span class="slash">/</span> <a href="http://warwebdev.com/tag/crossbrowser/">CrossBrowser</a> <span class="slash">/</span> <a href="http://warwebdev.com/tag/css3/">CSS3</a> <span class="slash">/</span> <a href="http://warwebdev.com/tag/jquery/">jQuery</a> <span class="slash">/</span> <a href="http://warwebdev.com/tag/rounded/">Rounded</a>  </p>		
+						
+									
+		</div>		
+	</article>
+	
+<div class="sidebar three columns omega">
+		<nav id="post-nav">
+		<a href="http://warwebdev.com/2014/01/advanced-web-design-without-code-a-how-to-with-webydo/" rel="prev"><span>‹</span> PREV</a>    		
+	</nav>
+		</div>	</div> 
+	<script type="text/javascript" src="Cross-Browser%20Rounded%20Buttons%20with%20CSS3%20and%20jQuery%20%7C%20WarWebDev_files/adsbygoogle.js"></script>
+   
+
+
+	
+
+
+
+</body></html>
+<!-- Dynamic page generated in 0.611 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-01-08 17:15:00 -->
+<!-- Compression = gzip -->

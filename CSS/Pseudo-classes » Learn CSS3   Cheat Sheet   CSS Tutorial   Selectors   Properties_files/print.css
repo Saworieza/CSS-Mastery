@@ -1,0 +1,115 @@
+
+
+/* for print media only / hide from Mac/IE5 */
+/* this is a print style sheet - no pixel measurements! */
+@media print
+{
+
+
+
+	/* hide irreleveant content */
+	#header, #navoutercontainer, #navbar, #navpanel, #footer, 
+	.paging ul, .categorylist, dl.modifymenu, 
+	p.submitentry, p.makeoffer, #entries p.submitentry, .report, 
+	#actions, #respond, .actions, .brief, .addfeedback, .backtocontest,
+	input.button, .upgrades img, .overview-links, .toquestions, 
+	.paging, .feedbox, #thumbnails form 
+	{
+		display:none !important;
+	}
+	
+	.tableheader .paging
+	{
+		display:block !important;
+	}
+
+
+	/* re-factor container sizes accordingly */
+	#mainpanel
+	{
+		width:100%;
+	}
+	
+	
+	/* grayscale and override superfluous CSS imagery */
+	*,
+	#listingdetails dl.prize dd.amount,
+	#listingdetails dl.properties dd.amount,
+	#listingdetails em.amount
+	{
+		color:#000 !important;
+		border-color:#999 !important;
+	}
+	
+	
+	.tableheader, .tableheader div, .tableheader h2,
+	.creator-profile h4, #bidhistory h4, #thumbnails h4, #discuss h4,
+	#respond h4, .addfeedback h4, .entrydescription h4, div.nav h4, 
+	table.information th, table.information th *
+	{
+		background:#999 !important;
+		color:#fff !important;
+	}
+	
+	.tableheader, .tableheader div, .tableheader h2
+	{
+		border:none !important;
+	}
+	
+	.tableheader div
+	{
+		border:1px solid #666 !important;
+		margin-bottom:1px;
+	}
+	
+	table.listingtable thead th,
+	#discuss dl.postinfo, #discuss dl.postinfo dd, #discuss dl.postinfo dd *, 
+	.attention, div.table table.totalcost th, #errorbox
+	{
+		background:#ddd !important;
+	}
+	
+	table.information tbody th, table.information tbody th *
+	{
+		background:#fff !important;
+		color:#000 !important;
+	}
+
+	.paging, .paging p, #discuss div.post, #listingdetails, #listingactions, 
+	#discuss li.deleted dl.postinfo, #discuss li.deleted dl.postinfo *, 
+	ul#feedback, .steps, #login div,
+	table.information tbody tr.disabled th, table.information tbody tr.disabled th *
+	{
+		background:#eee !important;
+	}
+
+	tr.upgrade_1 th, tr.upgrade_1 th *,
+	tr.upgrade_1 td, tr.upgrade_1 td *,
+	#listentries div.entrycomment h4, .steps em 
+	{
+		background:#ccc !important;
+	}
+
+	.creator-profile h4, #bidhistory h4, #thumbnails h4, #discuss h4,
+	#respond h4, .addfeedback h4, .entrydescription h4, div.nav h4, 
+	table.information th, table.information th *, #listingdetails, #listingactions
+	{
+		border-color:#999 !important;
+	}
+	
+	#discuss dl.postinfo, #discuss dl.postinfo dd, #discuss dl.postinfo dd *, 
+	#discuss div.post div.contestholder p, #discuss div.post div.seller p, 
+	div.table table.totalcost th, div.table table.totalcost td, div.table table.totalcost caption
+	{
+		color:#666 !important;
+	}
+
+	.steps em
+	{
+		border-color:#aaa !important;
+	}
+
+
+
+}
+/* end media wrapper */
